@@ -1,0 +1,47 @@
+{
+  "figure": "fig_c1_lohc_inventory_agv_allocation",
+  "source_run": "experiments/c1_confirmed_main_budget_20260714/C1_ProposedRobustMain_refined_partition",
+  "case_name": "C1_ProposedRobustMain",
+  "certificate_status": "engineering_optimal",
+  "joint_bundle_sha256": "c86a258d698635b6279717fd8f4c4f19491024e01cbe1af0ed695b2a3c8714a5",
+  "master_status": "OPTIMAL",
+  "phase1_adversary_status": "OPTIMAL",
+  "cost_adversary_status": "OPTIMAL",
+  "accepted_limited_solve": false,
+  "time_limit_used_for_certificate": false,
+  "periods": 96,
+  "dt_hours": 0.25,
+  "aggregation": {
+    "lohc_production_and_outbound_kg": "sum of four 15-minute interval quantities",
+    "lohc_inventory_kg": "state sampled at integer-hour boundaries",
+    "simultaneous_agv_count": "arithmetic mean of four 15-minute periods"
+  },
+  "diagnostics": {
+    "max_hourly_agv_conservation_residual": 7.105427357601002e-15,
+    "lohc_production_total_kg": 3338.0187138536526,
+    "lohc_outbound_total_kg": 3593.018713853655,
+    "lohc_inventory_initial_kg": 680.0,
+    "lohc_inventory_terminal_kg": 425.0
+  },
+  "source_files": [
+    {
+      "path": "experiments/c1_confirmed_main_budget_20260714/C1_ProposedRobustMain_refined_partition/dispatch_recourse_worst.csv",
+      "sha256": "f61ebd71947ffe097674b1e24af95634eac9bb8e324785890254ca930ec48758"
+    },
+    {
+      "path": "experiments/c1_confirmed_main_budget_20260714/C1_ProposedRobustMain_refined_partition/certificate.json",
+      "sha256": "ddfe796f780ec79bed65e8f77b86ab84508070cfe2405f43ced1193831d8c17e"
+    },
+    {
+      "path": "experiments/c1_confirmed_main_budget_20260714/C1_ProposedRobustMain_refined_partition/resolved_case.json",
+      "sha256": "b5e39fadab66805464f51801054ecc0895a99e0d6db439af0ce9617bc83be735"
+    }
+  ],
+  "outputs": [
+    "data/hourly_lohc_agv_allocation.csv",
+    "data/hourly_lohc_inventory.csv",
+    "figures/fig_c1_lohc_inventory_agv_allocation.pdf",
+    "figures/fig_c1_lohc_inventory_agv_allocation.svg",
+    "figures/fig_c1_lohc_inventory_agv_allocation.png"
+  ]
+}

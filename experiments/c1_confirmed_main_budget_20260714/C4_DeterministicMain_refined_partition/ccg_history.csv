@@ -1,0 +1,2 @@
+iteration,lower_bound,global_upper_bound,gap_abs,gap_rel,theta,phase1_objective,cost_adversary_objective,scenario_count,action
+1,92.64436679479806,104.72079643860596,0.0,0.0,-156.07684616454324,2.7003647813564622e-09,-156.07684616454324,1,c4_nominal_then_stress

@@ -1,0 +1,18 @@
+{
+  "calibration_name": "large_port_12v_confirmed_main_budget",
+  "equivalent_ship_pressure_used": false,
+  "files": {
+    "C1_large_port_12v.yaml": "001e4f70779e343ebecd209dac2731b43647633a5476269374ed1d17975e859e",
+    "C2_large_port_12v.yaml": "6e98f966c7f68086b0acbd75c4f99642697ccce758869e163d37167f3cbaff90",
+    "C3_large_port_12v.yaml": "99dbfbe987b77d4816b5efc4e8597c80991dd9a06401c195b43630b867d823da",
+    "C4_large_port_12v.yaml": "61fc6355198270a8e609fb6df4f3aba97c12c68e4e7e773c86a1609f2d71188d",
+    "parameter_mapping.json": "b83bf6138d17ca2181651c888d4ad527c67a129ee81ce28cfa3b36ec9f6237c6",
+    "physical_large_port_96.json": "c32600a1e76d34f68fd6eb95a027894f515f5793e9d8ae9bbd3c1488649226bb",
+    "profile_96.yaml": "a6c3d27596f818f0687fb00512640093c6a76bb3243cf9c1908d6ed6350a8def",
+    "ship_delay_large_port_96.json": "683ad18dc51a020599a413272df6ca4ffca304ccebb2a9864102b7e42e763c7f",
+    "wind_large_port_96.json": "7d4c0e078bd66c85dc4c350db9e61e2f7a5f7733604a95cf5322bdf42506dda1"
+  },
+  "formal_baseline_overwritten": false,
+  "generated_by": "tools/build_large_port_inputs.py",
+  "schema_version": 1
+}

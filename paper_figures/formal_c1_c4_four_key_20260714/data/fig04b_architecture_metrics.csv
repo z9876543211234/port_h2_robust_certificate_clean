@@ -1,0 +1,11 @@
+metric_key,metric_label,case,actual_value,normalized_to_c1
+grid_import_mwh,Grid import,C1,455.91685731063626,1.0
+grid_import_mwh,Grid import,C2,329.97582582582584,0.7237631610559176
+grid_export_mwh,Grid export,C1,0.07950450450450573,1.0
+grid_export_mwh,Grid export,C2,38.39002066582712,482.865982312379
+spill_mwh,Wind spill,C1,4.313963963963963,1.0
+spill_mwh,Wind spill,C2,10.74054054054055,2.489714942048661
+hydrogen_side_landing_mwh,Hydrogen-side landing,C1,150.88588588588593,1.0
+hydrogen_side_landing_mwh,Hydrogen-side landing,C2,0.0,0.0
+lohc_outbound_kg,LOHC outbound,C1,3593.018713853655,1.0
+lohc_outbound_kg,LOHC outbound,C2,0.0,0.0

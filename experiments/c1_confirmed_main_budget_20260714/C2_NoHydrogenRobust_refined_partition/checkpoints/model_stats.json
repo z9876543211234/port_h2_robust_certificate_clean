@@ -1,0 +1,8 @@
+{
+  "bundle_constraints": 235,
+  "bundle_selectors": 293,
+  "first_stage_constraints": 286,
+  "first_stage_variables": 384,
+  "recourse_constraints_per_scenario": 1633,
+  "recourse_variables_per_scenario": 770
+}

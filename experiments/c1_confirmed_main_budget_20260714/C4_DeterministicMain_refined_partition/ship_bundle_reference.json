@@ -1,0 +1,8 @@
+{
+  "bundle_sha256": "77e2d55be8cbc14ffd8c43ea58b38201bb4a8a381d9f54e24332706452b41147",
+  "source_hashes": {
+    "ship_delay.canonical_payload_sha256": "1ac440cf33778f2dba7f65a122be4a6d432ca4a8eb1bcf83c7e7738650bf148d",
+    "ship_delay.generation_script_sha256": "ab659a919fd996c04d398dc6a09b9ff33a98fd0651c1e12557195d4ffad2601c",
+    "ship_delay.raw_file_sha256": "47e21db6eff99a454ae902f8ed82dc2b0746ca00669f4af1367a25eec2a3d1fb"
+  }
+}

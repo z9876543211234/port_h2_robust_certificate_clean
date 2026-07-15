@@ -1,0 +1,11 @@
+{
+  "bundle_sha256": "c86a258d698635b6279717fd8f4c4f19491024e01cbe1af0ed695b2a3c8714a5",
+  "model_horizon": 96,
+  "profile_name": "quarter_hour_96",
+  "proofs": {
+    "composition": "cartesian_product",
+    "joint_budget_added": false,
+    "ship_bundle_sha256": "77e2d55be8cbc14ffd8c43ea58b38201bb4a8a381d9f54e24332706452b41147",
+    "wind_bundle_sha256": "50f86c25cf63f07bbecd9bff2058b339d0dbd1117c04571f70a4e4b8e4215061"
+  }
+}

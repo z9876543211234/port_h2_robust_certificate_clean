@@ -1,0 +1,44 @@
+{
+  "adaptations": {
+    "agv_charge_count_ramp": "Four-vehicle ramp retained from the confirmed main-budget base.",
+    "agv_run_power_per_vehicle_kw": "Reference has 15 kW container and 18 kW LOHC duties; clean schema has one coefficient, so the conservative 18 kW value is used.",
+    "c3_work_capacity_caps": "The baseline 13-vehicle C3 working-state split of 7:6 is scaled to the 60-vehicle fleet and rounded to 32:28 whole-vehicle caps; idle and charging remain pooled.",
+    "grid_sell_capacity_kw": "Clean schema supports the intended separate 50 MW sell cap.",
+    "ship_delay": "Four 15-minute steps and at most two delayed ships retained.",
+    "wind_budget": "Gamma=12 retained from the certificate-clean formal spec."
+  },
+  "calibration_name": "large_port_12v_confirmed_main_budget",
+  "control_calibration": "confirmed_main_budget",
+  "formal_baseline_overwritten": false,
+  "model_semantics_changed": false,
+  "ship_nominal": {
+    "integer_draw_preserved": true,
+    "realized_daily_totals": {
+      "current_day": 15,
+      "next_day": 9,
+      "previous_day": 15
+    },
+    "target_daily_expected_arrivals": 11.52
+  },
+  "source_files": {
+    "baseline_integer_nhpp": "data/uncertainty_sources/ship_delay/nhpp_three_day_96.csv",
+    "baseline_physical": "data/deterministic/quarter_hour_96/physical.json",
+    "baseline_wind": "data/uncertainty_sources/wind/quarter_hour_96.json",
+    "confirmed_control_base": "port_h2_robust_clean/records/parameter_scan_realistic_c1_ramp_20260622/case_comparison_generated_nhpp_current_scale_20260623_qc19_formal_rerun/configs/C1_ProposedRobustMain.yaml",
+    "confirmed_control_source": "port_h2_robust_clean/experiments/active_dayahead_shift_arrival_20260710/shift_arrival_experiment/realistic_case_set.py",
+    "large_port_reference": "experiments/inputs/realistic_offshore_port_20260621/model_realistic_offshore_port.yaml"
+  },
+  "spill_cost_selection": {
+    "observed_transition": "Worst-case spill deviation is 0.025 MWh at 0.10 and 0 MWh from 0.125 through 0.30.",
+    "selection_rule": "Smallest scanned value strictly above the 0.10 yuan/kWh marginal tie with the 0.20 yuan/kWh grid-deviation cost.",
+    "spill_day_ahead_per_kwh": 0.1,
+    "spill_deviation_per_kwh": 0.125,
+    "spill_real_time_per_kwh": 0.1
+  },
+  "wind": {
+    "relative_deviation_preserved": true,
+    "scale_factor": 8.531258531258532,
+    "shape_preserved": true,
+    "target_peak_kw": 50000
+  }
+}

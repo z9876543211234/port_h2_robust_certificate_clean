@@ -1,0 +1,8 @@
+{
+  "bundle_sha256": "50f86c25cf63f07bbecd9bff2058b339d0dbd1117c04571f70a4e4b8e4215061",
+  "source_hashes": {
+    "wind.canonical_payload_sha256": "eb0d234c8540728f4f3dd77e95983fa3d3bafa776e829f79b48b4e637527b30a",
+    "wind.generation_script_sha256": "ab659a919fd996c04d398dc6a09b9ff33a98fd0651c1e12557195d4ffad2601c",
+    "wind.raw_file_sha256": "98d348b0575be916e619fcb002c5edcf2d632899b1a16b4f3a8ee36acb0523b7"
+  }
+}

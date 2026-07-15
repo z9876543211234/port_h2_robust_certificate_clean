@@ -1,0 +1,40 @@
+{
+  "accepted_limited_solve": false,
+  "all_partition_leaves_optimal_or_empty": true,
+  "bounds_ordered": true,
+  "case_name": "C3_WorkCapacityCapsRobust",
+  "case_semantic_sha256": "ac843644be57b2f216770e6e774441d35b5469e6d833565a93582849bd157ff9",
+  "cost_adversary_status": "OPTIMAL",
+  "cost_partition_branch_keys": [
+    "wind.down[1]",
+    "wind.down[9]",
+    "ship.delay[51,0,2]",
+    "ship.delay[48,0,4]"
+  ],
+  "engineering_optimal": true,
+  "gap_abs": 0.8177652854483597,
+  "gap_rel": 0.006776663252789704,
+  "git_commit": "uncommitted",
+  "gurobi_version": "13.0.1",
+  "joint_bundle_sha256": "c86a258d698635b6279717fd8f4c4f19491024e01cbe1af0ed695b2a3c8714a5",
+  "lower_bound": 119.855972650654,
+  "master_status": "OPTIMAL",
+  "max_abs_residual": 9.769962616701378e-15,
+  "model_horizon": 96,
+  "outer_gap_tolerance": 0.01,
+  "partition_oracle_used": true,
+  "phase1_adversary_status": "OPTIMAL",
+  "primal_replay_passed": true,
+  "profile_name": "quarter_hour_96",
+  "residual_check_passed": true,
+  "schema_version": 1,
+  "ship_builder_horizon": 288,
+  "ship_projection_window": [
+    96,
+    192
+  ],
+  "status": "engineering_optimal",
+  "time_limit_used_for_certificate": false,
+  "uncertainty_coverage_complete": true,
+  "upper_bound": 120.67373793610236
+}

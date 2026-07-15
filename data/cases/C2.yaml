@@ -1,0 +1,22 @@
+{
+  "case_name": "C2_NoHydrogenRobust",
+  "container_work_capacity": null,
+  "hydrogen_chain": false,
+  "lohc_work_capacity": null,
+  "outbound_mode": "disabled",
+  "profiles": {
+    "hourly_24": {
+      "deterministic_reference": "../deterministic/hourly_24/physical.json",
+      "profile_reference": "../profiles/hourly_24.yaml",
+      "ship_delay_source_reference": "../uncertainty_sources/ship_delay/hourly_24.json",
+      "wind_source_reference": "../uncertainty_sources/wind/hourly_24.json"
+    },
+    "quarter_hour_96": {
+      "deterministic_reference": "../deterministic/quarter_hour_96/physical.json",
+      "profile_reference": "../profiles/quarter_hour_96.yaml",
+      "ship_delay_source_reference": "../uncertainty_sources/ship_delay/quarter_hour_96.json",
+      "wind_source_reference": "../uncertainty_sources/wind/quarter_hour_96.json"
+    }
+  },
+  "schema_version": 1
+}

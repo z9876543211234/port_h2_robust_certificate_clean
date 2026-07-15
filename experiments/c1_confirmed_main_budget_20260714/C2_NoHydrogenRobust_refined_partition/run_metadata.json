@@ -1,0 +1,6 @@
+{
+  "accepted_limited_solve": false,
+  "git_commit": "uncommitted",
+  "solver": "gurobipy",
+  "time_limit_used": false
+}

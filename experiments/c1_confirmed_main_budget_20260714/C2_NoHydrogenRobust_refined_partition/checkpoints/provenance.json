@@ -1,0 +1,18 @@
+{
+  "deterministic": {
+    "canonical_payload_sha256": "592b3ef2644af4249218858e35912a27ce89d8b64651f3d310cdbaca05c04ecb",
+    "generation_script_sha256": "ab659a919fd996c04d398dc6a09b9ff33a98fd0651c1e12557195d4ffad2601c",
+    "random_seed": null,
+    "raw_file_sha256": "4e9a16912b1b9287f12ca804b84af86a5653a07906ec8788e31e520065b62983",
+    "source_reference": "port_h2_robust_certificate_clean/data/deterministic/quarter_hour_96/physical.json;experiments/inputs/realistic_offshore_port_20260621/model_realistic_offshore_port.yaml;experiments/inputs/realistic_offshore_port_20260621/timeseries.csv;experiments/inputs/realistic_offshore_port_20260621/h2_history.csv;port_h2_robust_clean/experiments/active_dayahead_shift_arrival_20260710/shift_arrival_experiment/realistic_case_set.py;port_h2_robust_clean/records/parameter_scan_realistic_c1_ramp_20260622/case_comparison_generated_nhpp_current_scale_20260623_qc19_formal_rerun/configs/C1_ProposedRobustMain.yaml",
+    "source_type": "fixed_file"
+  },
+  "source_hashes": {
+    "ship_delay.canonical_payload_sha256": "1ac440cf33778f2dba7f65a122be4a6d432ca4a8eb1bcf83c7e7738650bf148d",
+    "ship_delay.generation_script_sha256": "ab659a919fd996c04d398dc6a09b9ff33a98fd0651c1e12557195d4ffad2601c",
+    "ship_delay.raw_file_sha256": "47e21db6eff99a454ae902f8ed82dc2b0746ca00669f4af1367a25eec2a3d1fb",
+    "wind.canonical_payload_sha256": "eb0d234c8540728f4f3dd77e95983fa3d3bafa776e829f79b48b4e637527b30a",
+    "wind.generation_script_sha256": "ab659a919fd996c04d398dc6a09b9ff33a98fd0651c1e12557195d4ffad2601c",
+    "wind.raw_file_sha256": "98d348b0575be916e619fcb002c5edcf2d632899b1a16b4f3a8ee36acb0523b7"
+  }
+}

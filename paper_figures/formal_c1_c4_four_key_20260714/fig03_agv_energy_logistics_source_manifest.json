@@ -1,0 +1,37 @@
+{
+  "accepted_limited_solve": false,
+  "case_name": "C1_ProposedRobustMain",
+  "case_semantic_sha256": "1a7f9bd02d921ac514b7e4d39ce71fb8b3f7127b755e320a9c9f50da80157fa2",
+  "cost_adversary_status": "OPTIMAL",
+  "engineering_optimal": true,
+  "exports": {
+    "background": "white",
+    "pdf": "fig03_agv_energy_logistics.pdf",
+    "png": "fig03_agv_energy_logistics.png",
+    "png_dpi": 600,
+    "svg": "fig03_agv_energy_logistics.svg"
+  },
+  "figure_id": "Fig03",
+  "git_commit": "uncommitted",
+  "joint_bundle_sha256": "c86a258d698635b6279717fd8f4c4f19491024e01cbe1af0ed695b2a3c8714a5",
+  "master_status": "OPTIMAL",
+  "phase1_adversary_status": "OPTIMAL",
+  "primal_replay_passed": true,
+  "profile_name": "quarter_hour_96",
+  "residual_check_passed": true,
+  "scenario_sha256": "99772e6341d850854c4114f253faac438b72ab2e5f7cef2768dc4813045c7960",
+  "scenario_type": "certified_worst_case",
+  "source_files": [
+    "experiments/c1_confirmed_main_budget_20260714/C1_ProposedRobustMain_refined_partition/certificate.json",
+    "experiments/c1_confirmed_main_budget_20260714/C1_ProposedRobustMain_refined_partition/resolved_case.json",
+    "experiments/c1_confirmed_main_budget_20260714/C1_ProposedRobustMain_refined_partition/dispatch_day_ahead.csv",
+    "experiments/c1_confirmed_main_budget_20260714/C1_ProposedRobustMain_refined_partition/dispatch_recourse_worst.csv",
+    "experiments/c1_confirmed_main_budget_20260714/C1_ProposedRobustMain_refined_partition/worst_scenario.csv",
+    "experiments/c1_confirmed_main_budget_20260714/C1_ProposedRobustMain_refined_partition/ship_delay_assignment.csv",
+    "paper_figures/formal_c1_c4_four_key_20260714/data/c1_plot_flows.csv",
+    "paper_figures/formal_c1_c4_four_key_20260714/data/c1_plot_states.csv",
+    "paper_figures/formal_c1_c4_four_key_20260714/data/fig03_plot_data.csv"
+  ],
+  "time_limit_used_for_certificate": false,
+  "uncertainty_coverage_complete": true
+}

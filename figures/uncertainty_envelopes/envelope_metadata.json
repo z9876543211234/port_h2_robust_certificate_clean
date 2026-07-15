@@ -1,0 +1,44 @@
+{
+  "all_bound_solver_statuses": "OPTIMAL",
+  "generator_sha256": "3d48d7f1c04e55a32ec65ec8aa2f9e148da2732e7413dff24ad3d8e2f7400c17",
+  "pointwise_envelope_note": "Each time-coordinate bound is exact, but all pointwise extremes cannot generally occur simultaneously under the global uncertainty budgets.",
+  "profile": "quarter_hour_96",
+  "schema_version": 1,
+  "ship_bundle_sha256": "52ad58021df25159457b6420d1c72093b4a152677362e1c42941770545938d84",
+  "ship_envelope_status": "provisional_validation_parameters",
+  "ship_nominal_daily_totals": [
+    15,
+    15,
+    9
+  ],
+  "ship_parameters": {
+    "delayed_ship_budget": 2,
+    "max_delay_hours": 1.0,
+    "max_delay_steps": 4,
+    "total_delay_step_budget": null
+  },
+  "ship_pointwise_lower_min_max": [
+    0,
+    0
+  ],
+  "ship_pointwise_upper_min_max": [
+    0,
+    4
+  ],
+  "ship_source_sha256": "926e95af0f90b863245b150f291a502a059effd9eb8d3b0fa41cf60630935b31",
+  "wind_budget": 12,
+  "wind_bundle_sha256": "9e877d833ef34288254fbac752e9b5668c1f8c7e914fbdfe4a645559b4e1e90e",
+  "wind_nominal_min_max_mw": [
+    0.176,
+    5.8608
+  ],
+  "wind_pointwise_lower_min_max_mw": [
+    0.1408,
+    4.68864
+  ],
+  "wind_pointwise_upper_min_max_mw": [
+    0.2112,
+    7.03296
+  ],
+  "wind_source_sha256": "6eaf598caecb654d343c801f03cec56779cac988b2ea637fa724a5b7b2d8cb72"
+}

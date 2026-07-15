@@ -1,0 +1,18 @@
+{
+  "day_ahead_by_component": {
+    "agv": 0.0,
+    "electricity": 176.3393001065582
+  },
+  "reconstructed_recourse": {
+    "backlog_delay": 0.0,
+    "charge_deviation": 0.5849999999999962,
+    "grid_deviation": 8.47201201201201,
+    "spill_deviation": 1.3425675675675688,
+    "spill_real_time": 1.074054054054055
+  },
+  "recourse_by_component": {
+    "agv": 0.5849999999999963,
+    "electricity": 10.888633633633633,
+    "logistics": 0.0
+  }
+}

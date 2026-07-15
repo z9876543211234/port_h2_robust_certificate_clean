@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "port-h2-robust-certificate-clean"
+version = "0.1.0"
+description = "Clean-room two-stage robust scheduling and certificate implementation"
+requires-python = ">=3.12"
+dependencies = [
+  "gurobipy>=13",
+  "matplotlib>=3.9",
+  "numpy>=2",
+  "pandas>=2.2",
+  "scipy>=1.14",
+  "PyYAML>=6",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-ra"

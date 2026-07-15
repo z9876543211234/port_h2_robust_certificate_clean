@@ -1,0 +1,5578 @@
+{
+  "bundle_sha256": "c86a258d698635b6279717fd8f4c4f19491024e01cbe1af0ed695b2a3c8714a5",
+  "bundle_type": "joint_wind_ship_delay",
+  "constraints": [
+    {
+      "coefficients": {
+        "wind.down[0]": 1.0,
+        "wind.up[0]": 1.0
+      },
+      "name": "wind.mutual_exclusion[0]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[1]": 1.0,
+        "wind.up[1]": 1.0
+      },
+      "name": "wind.mutual_exclusion[1]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[2]": 1.0,
+        "wind.up[2]": 1.0
+      },
+      "name": "wind.mutual_exclusion[2]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[3]": 1.0,
+        "wind.up[3]": 1.0
+      },
+      "name": "wind.mutual_exclusion[3]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[4]": 1.0,
+        "wind.up[4]": 1.0
+      },
+      "name": "wind.mutual_exclusion[4]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[5]": 1.0,
+        "wind.up[5]": 1.0
+      },
+      "name": "wind.mutual_exclusion[5]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[6]": 1.0,
+        "wind.up[6]": 1.0
+      },
+      "name": "wind.mutual_exclusion[6]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[7]": 1.0,
+        "wind.up[7]": 1.0
+      },
+      "name": "wind.mutual_exclusion[7]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[8]": 1.0,
+        "wind.up[8]": 1.0
+      },
+      "name": "wind.mutual_exclusion[8]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[9]": 1.0,
+        "wind.up[9]": 1.0
+      },
+      "name": "wind.mutual_exclusion[9]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[10]": 1.0,
+        "wind.up[10]": 1.0
+      },
+      "name": "wind.mutual_exclusion[10]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[11]": 1.0,
+        "wind.up[11]": 1.0
+      },
+      "name": "wind.mutual_exclusion[11]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[12]": 1.0,
+        "wind.up[12]": 1.0
+      },
+      "name": "wind.mutual_exclusion[12]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[13]": 1.0,
+        "wind.up[13]": 1.0
+      },
+      "name": "wind.mutual_exclusion[13]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[14]": 1.0,
+        "wind.up[14]": 1.0
+      },
+      "name": "wind.mutual_exclusion[14]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[15]": 1.0,
+        "wind.up[15]": 1.0
+      },
+      "name": "wind.mutual_exclusion[15]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[16]": 1.0,
+        "wind.up[16]": 1.0
+      },
+      "name": "wind.mutual_exclusion[16]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[17]": 1.0,
+        "wind.up[17]": 1.0
+      },
+      "name": "wind.mutual_exclusion[17]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[18]": 1.0,
+        "wind.up[18]": 1.0
+      },
+      "name": "wind.mutual_exclusion[18]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[19]": 1.0,
+        "wind.up[19]": 1.0
+      },
+      "name": "wind.mutual_exclusion[19]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[20]": 1.0,
+        "wind.up[20]": 1.0
+      },
+      "name": "wind.mutual_exclusion[20]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[21]": 1.0,
+        "wind.up[21]": 1.0
+      },
+      "name": "wind.mutual_exclusion[21]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[22]": 1.0,
+        "wind.up[22]": 1.0
+      },
+      "name": "wind.mutual_exclusion[22]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[23]": 1.0,
+        "wind.up[23]": 1.0
+      },
+      "name": "wind.mutual_exclusion[23]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[24]": 1.0,
+        "wind.up[24]": 1.0
+      },
+      "name": "wind.mutual_exclusion[24]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[25]": 1.0,
+        "wind.up[25]": 1.0
+      },
+      "name": "wind.mutual_exclusion[25]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[26]": 1.0,
+        "wind.up[26]": 1.0
+      },
+      "name": "wind.mutual_exclusion[26]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[27]": 1.0,
+        "wind.up[27]": 1.0
+      },
+      "name": "wind.mutual_exclusion[27]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[28]": 1.0,
+        "wind.up[28]": 1.0
+      },
+      "name": "wind.mutual_exclusion[28]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[29]": 1.0,
+        "wind.up[29]": 1.0
+      },
+      "name": "wind.mutual_exclusion[29]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[30]": 1.0,
+        "wind.up[30]": 1.0
+      },
+      "name": "wind.mutual_exclusion[30]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[31]": 1.0,
+        "wind.up[31]": 1.0
+      },
+      "name": "wind.mutual_exclusion[31]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[32]": 1.0,
+        "wind.up[32]": 1.0
+      },
+      "name": "wind.mutual_exclusion[32]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[33]": 1.0,
+        "wind.up[33]": 1.0
+      },
+      "name": "wind.mutual_exclusion[33]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[34]": 1.0,
+        "wind.up[34]": 1.0
+      },
+      "name": "wind.mutual_exclusion[34]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[35]": 1.0,
+        "wind.up[35]": 1.0
+      },
+      "name": "wind.mutual_exclusion[35]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[36]": 1.0,
+        "wind.up[36]": 1.0
+      },
+      "name": "wind.mutual_exclusion[36]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[37]": 1.0,
+        "wind.up[37]": 1.0
+      },
+      "name": "wind.mutual_exclusion[37]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[38]": 1.0,
+        "wind.up[38]": 1.0
+      },
+      "name": "wind.mutual_exclusion[38]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[39]": 1.0,
+        "wind.up[39]": 1.0
+      },
+      "name": "wind.mutual_exclusion[39]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[40]": 1.0,
+        "wind.up[40]": 1.0
+      },
+      "name": "wind.mutual_exclusion[40]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[41]": 1.0,
+        "wind.up[41]": 1.0
+      },
+      "name": "wind.mutual_exclusion[41]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[42]": 1.0,
+        "wind.up[42]": 1.0
+      },
+      "name": "wind.mutual_exclusion[42]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[43]": 1.0,
+        "wind.up[43]": 1.0
+      },
+      "name": "wind.mutual_exclusion[43]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[44]": 1.0,
+        "wind.up[44]": 1.0
+      },
+      "name": "wind.mutual_exclusion[44]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[45]": 1.0,
+        "wind.up[45]": 1.0
+      },
+      "name": "wind.mutual_exclusion[45]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[46]": 1.0,
+        "wind.up[46]": 1.0
+      },
+      "name": "wind.mutual_exclusion[46]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[47]": 1.0,
+        "wind.up[47]": 1.0
+      },
+      "name": "wind.mutual_exclusion[47]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[48]": 1.0,
+        "wind.up[48]": 1.0
+      },
+      "name": "wind.mutual_exclusion[48]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[49]": 1.0,
+        "wind.up[49]": 1.0
+      },
+      "name": "wind.mutual_exclusion[49]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[50]": 1.0,
+        "wind.up[50]": 1.0
+      },
+      "name": "wind.mutual_exclusion[50]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[51]": 1.0,
+        "wind.up[51]": 1.0
+      },
+      "name": "wind.mutual_exclusion[51]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[52]": 1.0,
+        "wind.up[52]": 1.0
+      },
+      "name": "wind.mutual_exclusion[52]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[53]": 1.0,
+        "wind.up[53]": 1.0
+      },
+      "name": "wind.mutual_exclusion[53]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[54]": 1.0,
+        "wind.up[54]": 1.0
+      },
+      "name": "wind.mutual_exclusion[54]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[55]": 1.0,
+        "wind.up[55]": 1.0
+      },
+      "name": "wind.mutual_exclusion[55]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[56]": 1.0,
+        "wind.up[56]": 1.0
+      },
+      "name": "wind.mutual_exclusion[56]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[57]": 1.0,
+        "wind.up[57]": 1.0
+      },
+      "name": "wind.mutual_exclusion[57]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[58]": 1.0,
+        "wind.up[58]": 1.0
+      },
+      "name": "wind.mutual_exclusion[58]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[59]": 1.0,
+        "wind.up[59]": 1.0
+      },
+      "name": "wind.mutual_exclusion[59]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[60]": 1.0,
+        "wind.up[60]": 1.0
+      },
+      "name": "wind.mutual_exclusion[60]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[61]": 1.0,
+        "wind.up[61]": 1.0
+      },
+      "name": "wind.mutual_exclusion[61]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[62]": 1.0,
+        "wind.up[62]": 1.0
+      },
+      "name": "wind.mutual_exclusion[62]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[63]": 1.0,
+        "wind.up[63]": 1.0
+      },
+      "name": "wind.mutual_exclusion[63]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[64]": 1.0,
+        "wind.up[64]": 1.0
+      },
+      "name": "wind.mutual_exclusion[64]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[65]": 1.0,
+        "wind.up[65]": 1.0
+      },
+      "name": "wind.mutual_exclusion[65]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[66]": 1.0,
+        "wind.up[66]": 1.0
+      },
+      "name": "wind.mutual_exclusion[66]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[67]": 1.0,
+        "wind.up[67]": 1.0
+      },
+      "name": "wind.mutual_exclusion[67]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[68]": 1.0,
+        "wind.up[68]": 1.0
+      },
+      "name": "wind.mutual_exclusion[68]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[69]": 1.0,
+        "wind.up[69]": 1.0
+      },
+      "name": "wind.mutual_exclusion[69]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[70]": 1.0,
+        "wind.up[70]": 1.0
+      },
+      "name": "wind.mutual_exclusion[70]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[71]": 1.0,
+        "wind.up[71]": 1.0
+      },
+      "name": "wind.mutual_exclusion[71]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[72]": 1.0,
+        "wind.up[72]": 1.0
+      },
+      "name": "wind.mutual_exclusion[72]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[73]": 1.0,
+        "wind.up[73]": 1.0
+      },
+      "name": "wind.mutual_exclusion[73]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[74]": 1.0,
+        "wind.up[74]": 1.0
+      },
+      "name": "wind.mutual_exclusion[74]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[75]": 1.0,
+        "wind.up[75]": 1.0
+      },
+      "name": "wind.mutual_exclusion[75]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[76]": 1.0,
+        "wind.up[76]": 1.0
+      },
+      "name": "wind.mutual_exclusion[76]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[77]": 1.0,
+        "wind.up[77]": 1.0
+      },
+      "name": "wind.mutual_exclusion[77]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[78]": 1.0,
+        "wind.up[78]": 1.0
+      },
+      "name": "wind.mutual_exclusion[78]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[79]": 1.0,
+        "wind.up[79]": 1.0
+      },
+      "name": "wind.mutual_exclusion[79]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[80]": 1.0,
+        "wind.up[80]": 1.0
+      },
+      "name": "wind.mutual_exclusion[80]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[81]": 1.0,
+        "wind.up[81]": 1.0
+      },
+      "name": "wind.mutual_exclusion[81]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[82]": 1.0,
+        "wind.up[82]": 1.0
+      },
+      "name": "wind.mutual_exclusion[82]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[83]": 1.0,
+        "wind.up[83]": 1.0
+      },
+      "name": "wind.mutual_exclusion[83]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[84]": 1.0,
+        "wind.up[84]": 1.0
+      },
+      "name": "wind.mutual_exclusion[84]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[85]": 1.0,
+        "wind.up[85]": 1.0
+      },
+      "name": "wind.mutual_exclusion[85]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[86]": 1.0,
+        "wind.up[86]": 1.0
+      },
+      "name": "wind.mutual_exclusion[86]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[87]": 1.0,
+        "wind.up[87]": 1.0
+      },
+      "name": "wind.mutual_exclusion[87]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[88]": 1.0,
+        "wind.up[88]": 1.0
+      },
+      "name": "wind.mutual_exclusion[88]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[89]": 1.0,
+        "wind.up[89]": 1.0
+      },
+      "name": "wind.mutual_exclusion[89]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[90]": 1.0,
+        "wind.up[90]": 1.0
+      },
+      "name": "wind.mutual_exclusion[90]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[91]": 1.0,
+        "wind.up[91]": 1.0
+      },
+      "name": "wind.mutual_exclusion[91]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[92]": 1.0,
+        "wind.up[92]": 1.0
+      },
+      "name": "wind.mutual_exclusion[92]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[93]": 1.0,
+        "wind.up[93]": 1.0
+      },
+      "name": "wind.mutual_exclusion[93]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[94]": 1.0,
+        "wind.up[94]": 1.0
+      },
+      "name": "wind.mutual_exclusion[94]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[95]": 1.0,
+        "wind.up[95]": 1.0
+      },
+      "name": "wind.mutual_exclusion[95]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "wind.down[0]": 1.0,
+        "wind.down[10]": 1.0,
+        "wind.down[11]": 1.0,
+        "wind.down[12]": 1.0,
+        "wind.down[13]": 1.0,
+        "wind.down[14]": 1.0,
+        "wind.down[15]": 1.0,
+        "wind.down[16]": 1.0,
+        "wind.down[17]": 1.0,
+        "wind.down[18]": 1.0,
+        "wind.down[19]": 1.0,
+        "wind.down[1]": 1.0,
+        "wind.down[20]": 1.0,
+        "wind.down[21]": 1.0,
+        "wind.down[22]": 1.0,
+        "wind.down[23]": 1.0,
+        "wind.down[24]": 1.0,
+        "wind.down[25]": 1.0,
+        "wind.down[26]": 1.0,
+        "wind.down[27]": 1.0,
+        "wind.down[28]": 1.0,
+        "wind.down[29]": 1.0,
+        "wind.down[2]": 1.0,
+        "wind.down[30]": 1.0,
+        "wind.down[31]": 1.0,
+        "wind.down[32]": 1.0,
+        "wind.down[33]": 1.0,
+        "wind.down[34]": 1.0,
+        "wind.down[35]": 1.0,
+        "wind.down[36]": 1.0,
+        "wind.down[37]": 1.0,
+        "wind.down[38]": 1.0,
+        "wind.down[39]": 1.0,
+        "wind.down[3]": 1.0,
+        "wind.down[40]": 1.0,
+        "wind.down[41]": 1.0,
+        "wind.down[42]": 1.0,
+        "wind.down[43]": 1.0,
+        "wind.down[44]": 1.0,
+        "wind.down[45]": 1.0,
+        "wind.down[46]": 1.0,
+        "wind.down[47]": 1.0,
+        "wind.down[48]": 1.0,
+        "wind.down[49]": 1.0,
+        "wind.down[4]": 1.0,
+        "wind.down[50]": 1.0,
+        "wind.down[51]": 1.0,
+        "wind.down[52]": 1.0,
+        "wind.down[53]": 1.0,
+        "wind.down[54]": 1.0,
+        "wind.down[55]": 1.0,
+        "wind.down[56]": 1.0,
+        "wind.down[57]": 1.0,
+        "wind.down[58]": 1.0,
+        "wind.down[59]": 1.0,
+        "wind.down[5]": 1.0,
+        "wind.down[60]": 1.0,
+        "wind.down[61]": 1.0,
+        "wind.down[62]": 1.0,
+        "wind.down[63]": 1.0,
+        "wind.down[64]": 1.0,
+        "wind.down[65]": 1.0,
+        "wind.down[66]": 1.0,
+        "wind.down[67]": 1.0,
+        "wind.down[68]": 1.0,
+        "wind.down[69]": 1.0,
+        "wind.down[6]": 1.0,
+        "wind.down[70]": 1.0,
+        "wind.down[71]": 1.0,
+        "wind.down[72]": 1.0,
+        "wind.down[73]": 1.0,
+        "wind.down[74]": 1.0,
+        "wind.down[75]": 1.0,
+        "wind.down[76]": 1.0,
+        "wind.down[77]": 1.0,
+        "wind.down[78]": 1.0,
+        "wind.down[79]": 1.0,
+        "wind.down[7]": 1.0,
+        "wind.down[80]": 1.0,
+        "wind.down[81]": 1.0,
+        "wind.down[82]": 1.0,
+        "wind.down[83]": 1.0,
+        "wind.down[84]": 1.0,
+        "wind.down[85]": 1.0,
+        "wind.down[86]": 1.0,
+        "wind.down[87]": 1.0,
+        "wind.down[88]": 1.0,
+        "wind.down[89]": 1.0,
+        "wind.down[8]": 1.0,
+        "wind.down[90]": 1.0,
+        "wind.down[91]": 1.0,
+        "wind.down[92]": 1.0,
+        "wind.down[93]": 1.0,
+        "wind.down[94]": 1.0,
+        "wind.down[95]": 1.0,
+        "wind.down[9]": 1.0,
+        "wind.up[0]": 1.0,
+        "wind.up[10]": 1.0,
+        "wind.up[11]": 1.0,
+        "wind.up[12]": 1.0,
+        "wind.up[13]": 1.0,
+        "wind.up[14]": 1.0,
+        "wind.up[15]": 1.0,
+        "wind.up[16]": 1.0,
+        "wind.up[17]": 1.0,
+        "wind.up[18]": 1.0,
+        "wind.up[19]": 1.0,
+        "wind.up[1]": 1.0,
+        "wind.up[20]": 1.0,
+        "wind.up[21]": 1.0,
+        "wind.up[22]": 1.0,
+        "wind.up[23]": 1.0,
+        "wind.up[24]": 1.0,
+        "wind.up[25]": 1.0,
+        "wind.up[26]": 1.0,
+        "wind.up[27]": 1.0,
+        "wind.up[28]": 1.0,
+        "wind.up[29]": 1.0,
+        "wind.up[2]": 1.0,
+        "wind.up[30]": 1.0,
+        "wind.up[31]": 1.0,
+        "wind.up[32]": 1.0,
+        "wind.up[33]": 1.0,
+        "wind.up[34]": 1.0,
+        "wind.up[35]": 1.0,
+        "wind.up[36]": 1.0,
+        "wind.up[37]": 1.0,
+        "wind.up[38]": 1.0,
+        "wind.up[39]": 1.0,
+        "wind.up[3]": 1.0,
+        "wind.up[40]": 1.0,
+        "wind.up[41]": 1.0,
+        "wind.up[42]": 1.0,
+        "wind.up[43]": 1.0,
+        "wind.up[44]": 1.0,
+        "wind.up[45]": 1.0,
+        "wind.up[46]": 1.0,
+        "wind.up[47]": 1.0,
+        "wind.up[48]": 1.0,
+        "wind.up[49]": 1.0,
+        "wind.up[4]": 1.0,
+        "wind.up[50]": 1.0,
+        "wind.up[51]": 1.0,
+        "wind.up[52]": 1.0,
+        "wind.up[53]": 1.0,
+        "wind.up[54]": 1.0,
+        "wind.up[55]": 1.0,
+        "wind.up[56]": 1.0,
+        "wind.up[57]": 1.0,
+        "wind.up[58]": 1.0,
+        "wind.up[59]": 1.0,
+        "wind.up[5]": 1.0,
+        "wind.up[60]": 1.0,
+        "wind.up[61]": 1.0,
+        "wind.up[62]": 1.0,
+        "wind.up[63]": 1.0,
+        "wind.up[64]": 1.0,
+        "wind.up[65]": 1.0,
+        "wind.up[66]": 1.0,
+        "wind.up[67]": 1.0,
+        "wind.up[68]": 1.0,
+        "wind.up[69]": 1.0,
+        "wind.up[6]": 1.0,
+        "wind.up[70]": 1.0,
+        "wind.up[71]": 1.0,
+        "wind.up[72]": 1.0,
+        "wind.up[73]": 1.0,
+        "wind.up[74]": 1.0,
+        "wind.up[75]": 1.0,
+        "wind.up[76]": 1.0,
+        "wind.up[77]": 1.0,
+        "wind.up[78]": 1.0,
+        "wind.up[79]": 1.0,
+        "wind.up[7]": 1.0,
+        "wind.up[80]": 1.0,
+        "wind.up[81]": 1.0,
+        "wind.up[82]": 1.0,
+        "wind.up[83]": 1.0,
+        "wind.up[84]": 1.0,
+        "wind.up[85]": 1.0,
+        "wind.up[86]": 1.0,
+        "wind.up[87]": 1.0,
+        "wind.up[88]": 1.0,
+        "wind.up[89]": 1.0,
+        "wind.up[8]": 1.0,
+        "wind.up[90]": 1.0,
+        "wind.up[91]": 1.0,
+        "wind.up[92]": 1.0,
+        "wind.up[93]": 1.0,
+        "wind.up[94]": 1.0,
+        "wind.up[95]": 1.0,
+        "wind.up[9]": 1.0
+      },
+      "name": "wind.deviation_budget",
+      "rhs": 12.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[20,0,1]": 1.0,
+        "ship.delay[20,0,2]": 1.0,
+        "ship.delay[20,0,3]": 1.0,
+        "ship.delay[20,0,4]": 1.0
+      },
+      "name": "ship.one_delay[20,0]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[34,0,1]": 1.0,
+        "ship.delay[34,0,2]": 1.0,
+        "ship.delay[34,0,3]": 1.0,
+        "ship.delay[34,0,4]": 1.0
+      },
+      "name": "ship.one_delay[34,0]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[38,0,1]": 1.0,
+        "ship.delay[38,0,2]": 1.0,
+        "ship.delay[38,0,3]": 1.0,
+        "ship.delay[38,0,4]": 1.0
+      },
+      "name": "ship.one_delay[38,0]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[48,0,1]": 1.0,
+        "ship.delay[48,0,2]": 1.0,
+        "ship.delay[48,0,3]": 1.0,
+        "ship.delay[48,0,4]": 1.0
+      },
+      "name": "ship.one_delay[48,0]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[51,0,1]": 1.0,
+        "ship.delay[51,0,2]": 1.0,
+        "ship.delay[51,0,3]": 1.0,
+        "ship.delay[51,0,4]": 1.0
+      },
+      "name": "ship.one_delay[51,0]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[52,0,1]": 1.0,
+        "ship.delay[52,0,2]": 1.0,
+        "ship.delay[52,0,3]": 1.0,
+        "ship.delay[52,0,4]": 1.0
+      },
+      "name": "ship.one_delay[52,0]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[52,1,1]": 1.0,
+        "ship.delay[52,1,2]": 1.0,
+        "ship.delay[52,1,3]": 1.0,
+        "ship.delay[52,1,4]": 1.0
+      },
+      "name": "ship.one_delay[52,1]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[54,0,1]": 1.0,
+        "ship.delay[54,0,2]": 1.0,
+        "ship.delay[54,0,3]": 1.0,
+        "ship.delay[54,0,4]": 1.0
+      },
+      "name": "ship.one_delay[54,0]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[55,0,1]": 1.0,
+        "ship.delay[55,0,2]": 1.0,
+        "ship.delay[55,0,3]": 1.0,
+        "ship.delay[55,0,4]": 1.0
+      },
+      "name": "ship.one_delay[55,0]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,1]": 1.0,
+        "ship.delay[58,0,2]": 1.0,
+        "ship.delay[58,0,3]": 1.0,
+        "ship.delay[58,0,4]": 1.0
+      },
+      "name": "ship.one_delay[58,0]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[62,0,1]": 1.0,
+        "ship.delay[62,0,2]": 1.0,
+        "ship.delay[62,0,3]": 1.0,
+        "ship.delay[62,0,4]": 1.0
+      },
+      "name": "ship.one_delay[62,0]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[68,0,1]": 1.0,
+        "ship.delay[68,0,2]": 1.0,
+        "ship.delay[68,0,3]": 1.0,
+        "ship.delay[68,0,4]": 1.0
+      },
+      "name": "ship.one_delay[68,0]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[71,0,1]": 1.0,
+        "ship.delay[71,0,2]": 1.0,
+        "ship.delay[71,0,3]": 1.0,
+        "ship.delay[71,0,4]": 1.0
+      },
+      "name": "ship.one_delay[71,0]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,1]": 1.0,
+        "ship.delay[90,0,2]": 1.0,
+        "ship.delay[90,0,3]": 1.0,
+        "ship.delay[90,0,4]": 1.0
+      },
+      "name": "ship.one_delay[90,0]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,1,1]": 1.0,
+        "ship.delay[90,1,2]": 1.0,
+        "ship.delay[90,1,3]": 1.0,
+        "ship.delay[90,1,4]": 1.0
+      },
+      "name": "ship.one_delay[90,1]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[20,0,1]": 1.0,
+        "ship.delay[20,0,2]": 1.0,
+        "ship.delay[20,0,3]": 1.0,
+        "ship.delay[20,0,4]": 1.0,
+        "ship.delay[34,0,1]": 1.0,
+        "ship.delay[34,0,2]": 1.0,
+        "ship.delay[34,0,3]": 1.0,
+        "ship.delay[34,0,4]": 1.0,
+        "ship.delay[38,0,1]": 1.0,
+        "ship.delay[38,0,2]": 1.0,
+        "ship.delay[38,0,3]": 1.0,
+        "ship.delay[38,0,4]": 1.0,
+        "ship.delay[48,0,1]": 1.0,
+        "ship.delay[48,0,2]": 1.0,
+        "ship.delay[48,0,3]": 1.0,
+        "ship.delay[48,0,4]": 1.0,
+        "ship.delay[51,0,1]": 1.0,
+        "ship.delay[51,0,2]": 1.0,
+        "ship.delay[51,0,3]": 1.0,
+        "ship.delay[51,0,4]": 1.0,
+        "ship.delay[52,0,1]": 1.0,
+        "ship.delay[52,0,2]": 1.0,
+        "ship.delay[52,0,3]": 1.0,
+        "ship.delay[52,0,4]": 1.0,
+        "ship.delay[52,1,1]": 1.0,
+        "ship.delay[52,1,2]": 1.0,
+        "ship.delay[52,1,3]": 1.0,
+        "ship.delay[52,1,4]": 1.0,
+        "ship.delay[54,0,1]": 1.0,
+        "ship.delay[54,0,2]": 1.0,
+        "ship.delay[54,0,3]": 1.0,
+        "ship.delay[54,0,4]": 1.0,
+        "ship.delay[55,0,1]": 1.0,
+        "ship.delay[55,0,2]": 1.0,
+        "ship.delay[55,0,3]": 1.0,
+        "ship.delay[55,0,4]": 1.0,
+        "ship.delay[58,0,1]": 1.0,
+        "ship.delay[58,0,2]": 1.0,
+        "ship.delay[58,0,3]": 1.0,
+        "ship.delay[58,0,4]": 1.0,
+        "ship.delay[62,0,1]": 1.0,
+        "ship.delay[62,0,2]": 1.0,
+        "ship.delay[62,0,3]": 1.0,
+        "ship.delay[62,0,4]": 1.0,
+        "ship.delay[68,0,1]": 1.0,
+        "ship.delay[68,0,2]": 1.0,
+        "ship.delay[68,0,3]": 1.0,
+        "ship.delay[68,0,4]": 1.0,
+        "ship.delay[71,0,1]": 1.0,
+        "ship.delay[71,0,2]": 1.0,
+        "ship.delay[71,0,3]": 1.0,
+        "ship.delay[71,0,4]": 1.0,
+        "ship.delay[90,0,1]": 1.0,
+        "ship.delay[90,0,2]": 1.0,
+        "ship.delay[90,0,3]": 1.0,
+        "ship.delay[90,0,4]": 1.0,
+        "ship.delay[90,1,1]": 1.0,
+        "ship.delay[90,1,2]": 1.0,
+        "ship.delay[90,1,3]": 1.0,
+        "ship.delay[90,1,4]": 1.0
+      },
+      "name": "ship.delayed_ship_budget",
+      "rhs": 2.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[52,0,1]": 1.0,
+        "ship.delay[52,0,2]": 1.0,
+        "ship.delay[52,0,3]": 1.0,
+        "ship.delay[52,0,4]": 1.0,
+        "ship.delay[52,1,1]": -1.0,
+        "ship.delay[52,1,2]": -1.0,
+        "ship.delay[52,1,3]": -1.0,
+        "ship.delay[52,1,4]": -1.0
+      },
+      "name": "ship.symmetry_active[52,0]",
+      "rhs": 0.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.delay[52,0,1]": 1.0,
+        "ship.delay[52,0,2]": 2.0,
+        "ship.delay[52,0,3]": 3.0,
+        "ship.delay[52,0,4]": 4.0,
+        "ship.delay[52,1,1]": -1.0,
+        "ship.delay[52,1,2]": -2.0,
+        "ship.delay[52,1,3]": -3.0,
+        "ship.delay[52,1,4]": -4.0
+      },
+      "name": "ship.symmetry_delay[52,0]",
+      "rhs": 0.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,1]": 1.0,
+        "ship.delay[90,0,2]": 1.0,
+        "ship.delay[90,0,3]": 1.0,
+        "ship.delay[90,0,4]": 1.0,
+        "ship.delay[90,1,1]": -1.0,
+        "ship.delay[90,1,2]": -1.0,
+        "ship.delay[90,1,3]": -1.0,
+        "ship.delay[90,1,4]": -1.0
+      },
+      "name": "ship.symmetry_active[90,0]",
+      "rhs": 0.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,1]": 1.0,
+        "ship.delay[90,0,2]": 2.0,
+        "ship.delay[90,0,3]": 3.0,
+        "ship.delay[90,0,4]": 4.0,
+        "ship.delay[90,1,1]": -1.0,
+        "ship.delay[90,1,2]": -2.0,
+        "ship.delay[90,1,3]": -3.0,
+        "ship.delay[90,1,4]": -4.0
+      },
+      "name": "ship.symmetry_delay[90,0]",
+      "rhs": 0.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.delay[48,0,4]": -4.0,
+        "ship.delay[51,0,1]": -4.0,
+        "ship.delay[51,0,2]": -4.0,
+        "ship.delay[51,0,3]": -4.0,
+        "ship.delay[51,0,4]": -4.0,
+        "ship.qc_saturated[51]": -4.0
+      },
+      "name": "ship.qc_threshold_high[51]",
+      "rhs": -4.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[48,0,4]": 4.0,
+        "ship.delay[51,0,1]": 4.0,
+        "ship.delay[51,0,2]": 4.0,
+        "ship.delay[51,0,3]": 4.0,
+        "ship.delay[51,0,4]": 4.0,
+        "ship.qc_saturated[51]": 4.0
+      },
+      "name": "ship.qc_threshold_low[51]",
+      "rhs": 8.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[51,ship.delay[48,0,4]]": 1.0,
+        "ship.qc_saturated[51]": -1.0
+      },
+      "name": "ship.qc_product[51,ship.delay[48,0,4]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[48,0,4]": -1.0,
+        "ship.qc_product[51,ship.delay[48,0,4]]": 1.0
+      },
+      "name": "ship.qc_product[51,ship.delay[48,0,4]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[48,0,4]": -1.0,
+        "ship.qc_product[51,ship.delay[48,0,4]]": 1.0,
+        "ship.qc_saturated[51]": -1.0
+      },
+      "name": "ship.qc_product[51,ship.delay[48,0,4]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[51,ship.delay[51,0,1]]": 1.0,
+        "ship.qc_saturated[51]": -1.0
+      },
+      "name": "ship.qc_product[51,ship.delay[51,0,1]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[51,0,1]": -1.0,
+        "ship.qc_product[51,ship.delay[51,0,1]]": 1.0
+      },
+      "name": "ship.qc_product[51,ship.delay[51,0,1]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[51,0,1]": -1.0,
+        "ship.qc_product[51,ship.delay[51,0,1]]": 1.0,
+        "ship.qc_saturated[51]": -1.0
+      },
+      "name": "ship.qc_product[51,ship.delay[51,0,1]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[51,ship.delay[51,0,2]]": 1.0,
+        "ship.qc_saturated[51]": -1.0
+      },
+      "name": "ship.qc_product[51,ship.delay[51,0,2]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[51,0,2]": -1.0,
+        "ship.qc_product[51,ship.delay[51,0,2]]": 1.0
+      },
+      "name": "ship.qc_product[51,ship.delay[51,0,2]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[51,0,2]": -1.0,
+        "ship.qc_product[51,ship.delay[51,0,2]]": 1.0,
+        "ship.qc_saturated[51]": -1.0
+      },
+      "name": "ship.qc_product[51,ship.delay[51,0,2]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[51,ship.delay[51,0,3]]": 1.0,
+        "ship.qc_saturated[51]": -1.0
+      },
+      "name": "ship.qc_product[51,ship.delay[51,0,3]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[51,0,3]": -1.0,
+        "ship.qc_product[51,ship.delay[51,0,3]]": 1.0
+      },
+      "name": "ship.qc_product[51,ship.delay[51,0,3]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[51,0,3]": -1.0,
+        "ship.qc_product[51,ship.delay[51,0,3]]": 1.0,
+        "ship.qc_saturated[51]": -1.0
+      },
+      "name": "ship.qc_product[51,ship.delay[51,0,3]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[51,ship.delay[51,0,4]]": 1.0,
+        "ship.qc_saturated[51]": -1.0
+      },
+      "name": "ship.qc_product[51,ship.delay[51,0,4]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[51,0,4]": -1.0,
+        "ship.qc_product[51,ship.delay[51,0,4]]": 1.0
+      },
+      "name": "ship.qc_product[51,ship.delay[51,0,4]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[51,0,4]": -1.0,
+        "ship.qc_product[51,ship.delay[51,0,4]]": 1.0,
+        "ship.qc_saturated[51]": -1.0
+      },
+      "name": "ship.qc_product[51,ship.delay[51,0,4]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.delay[55,0,4]": 4.0,
+        "ship.delay[58,0,1]": 4.0,
+        "ship.delay[58,0,2]": 4.0,
+        "ship.delay[58,0,3]": 4.0,
+        "ship.delay[58,0,4]": 4.0,
+        "ship.delay[90,0,1]": -4.0,
+        "ship.delay[90,0,2]": -4.0,
+        "ship.delay[90,0,3]": -4.0,
+        "ship.delay[90,0,4]": -4.0,
+        "ship.delay[90,1,1]": -4.0,
+        "ship.delay[90,1,2]": -4.0,
+        "ship.delay[90,1,3]": -4.0,
+        "ship.delay[90,1,4]": -4.0,
+        "ship.qc_saturated[90]": -12.0
+      },
+      "name": "ship.qc_threshold_high[90]",
+      "rhs": -4.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[55,0,4]": -4.0,
+        "ship.delay[58,0,1]": -4.0,
+        "ship.delay[58,0,2]": -4.0,
+        "ship.delay[58,0,3]": -4.0,
+        "ship.delay[58,0,4]": -4.0,
+        "ship.delay[90,0,1]": 4.0,
+        "ship.delay[90,0,2]": 4.0,
+        "ship.delay[90,0,3]": 4.0,
+        "ship.delay[90,0,4]": 4.0,
+        "ship.delay[90,1,1]": 4.0,
+        "ship.delay[90,1,2]": 4.0,
+        "ship.delay[90,1,3]": 4.0,
+        "ship.delay[90,1,4]": 4.0,
+        "ship.qc_saturated[90]": 4.0
+      },
+      "name": "ship.qc_threshold_low[90]",
+      "rhs": 8.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[90,ship.delay[55,0,4]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[55,0,4]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[55,0,4]": -1.0,
+        "ship.qc_product[90,ship.delay[55,0,4]]": 1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[55,0,4]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[55,0,4]": -1.0,
+        "ship.qc_product[90,ship.delay[55,0,4]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[55,0,4]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[90,ship.delay[58,0,1]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[58,0,1]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,1]": -1.0,
+        "ship.qc_product[90,ship.delay[58,0,1]]": 1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[58,0,1]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,1]": -1.0,
+        "ship.qc_product[90,ship.delay[58,0,1]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[58,0,1]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[90,ship.delay[58,0,2]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[58,0,2]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,2]": -1.0,
+        "ship.qc_product[90,ship.delay[58,0,2]]": 1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[58,0,2]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,2]": -1.0,
+        "ship.qc_product[90,ship.delay[58,0,2]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[58,0,2]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[90,ship.delay[58,0,3]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[58,0,3]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,3]": -1.0,
+        "ship.qc_product[90,ship.delay[58,0,3]]": 1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[58,0,3]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,3]": -1.0,
+        "ship.qc_product[90,ship.delay[58,0,3]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[58,0,3]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[90,ship.delay[58,0,4]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[58,0,4]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,4]": -1.0,
+        "ship.qc_product[90,ship.delay[58,0,4]]": 1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[58,0,4]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,4]": -1.0,
+        "ship.qc_product[90,ship.delay[58,0,4]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[58,0,4]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[90,ship.delay[90,0,1]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,0,1]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,1]": -1.0,
+        "ship.qc_product[90,ship.delay[90,0,1]]": 1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,0,1]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,1]": -1.0,
+        "ship.qc_product[90,ship.delay[90,0,1]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,0,1]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[90,ship.delay[90,0,2]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,0,2]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,2]": -1.0,
+        "ship.qc_product[90,ship.delay[90,0,2]]": 1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,0,2]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,2]": -1.0,
+        "ship.qc_product[90,ship.delay[90,0,2]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,0,2]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[90,ship.delay[90,0,3]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,0,3]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,3]": -1.0,
+        "ship.qc_product[90,ship.delay[90,0,3]]": 1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,0,3]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,3]": -1.0,
+        "ship.qc_product[90,ship.delay[90,0,3]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,0,3]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[90,ship.delay[90,0,4]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,0,4]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,4]": -1.0,
+        "ship.qc_product[90,ship.delay[90,0,4]]": 1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,0,4]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,4]": -1.0,
+        "ship.qc_product[90,ship.delay[90,0,4]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,0,4]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[90,ship.delay[90,1,1]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,1,1]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,1,1]": -1.0,
+        "ship.qc_product[90,ship.delay[90,1,1]]": 1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,1,1]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,1,1]": -1.0,
+        "ship.qc_product[90,ship.delay[90,1,1]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,1,1]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[90,ship.delay[90,1,2]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,1,2]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,1,2]": -1.0,
+        "ship.qc_product[90,ship.delay[90,1,2]]": 1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,1,2]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,1,2]": -1.0,
+        "ship.qc_product[90,ship.delay[90,1,2]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,1,2]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[90,ship.delay[90,1,3]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,1,3]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,1,3]": -1.0,
+        "ship.qc_product[90,ship.delay[90,1,3]]": 1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,1,3]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,1,3]": -1.0,
+        "ship.qc_product[90,ship.delay[90,1,3]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,1,3]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[90,ship.delay[90,1,4]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,1,4]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,1,4]": -1.0,
+        "ship.qc_product[90,ship.delay[90,1,4]]": 1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,1,4]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,1,4]": -1.0,
+        "ship.qc_product[90,ship.delay[90,1,4]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,1,4]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,2]": 4.0,
+        "ship.delay[58,0,3]": 4.0,
+        "ship.delay[58,0,4]": 4.0,
+        "ship.delay[90,0,2]": -4.0,
+        "ship.delay[90,0,3]": -4.0,
+        "ship.delay[90,0,4]": -4.0,
+        "ship.delay[90,1,2]": -4.0,
+        "ship.delay[90,1,3]": -4.0,
+        "ship.delay[90,1,4]": -4.0,
+        "ship.qc_saturated[91]": -8.0
+      },
+      "name": "ship.qc_threshold_high[91]",
+      "rhs": -4.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,2]": -4.0,
+        "ship.delay[58,0,3]": -4.0,
+        "ship.delay[58,0,4]": -4.0,
+        "ship.delay[90,0,2]": 4.0,
+        "ship.delay[90,0,3]": 4.0,
+        "ship.delay[90,0,4]": 4.0,
+        "ship.delay[90,1,2]": 4.0,
+        "ship.delay[90,1,3]": 4.0,
+        "ship.delay[90,1,4]": 4.0,
+        "ship.qc_saturated[91]": 4.0
+      },
+      "name": "ship.qc_threshold_low[91]",
+      "rhs": 8.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[91,ship.delay[58,0,2]]": 1.0,
+        "ship.qc_saturated[91]": -1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[58,0,2]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,2]": -1.0,
+        "ship.qc_product[91,ship.delay[58,0,2]]": 1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[58,0,2]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,2]": -1.0,
+        "ship.qc_product[91,ship.delay[58,0,2]]": 1.0,
+        "ship.qc_saturated[91]": -1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[58,0,2]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[91,ship.delay[58,0,3]]": 1.0,
+        "ship.qc_saturated[91]": -1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[58,0,3]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,3]": -1.0,
+        "ship.qc_product[91,ship.delay[58,0,3]]": 1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[58,0,3]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,3]": -1.0,
+        "ship.qc_product[91,ship.delay[58,0,3]]": 1.0,
+        "ship.qc_saturated[91]": -1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[58,0,3]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[91,ship.delay[58,0,4]]": 1.0,
+        "ship.qc_saturated[91]": -1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[58,0,4]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,4]": -1.0,
+        "ship.qc_product[91,ship.delay[58,0,4]]": 1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[58,0,4]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,4]": -1.0,
+        "ship.qc_product[91,ship.delay[58,0,4]]": 1.0,
+        "ship.qc_saturated[91]": -1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[58,0,4]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[91,ship.delay[90,0,2]]": 1.0,
+        "ship.qc_saturated[91]": -1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[90,0,2]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,2]": -1.0,
+        "ship.qc_product[91,ship.delay[90,0,2]]": 1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[90,0,2]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,2]": -1.0,
+        "ship.qc_product[91,ship.delay[90,0,2]]": 1.0,
+        "ship.qc_saturated[91]": -1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[90,0,2]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[91,ship.delay[90,0,3]]": 1.0,
+        "ship.qc_saturated[91]": -1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[90,0,3]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,3]": -1.0,
+        "ship.qc_product[91,ship.delay[90,0,3]]": 1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[90,0,3]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,3]": -1.0,
+        "ship.qc_product[91,ship.delay[90,0,3]]": 1.0,
+        "ship.qc_saturated[91]": -1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[90,0,3]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[91,ship.delay[90,0,4]]": 1.0,
+        "ship.qc_saturated[91]": -1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[90,0,4]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,4]": -1.0,
+        "ship.qc_product[91,ship.delay[90,0,4]]": 1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[90,0,4]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,4]": -1.0,
+        "ship.qc_product[91,ship.delay[90,0,4]]": 1.0,
+        "ship.qc_saturated[91]": -1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[90,0,4]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[91,ship.delay[90,1,2]]": 1.0,
+        "ship.qc_saturated[91]": -1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[90,1,2]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,1,2]": -1.0,
+        "ship.qc_product[91,ship.delay[90,1,2]]": 1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[90,1,2]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,1,2]": -1.0,
+        "ship.qc_product[91,ship.delay[90,1,2]]": 1.0,
+        "ship.qc_saturated[91]": -1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[90,1,2]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[91,ship.delay[90,1,3]]": 1.0,
+        "ship.qc_saturated[91]": -1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[90,1,3]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,1,3]": -1.0,
+        "ship.qc_product[91,ship.delay[90,1,3]]": 1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[90,1,3]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,1,3]": -1.0,
+        "ship.qc_product[91,ship.delay[90,1,3]]": 1.0,
+        "ship.qc_saturated[91]": -1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[90,1,3]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[91,ship.delay[90,1,4]]": 1.0,
+        "ship.qc_saturated[91]": -1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[90,1,4]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,1,4]": -1.0,
+        "ship.qc_product[91,ship.delay[90,1,4]]": 1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[90,1,4]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,1,4]": -1.0,
+        "ship.qc_product[91,ship.delay[90,1,4]]": 1.0,
+        "ship.qc_saturated[91]": -1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[90,1,4]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,3]": 4.0,
+        "ship.delay[58,0,4]": 4.0,
+        "ship.delay[90,0,3]": -4.0,
+        "ship.delay[90,0,4]": -4.0,
+        "ship.delay[90,1,3]": -4.0,
+        "ship.delay[90,1,4]": -4.0,
+        "ship.qc_saturated[92]": -8.0
+      },
+      "name": "ship.qc_threshold_high[92]",
+      "rhs": -4.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,3]": -4.0,
+        "ship.delay[58,0,4]": -4.0,
+        "ship.delay[90,0,3]": 4.0,
+        "ship.delay[90,0,4]": 4.0,
+        "ship.delay[90,1,3]": 4.0,
+        "ship.delay[90,1,4]": 4.0,
+        "ship.qc_saturated[92]": 4.0
+      },
+      "name": "ship.qc_threshold_low[92]",
+      "rhs": 8.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[92,ship.delay[58,0,3]]": 1.0,
+        "ship.qc_saturated[92]": -1.0
+      },
+      "name": "ship.qc_product[92,ship.delay[58,0,3]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,3]": -1.0,
+        "ship.qc_product[92,ship.delay[58,0,3]]": 1.0
+      },
+      "name": "ship.qc_product[92,ship.delay[58,0,3]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,3]": -1.0,
+        "ship.qc_product[92,ship.delay[58,0,3]]": 1.0,
+        "ship.qc_saturated[92]": -1.0
+      },
+      "name": "ship.qc_product[92,ship.delay[58,0,3]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[92,ship.delay[58,0,4]]": 1.0,
+        "ship.qc_saturated[92]": -1.0
+      },
+      "name": "ship.qc_product[92,ship.delay[58,0,4]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,4]": -1.0,
+        "ship.qc_product[92,ship.delay[58,0,4]]": 1.0
+      },
+      "name": "ship.qc_product[92,ship.delay[58,0,4]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,4]": -1.0,
+        "ship.qc_product[92,ship.delay[58,0,4]]": 1.0,
+        "ship.qc_saturated[92]": -1.0
+      },
+      "name": "ship.qc_product[92,ship.delay[58,0,4]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[92,ship.delay[90,0,3]]": 1.0,
+        "ship.qc_saturated[92]": -1.0
+      },
+      "name": "ship.qc_product[92,ship.delay[90,0,3]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,3]": -1.0,
+        "ship.qc_product[92,ship.delay[90,0,3]]": 1.0
+      },
+      "name": "ship.qc_product[92,ship.delay[90,0,3]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,3]": -1.0,
+        "ship.qc_product[92,ship.delay[90,0,3]]": 1.0,
+        "ship.qc_saturated[92]": -1.0
+      },
+      "name": "ship.qc_product[92,ship.delay[90,0,3]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[92,ship.delay[90,0,4]]": 1.0,
+        "ship.qc_saturated[92]": -1.0
+      },
+      "name": "ship.qc_product[92,ship.delay[90,0,4]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,4]": -1.0,
+        "ship.qc_product[92,ship.delay[90,0,4]]": 1.0
+      },
+      "name": "ship.qc_product[92,ship.delay[90,0,4]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,4]": -1.0,
+        "ship.qc_product[92,ship.delay[90,0,4]]": 1.0,
+        "ship.qc_saturated[92]": -1.0
+      },
+      "name": "ship.qc_product[92,ship.delay[90,0,4]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[92,ship.delay[90,1,3]]": 1.0,
+        "ship.qc_saturated[92]": -1.0
+      },
+      "name": "ship.qc_product[92,ship.delay[90,1,3]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,1,3]": -1.0,
+        "ship.qc_product[92,ship.delay[90,1,3]]": 1.0
+      },
+      "name": "ship.qc_product[92,ship.delay[90,1,3]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,1,3]": -1.0,
+        "ship.qc_product[92,ship.delay[90,1,3]]": 1.0,
+        "ship.qc_saturated[92]": -1.0
+      },
+      "name": "ship.qc_product[92,ship.delay[90,1,3]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[92,ship.delay[90,1,4]]": 1.0,
+        "ship.qc_saturated[92]": -1.0
+      },
+      "name": "ship.qc_product[92,ship.delay[90,1,4]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,1,4]": -1.0,
+        "ship.qc_product[92,ship.delay[90,1,4]]": 1.0
+      },
+      "name": "ship.qc_product[92,ship.delay[90,1,4]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,1,4]": -1.0,
+        "ship.qc_product[92,ship.delay[90,1,4]]": 1.0,
+        "ship.qc_saturated[92]": -1.0
+      },
+      "name": "ship.qc_product[92,ship.delay[90,1,4]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,4]": 4.0,
+        "ship.delay[90,0,4]": -4.0,
+        "ship.delay[90,1,4]": -4.0,
+        "ship.qc_saturated[93]": -8.0
+      },
+      "name": "ship.qc_threshold_high[93]",
+      "rhs": -4.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,4]": -4.0,
+        "ship.delay[90,0,4]": 4.0,
+        "ship.delay[90,1,4]": 4.0,
+        "ship.qc_saturated[93]": 4.0
+      },
+      "name": "ship.qc_threshold_low[93]",
+      "rhs": 8.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[93,ship.delay[58,0,4]]": 1.0,
+        "ship.qc_saturated[93]": -1.0
+      },
+      "name": "ship.qc_product[93,ship.delay[58,0,4]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,4]": -1.0,
+        "ship.qc_product[93,ship.delay[58,0,4]]": 1.0
+      },
+      "name": "ship.qc_product[93,ship.delay[58,0,4]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,4]": -1.0,
+        "ship.qc_product[93,ship.delay[58,0,4]]": 1.0,
+        "ship.qc_saturated[93]": -1.0
+      },
+      "name": "ship.qc_product[93,ship.delay[58,0,4]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[93,ship.delay[90,0,4]]": 1.0,
+        "ship.qc_saturated[93]": -1.0
+      },
+      "name": "ship.qc_product[93,ship.delay[90,0,4]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,4]": -1.0,
+        "ship.qc_product[93,ship.delay[90,0,4]]": 1.0
+      },
+      "name": "ship.qc_product[93,ship.delay[90,0,4]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,4]": -1.0,
+        "ship.qc_product[93,ship.delay[90,0,4]]": 1.0,
+        "ship.qc_saturated[93]": -1.0
+      },
+      "name": "ship.qc_product[93,ship.delay[90,0,4]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[93,ship.delay[90,1,4]]": 1.0,
+        "ship.qc_saturated[93]": -1.0
+      },
+      "name": "ship.qc_product[93,ship.delay[90,1,4]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,1,4]": -1.0,
+        "ship.qc_product[93,ship.delay[90,1,4]]": 1.0
+      },
+      "name": "ship.qc_product[93,ship.delay[90,1,4]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,1,4]": -1.0,
+        "ship.qc_product[93,ship.delay[90,1,4]]": 1.0,
+        "ship.qc_saturated[93]": -1.0
+      },
+      "name": "ship.qc_product[93,ship.delay[90,1,4]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    }
+  ],
+  "model_horizon": 96,
+  "nominal_selector": {
+    "ship.delay[20,0,1]": 0,
+    "ship.delay[20,0,2]": 0,
+    "ship.delay[20,0,3]": 0,
+    "ship.delay[20,0,4]": 0,
+    "ship.delay[34,0,1]": 0,
+    "ship.delay[34,0,2]": 0,
+    "ship.delay[34,0,3]": 0,
+    "ship.delay[34,0,4]": 0,
+    "ship.delay[38,0,1]": 0,
+    "ship.delay[38,0,2]": 0,
+    "ship.delay[38,0,3]": 0,
+    "ship.delay[38,0,4]": 0,
+    "ship.delay[48,0,1]": 0,
+    "ship.delay[48,0,2]": 0,
+    "ship.delay[48,0,3]": 0,
+    "ship.delay[48,0,4]": 0,
+    "ship.delay[51,0,1]": 0,
+    "ship.delay[51,0,2]": 0,
+    "ship.delay[51,0,3]": 0,
+    "ship.delay[51,0,4]": 0,
+    "ship.delay[52,0,1]": 0,
+    "ship.delay[52,0,2]": 0,
+    "ship.delay[52,0,3]": 0,
+    "ship.delay[52,0,4]": 0,
+    "ship.delay[52,1,1]": 0,
+    "ship.delay[52,1,2]": 0,
+    "ship.delay[52,1,3]": 0,
+    "ship.delay[52,1,4]": 0,
+    "ship.delay[54,0,1]": 0,
+    "ship.delay[54,0,2]": 0,
+    "ship.delay[54,0,3]": 0,
+    "ship.delay[54,0,4]": 0,
+    "ship.delay[55,0,1]": 0,
+    "ship.delay[55,0,2]": 0,
+    "ship.delay[55,0,3]": 0,
+    "ship.delay[55,0,4]": 0,
+    "ship.delay[58,0,1]": 0,
+    "ship.delay[58,0,2]": 0,
+    "ship.delay[58,0,3]": 0,
+    "ship.delay[58,0,4]": 0,
+    "ship.delay[62,0,1]": 0,
+    "ship.delay[62,0,2]": 0,
+    "ship.delay[62,0,3]": 0,
+    "ship.delay[62,0,4]": 0,
+    "ship.delay[68,0,1]": 0,
+    "ship.delay[68,0,2]": 0,
+    "ship.delay[68,0,3]": 0,
+    "ship.delay[68,0,4]": 0,
+    "ship.delay[71,0,1]": 0,
+    "ship.delay[71,0,2]": 0,
+    "ship.delay[71,0,3]": 0,
+    "ship.delay[71,0,4]": 0,
+    "ship.delay[90,0,1]": 0,
+    "ship.delay[90,0,2]": 0,
+    "ship.delay[90,0,3]": 0,
+    "ship.delay[90,0,4]": 0,
+    "ship.delay[90,1,1]": 0,
+    "ship.delay[90,1,2]": 0,
+    "ship.delay[90,1,3]": 0,
+    "ship.delay[90,1,4]": 0,
+    "ship.qc_product[51,ship.delay[48,0,4]]": 0,
+    "ship.qc_product[51,ship.delay[51,0,1]]": 0,
+    "ship.qc_product[51,ship.delay[51,0,2]]": 0,
+    "ship.qc_product[51,ship.delay[51,0,3]]": 0,
+    "ship.qc_product[51,ship.delay[51,0,4]]": 0,
+    "ship.qc_product[90,ship.delay[55,0,4]]": 0,
+    "ship.qc_product[90,ship.delay[58,0,1]]": 0,
+    "ship.qc_product[90,ship.delay[58,0,2]]": 0,
+    "ship.qc_product[90,ship.delay[58,0,3]]": 0,
+    "ship.qc_product[90,ship.delay[58,0,4]]": 0,
+    "ship.qc_product[90,ship.delay[90,0,1]]": 0,
+    "ship.qc_product[90,ship.delay[90,0,2]]": 0,
+    "ship.qc_product[90,ship.delay[90,0,3]]": 0,
+    "ship.qc_product[90,ship.delay[90,0,4]]": 0,
+    "ship.qc_product[90,ship.delay[90,1,1]]": 0,
+    "ship.qc_product[90,ship.delay[90,1,2]]": 0,
+    "ship.qc_product[90,ship.delay[90,1,3]]": 0,
+    "ship.qc_product[90,ship.delay[90,1,4]]": 0,
+    "ship.qc_product[91,ship.delay[58,0,2]]": 0,
+    "ship.qc_product[91,ship.delay[58,0,3]]": 0,
+    "ship.qc_product[91,ship.delay[58,0,4]]": 0,
+    "ship.qc_product[91,ship.delay[90,0,2]]": 0,
+    "ship.qc_product[91,ship.delay[90,0,3]]": 0,
+    "ship.qc_product[91,ship.delay[90,0,4]]": 0,
+    "ship.qc_product[91,ship.delay[90,1,2]]": 0,
+    "ship.qc_product[91,ship.delay[90,1,3]]": 0,
+    "ship.qc_product[91,ship.delay[90,1,4]]": 0,
+    "ship.qc_product[92,ship.delay[58,0,3]]": 0,
+    "ship.qc_product[92,ship.delay[58,0,4]]": 0,
+    "ship.qc_product[92,ship.delay[90,0,3]]": 0,
+    "ship.qc_product[92,ship.delay[90,0,4]]": 0,
+    "ship.qc_product[92,ship.delay[90,1,3]]": 0,
+    "ship.qc_product[92,ship.delay[90,1,4]]": 0,
+    "ship.qc_product[93,ship.delay[58,0,4]]": 0,
+    "ship.qc_product[93,ship.delay[90,0,4]]": 0,
+    "ship.qc_product[93,ship.delay[90,1,4]]": 0,
+    "ship.qc_saturated[51]": 1,
+    "ship.qc_saturated[90]": 1,
+    "ship.qc_saturated[91]": 1,
+    "ship.qc_saturated[92]": 1,
+    "ship.qc_saturated[93]": 1,
+    "wind.down[0]": 0,
+    "wind.down[10]": 0,
+    "wind.down[11]": 0,
+    "wind.down[12]": 0,
+    "wind.down[13]": 0,
+    "wind.down[14]": 0,
+    "wind.down[15]": 0,
+    "wind.down[16]": 0,
+    "wind.down[17]": 0,
+    "wind.down[18]": 0,
+    "wind.down[19]": 0,
+    "wind.down[1]": 0,
+    "wind.down[20]": 0,
+    "wind.down[21]": 0,
+    "wind.down[22]": 0,
+    "wind.down[23]": 0,
+    "wind.down[24]": 0,
+    "wind.down[25]": 0,
+    "wind.down[26]": 0,
+    "wind.down[27]": 0,
+    "wind.down[28]": 0,
+    "wind.down[29]": 0,
+    "wind.down[2]": 0,
+    "wind.down[30]": 0,
+    "wind.down[31]": 0,
+    "wind.down[32]": 0,
+    "wind.down[33]": 0,
+    "wind.down[34]": 0,
+    "wind.down[35]": 0,
+    "wind.down[36]": 0,
+    "wind.down[37]": 0,
+    "wind.down[38]": 0,
+    "wind.down[39]": 0,
+    "wind.down[3]": 0,
+    "wind.down[40]": 0,
+    "wind.down[41]": 0,
+    "wind.down[42]": 0,
+    "wind.down[43]": 0,
+    "wind.down[44]": 0,
+    "wind.down[45]": 0,
+    "wind.down[46]": 0,
+    "wind.down[47]": 0,
+    "wind.down[48]": 0,
+    "wind.down[49]": 0,
+    "wind.down[4]": 0,
+    "wind.down[50]": 0,
+    "wind.down[51]": 0,
+    "wind.down[52]": 0,
+    "wind.down[53]": 0,
+    "wind.down[54]": 0,
+    "wind.down[55]": 0,
+    "wind.down[56]": 0,
+    "wind.down[57]": 0,
+    "wind.down[58]": 0,
+    "wind.down[59]": 0,
+    "wind.down[5]": 0,
+    "wind.down[60]": 0,
+    "wind.down[61]": 0,
+    "wind.down[62]": 0,
+    "wind.down[63]": 0,
+    "wind.down[64]": 0,
+    "wind.down[65]": 0,
+    "wind.down[66]": 0,
+    "wind.down[67]": 0,
+    "wind.down[68]": 0,
+    "wind.down[69]": 0,
+    "wind.down[6]": 0,
+    "wind.down[70]": 0,
+    "wind.down[71]": 0,
+    "wind.down[72]": 0,
+    "wind.down[73]": 0,
+    "wind.down[74]": 0,
+    "wind.down[75]": 0,
+    "wind.down[76]": 0,
+    "wind.down[77]": 0,
+    "wind.down[78]": 0,
+    "wind.down[79]": 0,
+    "wind.down[7]": 0,
+    "wind.down[80]": 0,
+    "wind.down[81]": 0,
+    "wind.down[82]": 0,
+    "wind.down[83]": 0,
+    "wind.down[84]": 0,
+    "wind.down[85]": 0,
+    "wind.down[86]": 0,
+    "wind.down[87]": 0,
+    "wind.down[88]": 0,
+    "wind.down[89]": 0,
+    "wind.down[8]": 0,
+    "wind.down[90]": 0,
+    "wind.down[91]": 0,
+    "wind.down[92]": 0,
+    "wind.down[93]": 0,
+    "wind.down[94]": 0,
+    "wind.down[95]": 0,
+    "wind.down[9]": 0,
+    "wind.up[0]": 0,
+    "wind.up[10]": 0,
+    "wind.up[11]": 0,
+    "wind.up[12]": 0,
+    "wind.up[13]": 0,
+    "wind.up[14]": 0,
+    "wind.up[15]": 0,
+    "wind.up[16]": 0,
+    "wind.up[17]": 0,
+    "wind.up[18]": 0,
+    "wind.up[19]": 0,
+    "wind.up[1]": 0,
+    "wind.up[20]": 0,
+    "wind.up[21]": 0,
+    "wind.up[22]": 0,
+    "wind.up[23]": 0,
+    "wind.up[24]": 0,
+    "wind.up[25]": 0,
+    "wind.up[26]": 0,
+    "wind.up[27]": 0,
+    "wind.up[28]": 0,
+    "wind.up[29]": 0,
+    "wind.up[2]": 0,
+    "wind.up[30]": 0,
+    "wind.up[31]": 0,
+    "wind.up[32]": 0,
+    "wind.up[33]": 0,
+    "wind.up[34]": 0,
+    "wind.up[35]": 0,
+    "wind.up[36]": 0,
+    "wind.up[37]": 0,
+    "wind.up[38]": 0,
+    "wind.up[39]": 0,
+    "wind.up[3]": 0,
+    "wind.up[40]": 0,
+    "wind.up[41]": 0,
+    "wind.up[42]": 0,
+    "wind.up[43]": 0,
+    "wind.up[44]": 0,
+    "wind.up[45]": 0,
+    "wind.up[46]": 0,
+    "wind.up[47]": 0,
+    "wind.up[48]": 0,
+    "wind.up[49]": 0,
+    "wind.up[4]": 0,
+    "wind.up[50]": 0,
+    "wind.up[51]": 0,
+    "wind.up[52]": 0,
+    "wind.up[53]": 0,
+    "wind.up[54]": 0,
+    "wind.up[55]": 0,
+    "wind.up[56]": 0,
+    "wind.up[57]": 0,
+    "wind.up[58]": 0,
+    "wind.up[59]": 0,
+    "wind.up[5]": 0,
+    "wind.up[60]": 0,
+    "wind.up[61]": 0,
+    "wind.up[62]": 0,
+    "wind.up[63]": 0,
+    "wind.up[64]": 0,
+    "wind.up[65]": 0,
+    "wind.up[66]": 0,
+    "wind.up[67]": 0,
+    "wind.up[68]": 0,
+    "wind.up[69]": 0,
+    "wind.up[6]": 0,
+    "wind.up[70]": 0,
+    "wind.up[71]": 0,
+    "wind.up[72]": 0,
+    "wind.up[73]": 0,
+    "wind.up[74]": 0,
+    "wind.up[75]": 0,
+    "wind.up[76]": 0,
+    "wind.up[77]": 0,
+    "wind.up[78]": 0,
+    "wind.up[79]": 0,
+    "wind.up[7]": 0,
+    "wind.up[80]": 0,
+    "wind.up[81]": 0,
+    "wind.up[82]": 0,
+    "wind.up[83]": 0,
+    "wind.up[84]": 0,
+    "wind.up[85]": 0,
+    "wind.up[86]": 0,
+    "wind.up[87]": 0,
+    "wind.up[88]": 0,
+    "wind.up[89]": 0,
+    "wind.up[8]": 0,
+    "wind.up[90]": 0,
+    "wind.up[91]": 0,
+    "wind.up[92]": 0,
+    "wind.up[93]": 0,
+    "wind.up[94]": 0,
+    "wind.up[95]": 0,
+    "wind.up[9]": 0
+  },
+  "outputs": {
+    "ship.active_quay_cranes": {
+      "key": "ship.active_quay_cranes",
+      "nominal": [
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        8.0,
+        8.0,
+        12.0,
+        12.0,
+        12.0,
+        12.0,
+        12.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        4.0,
+        4.0,
+        4.0,
+        4.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        12.0,
+        12.0,
+        12.0,
+        12.0,
+        12.0,
+        12.0,
+        12.0,
+        12.0,
+        12.0,
+        12.0,
+        16.0,
+        16.0,
+        16.0,
+        20.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        16.0,
+        16.0
+      ],
+      "selector_columns_path": "joint_uncertainty_matrices.npz::ship.active_quay_cranes",
+      "unit": "quay_crane"
+    },
+    "ship.arrival_count": {
+      "key": "ship.arrival_count",
+      "nominal": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "selector_columns_path": "joint_uncertainty_matrices.npz::ship.arrival_count",
+      "unit": "ship"
+    },
+    "ship.delayed_out_of_current_day_count": {
+      "key": "ship.delayed_out_of_current_day_count",
+      "nominal": [
+        0.0
+      ],
+      "selector_columns_path": "joint_uncertainty_matrices.npz::ship.delayed_out_of_current_day_count",
+      "unit": "ship"
+    },
+    "ship.in_port_count": {
+      "key": "ship.in_port_count",
+      "nominal": [
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        7.0,
+        7.0,
+        7.0,
+        6.0,
+        6.0,
+        5.0,
+        5.0,
+        5.0,
+        4.0,
+        4.0,
+        4.0,
+        2.0,
+        2.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        4.0,
+        4.0,
+        4.0,
+        5.0,
+        6.0,
+        6.0,
+        7.0,
+        8.0,
+        8.0,
+        8.0,
+        9.0,
+        9.0,
+        9.0,
+        9.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        9.0,
+        9.0,
+        10.0,
+        10.0,
+        9.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        9.0,
+        9.0,
+        9.0,
+        8.0,
+        6.0,
+        6.0,
+        5.0,
+        4.0,
+        4.0,
+        4.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        4.0,
+        4.0
+      ],
+      "selector_columns_path": "joint_uncertainty_matrices.npz::ship.in_port_count",
+      "unit": "ship"
+    },
+    "ship.quay_crane_power_kw": {
+      "key": "ship.quay_crane_power_kw",
+      "nominal": [
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        4000.0,
+        4000.0,
+        6000.0,
+        6000.0,
+        6000.0,
+        6000.0,
+        6000.0,
+        4000.0,
+        4000.0,
+        4000.0,
+        4000.0,
+        4000.0,
+        2000.0,
+        2000.0,
+        2000.0,
+        2000.0,
+        4000.0,
+        4000.0,
+        4000.0,
+        4000.0,
+        6000.0,
+        6000.0,
+        6000.0,
+        6000.0,
+        6000.0,
+        6000.0,
+        6000.0,
+        6000.0,
+        6000.0,
+        6000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        10000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        10000.0,
+        10000.0,
+        10000.0,
+        10000.0,
+        8000.0,
+        8000.0
+      ],
+      "selector_columns_path": "joint_uncertainty_matrices.npz::ship.quay_crane_power_kw",
+      "unit": "kW"
+    },
+    "ship.shore_power_kw": {
+      "key": "ship.shore_power_kw",
+      "nominal": [
+        24000.0,
+        24000.0,
+        24000.0,
+        24000.0,
+        24000.0,
+        24000.0,
+        24000.0,
+        21000.0,
+        21000.0,
+        21000.0,
+        18000.0,
+        18000.0,
+        15000.0,
+        15000.0,
+        15000.0,
+        12000.0,
+        12000.0,
+        12000.0,
+        6000.0,
+        6000.0,
+        9000.0,
+        9000.0,
+        9000.0,
+        9000.0,
+        9000.0,
+        6000.0,
+        6000.0,
+        6000.0,
+        6000.0,
+        6000.0,
+        3000.0,
+        3000.0,
+        3000.0,
+        3000.0,
+        6000.0,
+        6000.0,
+        6000.0,
+        6000.0,
+        9000.0,
+        9000.0,
+        9000.0,
+        9000.0,
+        9000.0,
+        9000.0,
+        9000.0,
+        9000.0,
+        9000.0,
+        9000.0,
+        12000.0,
+        12000.0,
+        12000.0,
+        15000.0,
+        18000.0,
+        18000.0,
+        21000.0,
+        24000.0,
+        24000.0,
+        24000.0,
+        27000.0,
+        27000.0,
+        27000.0,
+        27000.0,
+        30000.0,
+        30000.0,
+        30000.0,
+        30000.0,
+        27000.0,
+        27000.0,
+        30000.0,
+        30000.0,
+        27000.0,
+        30000.0,
+        30000.0,
+        30000.0,
+        30000.0,
+        30000.0,
+        30000.0,
+        30000.0,
+        30000.0,
+        30000.0,
+        27000.0,
+        27000.0,
+        27000.0,
+        24000.0,
+        18000.0,
+        18000.0,
+        15000.0,
+        12000.0,
+        12000.0,
+        12000.0,
+        15000.0,
+        15000.0,
+        15000.0,
+        15000.0,
+        12000.0,
+        12000.0
+      ],
+      "selector_columns_path": "joint_uncertainty_matrices.npz::ship.shore_power_kw",
+      "unit": "kW"
+    },
+    "ship.task_release": {
+      "key": "ship.task_release",
+      "nominal": [
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        70.0,
+        70.0,
+        105.0,
+        105.0,
+        105.0,
+        105.0,
+        105.0,
+        70.0,
+        70.0,
+        70.0,
+        70.0,
+        70.0,
+        35.0,
+        35.0,
+        35.0,
+        35.0,
+        70.0,
+        70.0,
+        70.0,
+        70.0,
+        105.0,
+        105.0,
+        105.0,
+        105.0,
+        105.0,
+        105.0,
+        105.0,
+        105.0,
+        105.0,
+        105.0,
+        140.0,
+        140.0,
+        140.0,
+        175.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        175.0,
+        175.0,
+        175.0,
+        175.0,
+        140.0,
+        140.0
+      ],
+      "selector_columns_path": "joint_uncertainty_matrices.npz::ship.task_release",
+      "unit": "task"
+    },
+    "wind.available_power_kw": {
+      "key": "wind.available_power_kw",
+      "nominal": [
+        11861.861861861864,
+        20570.57057057057,
+        28378.37837837838,
+        31681.681681681683,
+        19819.81981981982,
+        22372.372372372374,
+        25675.675675675677,
+        29129.12912912913,
+        28378.37837837838,
+        41441.44144144145,
+        50000.00000000001,
+        47897.8978978979,
+        32582.58258258258,
+        24324.324324324323,
+        21171.171171171172,
+        25825.825825825825,
+        32432.432432432433,
+        28678.67867867868,
+        30030.03003003003,
+        24324.324324324323,
+        24624.624624624626,
+        21771.77177177177,
+        22522.522522522522,
+        18468.468468468473,
+        15915.915915915915,
+        15465.465465465466,
+        13213.213213213214,
+        13363.363363363365,
+        12312.312312312313,
+        16366.366366366368,
+        14414.414414414414,
+        16666.666666666668,
+        16666.666666666668,
+        15015.015015015015,
+        13513.513513513513,
+        13363.363363363365,
+        15615.615615615618,
+        19669.66966966967,
+        30330.33033033033,
+        27927.92792792793,
+        20570.57057057057,
+        19219.219219219223,
+        16666.666666666668,
+        19069.069069069068,
+        19369.36936936937,
+        18168.16816816817,
+        18318.318318318317,
+        19519.51951951952,
+        12462.462462462463,
+        14114.114114114116,
+        10210.21021021021,
+        9759.75975975976,
+        11111.111111111113,
+        11411.41141141141,
+        8258.258258258258,
+        5855.855855855856,
+        3153.1531531531537,
+        2552.5525525525527,
+        1501.5015015015015,
+        3303.3033033033034,
+        2252.252252252252,
+        4504.504504504504,
+        6306.306306306307,
+        4354.354354354355,
+        6006.006006006006,
+        5555.555555555557,
+        6156.156156156157,
+        4804.804804804806,
+        5555.555555555557,
+        5405.405405405406,
+        3903.9039039039044,
+        2702.702702702703,
+        4204.204204204205,
+        6606.606606606607,
+        4954.954954954955,
+        7657.657657657658,
+        7507.507507507507,
+        7057.057057057058,
+        10360.360360360362,
+        8408.40840840841,
+        8408.40840840841,
+        14714.714714714715,
+        22972.972972972977,
+        24624.624624624626,
+        21321.32132132132,
+        12462.462462462463,
+        13063.063063063064,
+        16516.516516516516,
+        15915.915915915915,
+        13813.813813813815,
+        17417.41741741742,
+        16216.216216216217,
+        8108.108108108108,
+        3903.9039039039044,
+        3453.4534534534537,
+        3303.3033033033034
+      ],
+      "selector_columns_path": "joint_uncertainty_matrices.npz::wind.available_power_kw",
+      "unit": "kW"
+    }
+  },
+  "primary_selector_keys": [
+    "wind.down[0]",
+    "wind.up[0]",
+    "wind.down[1]",
+    "wind.up[1]",
+    "wind.down[2]",
+    "wind.up[2]",
+    "wind.down[3]",
+    "wind.up[3]",
+    "wind.down[4]",
+    "wind.up[4]",
+    "wind.down[5]",
+    "wind.up[5]",
+    "wind.down[6]",
+    "wind.up[6]",
+    "wind.down[7]",
+    "wind.up[7]",
+    "wind.down[8]",
+    "wind.up[8]",
+    "wind.down[9]",
+    "wind.up[9]",
+    "wind.down[10]",
+    "wind.up[10]",
+    "wind.down[11]",
+    "wind.up[11]",
+    "wind.down[12]",
+    "wind.up[12]",
+    "wind.down[13]",
+    "wind.up[13]",
+    "wind.down[14]",
+    "wind.up[14]",
+    "wind.down[15]",
+    "wind.up[15]",
+    "wind.down[16]",
+    "wind.up[16]",
+    "wind.down[17]",
+    "wind.up[17]",
+    "wind.down[18]",
+    "wind.up[18]",
+    "wind.down[19]",
+    "wind.up[19]",
+    "wind.down[20]",
+    "wind.up[20]",
+    "wind.down[21]",
+    "wind.up[21]",
+    "wind.down[22]",
+    "wind.up[22]",
+    "wind.down[23]",
+    "wind.up[23]",
+    "wind.down[24]",
+    "wind.up[24]",
+    "wind.down[25]",
+    "wind.up[25]",
+    "wind.down[26]",
+    "wind.up[26]",
+    "wind.down[27]",
+    "wind.up[27]",
+    "wind.down[28]",
+    "wind.up[28]",
+    "wind.down[29]",
+    "wind.up[29]",
+    "wind.down[30]",
+    "wind.up[30]",
+    "wind.down[31]",
+    "wind.up[31]",
+    "wind.down[32]",
+    "wind.up[32]",
+    "wind.down[33]",
+    "wind.up[33]",
+    "wind.down[34]",
+    "wind.up[34]",
+    "wind.down[35]",
+    "wind.up[35]",
+    "wind.down[36]",
+    "wind.up[36]",
+    "wind.down[37]",
+    "wind.up[37]",
+    "wind.down[38]",
+    "wind.up[38]",
+    "wind.down[39]",
+    "wind.up[39]",
+    "wind.down[40]",
+    "wind.up[40]",
+    "wind.down[41]",
+    "wind.up[41]",
+    "wind.down[42]",
+    "wind.up[42]",
+    "wind.down[43]",
+    "wind.up[43]",
+    "wind.down[44]",
+    "wind.up[44]",
+    "wind.down[45]",
+    "wind.up[45]",
+    "wind.down[46]",
+    "wind.up[46]",
+    "wind.down[47]",
+    "wind.up[47]",
+    "wind.down[48]",
+    "wind.up[48]",
+    "wind.down[49]",
+    "wind.up[49]",
+    "wind.down[50]",
+    "wind.up[50]",
+    "wind.down[51]",
+    "wind.up[51]",
+    "wind.down[52]",
+    "wind.up[52]",
+    "wind.down[53]",
+    "wind.up[53]",
+    "wind.down[54]",
+    "wind.up[54]",
+    "wind.down[55]",
+    "wind.up[55]",
+    "wind.down[56]",
+    "wind.up[56]",
+    "wind.down[57]",
+    "wind.up[57]",
+    "wind.down[58]",
+    "wind.up[58]",
+    "wind.down[59]",
+    "wind.up[59]",
+    "wind.down[60]",
+    "wind.up[60]",
+    "wind.down[61]",
+    "wind.up[61]",
+    "wind.down[62]",
+    "wind.up[62]",
+    "wind.down[63]",
+    "wind.up[63]",
+    "wind.down[64]",
+    "wind.up[64]",
+    "wind.down[65]",
+    "wind.up[65]",
+    "wind.down[66]",
+    "wind.up[66]",
+    "wind.down[67]",
+    "wind.up[67]",
+    "wind.down[68]",
+    "wind.up[68]",
+    "wind.down[69]",
+    "wind.up[69]",
+    "wind.down[70]",
+    "wind.up[70]",
+    "wind.down[71]",
+    "wind.up[71]",
+    "wind.down[72]",
+    "wind.up[72]",
+    "wind.down[73]",
+    "wind.up[73]",
+    "wind.down[74]",
+    "wind.up[74]",
+    "wind.down[75]",
+    "wind.up[75]",
+    "wind.down[76]",
+    "wind.up[76]",
+    "wind.down[77]",
+    "wind.up[77]",
+    "wind.down[78]",
+    "wind.up[78]",
+    "wind.down[79]",
+    "wind.up[79]",
+    "wind.down[80]",
+    "wind.up[80]",
+    "wind.down[81]",
+    "wind.up[81]",
+    "wind.down[82]",
+    "wind.up[82]",
+    "wind.down[83]",
+    "wind.up[83]",
+    "wind.down[84]",
+    "wind.up[84]",
+    "wind.down[85]",
+    "wind.up[85]",
+    "wind.down[86]",
+    "wind.up[86]",
+    "wind.down[87]",
+    "wind.up[87]",
+    "wind.down[88]",
+    "wind.up[88]",
+    "wind.down[89]",
+    "wind.up[89]",
+    "wind.down[90]",
+    "wind.up[90]",
+    "wind.down[91]",
+    "wind.up[91]",
+    "wind.down[92]",
+    "wind.up[92]",
+    "wind.down[93]",
+    "wind.up[93]",
+    "wind.down[94]",
+    "wind.up[94]",
+    "wind.down[95]",
+    "wind.up[95]",
+    "ship.delay[20,0,1]",
+    "ship.delay[20,0,2]",
+    "ship.delay[20,0,3]",
+    "ship.delay[20,0,4]",
+    "ship.delay[34,0,1]",
+    "ship.delay[34,0,2]",
+    "ship.delay[34,0,3]",
+    "ship.delay[34,0,4]",
+    "ship.delay[38,0,1]",
+    "ship.delay[38,0,2]",
+    "ship.delay[38,0,3]",
+    "ship.delay[38,0,4]",
+    "ship.delay[48,0,1]",
+    "ship.delay[48,0,2]",
+    "ship.delay[48,0,3]",
+    "ship.delay[48,0,4]",
+    "ship.delay[51,0,1]",
+    "ship.delay[51,0,2]",
+    "ship.delay[51,0,3]",
+    "ship.delay[51,0,4]",
+    "ship.delay[52,0,1]",
+    "ship.delay[52,0,2]",
+    "ship.delay[52,0,3]",
+    "ship.delay[52,0,4]",
+    "ship.delay[52,1,1]",
+    "ship.delay[52,1,2]",
+    "ship.delay[52,1,3]",
+    "ship.delay[52,1,4]",
+    "ship.delay[54,0,1]",
+    "ship.delay[54,0,2]",
+    "ship.delay[54,0,3]",
+    "ship.delay[54,0,4]",
+    "ship.delay[55,0,1]",
+    "ship.delay[55,0,2]",
+    "ship.delay[55,0,3]",
+    "ship.delay[55,0,4]",
+    "ship.delay[58,0,1]",
+    "ship.delay[58,0,2]",
+    "ship.delay[58,0,3]",
+    "ship.delay[58,0,4]",
+    "ship.delay[62,0,1]",
+    "ship.delay[62,0,2]",
+    "ship.delay[62,0,3]",
+    "ship.delay[62,0,4]",
+    "ship.delay[68,0,1]",
+    "ship.delay[68,0,2]",
+    "ship.delay[68,0,3]",
+    "ship.delay[68,0,4]",
+    "ship.delay[71,0,1]",
+    "ship.delay[71,0,2]",
+    "ship.delay[71,0,3]",
+    "ship.delay[71,0,4]",
+    "ship.delay[90,0,1]",
+    "ship.delay[90,0,2]",
+    "ship.delay[90,0,3]",
+    "ship.delay[90,0,4]",
+    "ship.delay[90,1,1]",
+    "ship.delay[90,1,2]",
+    "ship.delay[90,1,3]",
+    "ship.delay[90,1,4]"
+  ],
+  "profile_name": "quarter_hour_96",
+  "proofs": {
+    "composition": "cartesian_product",
+    "joint_budget_added": false,
+    "ship_bundle_sha256": "77e2d55be8cbc14ffd8c43ea58b38201bb4a8a381d9f54e24332706452b41147",
+    "wind_bundle_sha256": "50f86c25cf63f07bbecd9bff2058b339d0dbd1117c04571f70a4e4b8e4215061"
+  },
+  "schema_version": 1,
+  "selectors": [
+    {
+      "domain": "binary",
+      "key": "wind.down[0]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[0]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[1]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[1]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[2]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[2]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[3]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[3]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[4]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[4]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[5]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[5]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[6]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[6]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[7]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[7]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[8]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[8]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[9]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[9]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[10]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[10]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[11]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[11]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[12]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[12]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[13]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[13]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[14]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[14]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[15]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[15]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[16]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[16]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[17]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[17]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[18]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[18]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[19]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[19]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[20]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[20]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[21]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[21]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[22]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[22]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[23]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[23]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[24]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[24]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[25]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[25]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[26]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[26]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[27]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[27]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[28]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[28]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[29]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[29]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[30]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[30]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[31]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[31]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[32]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[32]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[33]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[33]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[34]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[34]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[35]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[35]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[36]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[36]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[37]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[37]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[38]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[38]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[39]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[39]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[40]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[40]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[41]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[41]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[42]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[42]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[43]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[43]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[44]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[44]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[45]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[45]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[46]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[46]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[47]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[47]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[48]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[48]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[49]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[49]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[50]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[50]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[51]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[51]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[52]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[52]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[53]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[53]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[54]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[54]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[55]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[55]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[56]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[56]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[57]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[57]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[58]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[58]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[59]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[59]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[60]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[60]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[61]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[61]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[62]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[62]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[63]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[63]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[64]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[64]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[65]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[65]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[66]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[66]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[67]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[67]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[68]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[68]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[69]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[69]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[70]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[70]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[71]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[71]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[72]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[72]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[73]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[73]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[74]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[74]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[75]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[75]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[76]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[76]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[77]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[77]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[78]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[78]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[79]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[79]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[80]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[80]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[81]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[81]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[82]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[82]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[83]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[83]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[84]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[84]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[85]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[85]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[86]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[86]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[87]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[87]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[88]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[88]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[89]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[89]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[90]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[90]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[91]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[91]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[92]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[92]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[93]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[93]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[94]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[94]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.down[95]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "wind.up[95]",
+      "namespace": "wind",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[20,0,1]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[20,0,2]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[20,0,3]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[20,0,4]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[34,0,1]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[34,0,2]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[34,0,3]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[34,0,4]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[38,0,1]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[38,0,2]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[38,0,3]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[38,0,4]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[48,0,1]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[48,0,2]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[48,0,3]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[48,0,4]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[51,0,1]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[51,0,2]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[51,0,3]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[51,0,4]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[52,0,1]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[52,0,2]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[52,0,3]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[52,0,4]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[52,1,1]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[52,1,2]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[52,1,3]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[52,1,4]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[54,0,1]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[54,0,2]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[54,0,3]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[54,0,4]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[55,0,1]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[55,0,2]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[55,0,3]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[55,0,4]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[58,0,1]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[58,0,2]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[58,0,3]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[58,0,4]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[62,0,1]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[62,0,2]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[62,0,3]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[62,0,4]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[68,0,1]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[68,0,2]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[68,0,3]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[68,0,4]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[71,0,1]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[71,0,2]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[71,0,3]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[71,0,4]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[90,0,1]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[90,0,2]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[90,0,3]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[90,0,4]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[90,1,1]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[90,1,2]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[90,1,3]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[90,1,4]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_saturated[51]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[51,ship.delay[48,0,4]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[51,ship.delay[51,0,1]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[51,ship.delay[51,0,2]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[51,ship.delay[51,0,3]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[51,ship.delay[51,0,4]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_saturated[90]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[90,ship.delay[55,0,4]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[90,ship.delay[58,0,1]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[90,ship.delay[58,0,2]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[90,ship.delay[58,0,3]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[90,ship.delay[58,0,4]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[90,ship.delay[90,0,1]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[90,ship.delay[90,0,2]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[90,ship.delay[90,0,3]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[90,ship.delay[90,0,4]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[90,ship.delay[90,1,1]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[90,ship.delay[90,1,2]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[90,ship.delay[90,1,3]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[90,ship.delay[90,1,4]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_saturated[91]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[91,ship.delay[58,0,2]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[91,ship.delay[58,0,3]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[91,ship.delay[58,0,4]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[91,ship.delay[90,0,2]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[91,ship.delay[90,0,3]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[91,ship.delay[90,0,4]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[91,ship.delay[90,1,2]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[91,ship.delay[90,1,3]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[91,ship.delay[90,1,4]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_saturated[92]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[92,ship.delay[58,0,3]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[92,ship.delay[58,0,4]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[92,ship.delay[90,0,3]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[92,ship.delay[90,0,4]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[92,ship.delay[90,1,3]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[92,ship.delay[90,1,4]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_saturated[93]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[93,ship.delay[58,0,4]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[93,ship.delay[90,0,4]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[93,ship.delay[90,1,4]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    }
+  ],
+  "source_hashes": {
+    "ship_delay.canonical_payload_sha256": "1ac440cf33778f2dba7f65a122be4a6d432ca4a8eb1bcf83c7e7738650bf148d",
+    "ship_delay.generation_script_sha256": "ab659a919fd996c04d398dc6a09b9ff33a98fd0651c1e12557195d4ffad2601c",
+    "ship_delay.raw_file_sha256": "47e21db6eff99a454ae902f8ed82dc2b0746ca00669f4af1367a25eec2a3d1fb",
+    "wind.canonical_payload_sha256": "eb0d234c8540728f4f3dd77e95983fa3d3bafa776e829f79b48b4e637527b30a",
+    "wind.generation_script_sha256": "ab659a919fd996c04d398dc6a09b9ff33a98fd0651c1e12557195d4ffad2601c",
+    "wind.raw_file_sha256": "98d348b0575be916e619fcb002c5edcf2d632899b1a16b4f3a8ee36acb0523b7"
+  }
+}

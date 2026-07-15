@@ -1,0 +1,23 @@
+{
+  "day_ahead_by_component": {
+    "agv": 0.0,
+    "electricity": 257.75668151802955,
+    "lohc": 0.011183307341869925
+  },
+  "reconstructed_recourse": {
+    "backlog_delay": 19.70525000000001,
+    "charge_deviation": 0.5789964157706151,
+    "grid_deviation": 9.464277503309766,
+    "lohc_deviation": 0.7199999999999992,
+    "lohc_export_revenue": -168.15327580835094,
+    "spill_deviation": 0.3281249999999999,
+    "spill_real_time": 0.2624999999999999
+  },
+  "recourse_by_component": {
+    "agv": 0.5789964157706151,
+    "electricity": 10.054902503309766,
+    "hydrogen": 0.0,
+    "logistics": 19.70525000000001,
+    "lohc": -167.433275808351
+  }
+}

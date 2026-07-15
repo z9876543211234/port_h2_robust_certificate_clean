@@ -1,0 +1,13 @@
+{
+  "accepted_limited_solve": false,
+  "fig05_status": "PENDING_FORMAL_SENSITIVITY_RUNS",
+  "generated_figures": [
+    "fig01_uncertainty",
+    "fig02_c1_energy_hydrogen_dispatch",
+    "fig03_agv_energy_logistics",
+    "fig04_case_comparison"
+  ],
+  "joint_bundle_sha256": "c86a258d698635b6279717fd8f4c4f19491024e01cbe1af0ed695b2a3c8714a5",
+  "status": "FIGURES_1_TO_4_CERTIFIED",
+  "time_limit_used_for_certificate": false
+}

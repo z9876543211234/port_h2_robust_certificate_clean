@@ -1,0 +1,29 @@
+paper_profile: quarter_hour_96
+formal_result_root: experiments/c1_confirmed_main_budget_20260714
+main_case:
+  name: C1_ProposedRobustMain
+  scenario: certified_worst
+fig04:
+  c1_c3_common_scenario:
+    source: C3_certified_worst
+    recourse_rule: freeze_each_day_ahead_policy_and_solve_to_OPTIMAL
+  c1_c4_cross_evaluation:
+    policies:
+      - C1_robust_day_ahead
+      - C4_deterministic_day_ahead
+    scenarios:
+      - C1_certified_worst
+      - C4_certified_worst
+fig05:
+  status: pending_formal_sensitivity_runs
+  fabrication_or_interpolation_allowed: false
+exports:
+  pdf: true
+  svg: true
+  png_dpi: 600
+  transparent_background: false
+formal_gate:
+  solver_status: OPTIMAL
+  accepted_limited_solve: false
+  time_limit_used_for_certificate: false
+

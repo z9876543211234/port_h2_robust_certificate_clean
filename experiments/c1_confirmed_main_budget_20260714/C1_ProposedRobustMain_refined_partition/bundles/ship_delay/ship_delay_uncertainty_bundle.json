@@ -1,0 +1,3366 @@
+{
+  "bundle_sha256": "77e2d55be8cbc14ffd8c43ea58b38201bb4a8a381d9f54e24332706452b41147",
+  "bundle_type": "ship_delay",
+  "constraints": [
+    {
+      "coefficients": {
+        "ship.delay[20,0,1]": 1.0,
+        "ship.delay[20,0,2]": 1.0,
+        "ship.delay[20,0,3]": 1.0,
+        "ship.delay[20,0,4]": 1.0
+      },
+      "name": "ship.one_delay[20,0]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[34,0,1]": 1.0,
+        "ship.delay[34,0,2]": 1.0,
+        "ship.delay[34,0,3]": 1.0,
+        "ship.delay[34,0,4]": 1.0
+      },
+      "name": "ship.one_delay[34,0]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[38,0,1]": 1.0,
+        "ship.delay[38,0,2]": 1.0,
+        "ship.delay[38,0,3]": 1.0,
+        "ship.delay[38,0,4]": 1.0
+      },
+      "name": "ship.one_delay[38,0]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[48,0,1]": 1.0,
+        "ship.delay[48,0,2]": 1.0,
+        "ship.delay[48,0,3]": 1.0,
+        "ship.delay[48,0,4]": 1.0
+      },
+      "name": "ship.one_delay[48,0]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[51,0,1]": 1.0,
+        "ship.delay[51,0,2]": 1.0,
+        "ship.delay[51,0,3]": 1.0,
+        "ship.delay[51,0,4]": 1.0
+      },
+      "name": "ship.one_delay[51,0]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[52,0,1]": 1.0,
+        "ship.delay[52,0,2]": 1.0,
+        "ship.delay[52,0,3]": 1.0,
+        "ship.delay[52,0,4]": 1.0
+      },
+      "name": "ship.one_delay[52,0]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[52,1,1]": 1.0,
+        "ship.delay[52,1,2]": 1.0,
+        "ship.delay[52,1,3]": 1.0,
+        "ship.delay[52,1,4]": 1.0
+      },
+      "name": "ship.one_delay[52,1]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[54,0,1]": 1.0,
+        "ship.delay[54,0,2]": 1.0,
+        "ship.delay[54,0,3]": 1.0,
+        "ship.delay[54,0,4]": 1.0
+      },
+      "name": "ship.one_delay[54,0]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[55,0,1]": 1.0,
+        "ship.delay[55,0,2]": 1.0,
+        "ship.delay[55,0,3]": 1.0,
+        "ship.delay[55,0,4]": 1.0
+      },
+      "name": "ship.one_delay[55,0]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,1]": 1.0,
+        "ship.delay[58,0,2]": 1.0,
+        "ship.delay[58,0,3]": 1.0,
+        "ship.delay[58,0,4]": 1.0
+      },
+      "name": "ship.one_delay[58,0]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[62,0,1]": 1.0,
+        "ship.delay[62,0,2]": 1.0,
+        "ship.delay[62,0,3]": 1.0,
+        "ship.delay[62,0,4]": 1.0
+      },
+      "name": "ship.one_delay[62,0]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[68,0,1]": 1.0,
+        "ship.delay[68,0,2]": 1.0,
+        "ship.delay[68,0,3]": 1.0,
+        "ship.delay[68,0,4]": 1.0
+      },
+      "name": "ship.one_delay[68,0]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[71,0,1]": 1.0,
+        "ship.delay[71,0,2]": 1.0,
+        "ship.delay[71,0,3]": 1.0,
+        "ship.delay[71,0,4]": 1.0
+      },
+      "name": "ship.one_delay[71,0]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,1]": 1.0,
+        "ship.delay[90,0,2]": 1.0,
+        "ship.delay[90,0,3]": 1.0,
+        "ship.delay[90,0,4]": 1.0
+      },
+      "name": "ship.one_delay[90,0]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,1,1]": 1.0,
+        "ship.delay[90,1,2]": 1.0,
+        "ship.delay[90,1,3]": 1.0,
+        "ship.delay[90,1,4]": 1.0
+      },
+      "name": "ship.one_delay[90,1]",
+      "rhs": 1.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[20,0,1]": 1.0,
+        "ship.delay[20,0,2]": 1.0,
+        "ship.delay[20,0,3]": 1.0,
+        "ship.delay[20,0,4]": 1.0,
+        "ship.delay[34,0,1]": 1.0,
+        "ship.delay[34,0,2]": 1.0,
+        "ship.delay[34,0,3]": 1.0,
+        "ship.delay[34,0,4]": 1.0,
+        "ship.delay[38,0,1]": 1.0,
+        "ship.delay[38,0,2]": 1.0,
+        "ship.delay[38,0,3]": 1.0,
+        "ship.delay[38,0,4]": 1.0,
+        "ship.delay[48,0,1]": 1.0,
+        "ship.delay[48,0,2]": 1.0,
+        "ship.delay[48,0,3]": 1.0,
+        "ship.delay[48,0,4]": 1.0,
+        "ship.delay[51,0,1]": 1.0,
+        "ship.delay[51,0,2]": 1.0,
+        "ship.delay[51,0,3]": 1.0,
+        "ship.delay[51,0,4]": 1.0,
+        "ship.delay[52,0,1]": 1.0,
+        "ship.delay[52,0,2]": 1.0,
+        "ship.delay[52,0,3]": 1.0,
+        "ship.delay[52,0,4]": 1.0,
+        "ship.delay[52,1,1]": 1.0,
+        "ship.delay[52,1,2]": 1.0,
+        "ship.delay[52,1,3]": 1.0,
+        "ship.delay[52,1,4]": 1.0,
+        "ship.delay[54,0,1]": 1.0,
+        "ship.delay[54,0,2]": 1.0,
+        "ship.delay[54,0,3]": 1.0,
+        "ship.delay[54,0,4]": 1.0,
+        "ship.delay[55,0,1]": 1.0,
+        "ship.delay[55,0,2]": 1.0,
+        "ship.delay[55,0,3]": 1.0,
+        "ship.delay[55,0,4]": 1.0,
+        "ship.delay[58,0,1]": 1.0,
+        "ship.delay[58,0,2]": 1.0,
+        "ship.delay[58,0,3]": 1.0,
+        "ship.delay[58,0,4]": 1.0,
+        "ship.delay[62,0,1]": 1.0,
+        "ship.delay[62,0,2]": 1.0,
+        "ship.delay[62,0,3]": 1.0,
+        "ship.delay[62,0,4]": 1.0,
+        "ship.delay[68,0,1]": 1.0,
+        "ship.delay[68,0,2]": 1.0,
+        "ship.delay[68,0,3]": 1.0,
+        "ship.delay[68,0,4]": 1.0,
+        "ship.delay[71,0,1]": 1.0,
+        "ship.delay[71,0,2]": 1.0,
+        "ship.delay[71,0,3]": 1.0,
+        "ship.delay[71,0,4]": 1.0,
+        "ship.delay[90,0,1]": 1.0,
+        "ship.delay[90,0,2]": 1.0,
+        "ship.delay[90,0,3]": 1.0,
+        "ship.delay[90,0,4]": 1.0,
+        "ship.delay[90,1,1]": 1.0,
+        "ship.delay[90,1,2]": 1.0,
+        "ship.delay[90,1,3]": 1.0,
+        "ship.delay[90,1,4]": 1.0
+      },
+      "name": "ship.delayed_ship_budget",
+      "rhs": 2.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[52,0,1]": 1.0,
+        "ship.delay[52,0,2]": 1.0,
+        "ship.delay[52,0,3]": 1.0,
+        "ship.delay[52,0,4]": 1.0,
+        "ship.delay[52,1,1]": -1.0,
+        "ship.delay[52,1,2]": -1.0,
+        "ship.delay[52,1,3]": -1.0,
+        "ship.delay[52,1,4]": -1.0
+      },
+      "name": "ship.symmetry_active[52,0]",
+      "rhs": 0.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.delay[52,0,1]": 1.0,
+        "ship.delay[52,0,2]": 2.0,
+        "ship.delay[52,0,3]": 3.0,
+        "ship.delay[52,0,4]": 4.0,
+        "ship.delay[52,1,1]": -1.0,
+        "ship.delay[52,1,2]": -2.0,
+        "ship.delay[52,1,3]": -3.0,
+        "ship.delay[52,1,4]": -4.0
+      },
+      "name": "ship.symmetry_delay[52,0]",
+      "rhs": 0.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,1]": 1.0,
+        "ship.delay[90,0,2]": 1.0,
+        "ship.delay[90,0,3]": 1.0,
+        "ship.delay[90,0,4]": 1.0,
+        "ship.delay[90,1,1]": -1.0,
+        "ship.delay[90,1,2]": -1.0,
+        "ship.delay[90,1,3]": -1.0,
+        "ship.delay[90,1,4]": -1.0
+      },
+      "name": "ship.symmetry_active[90,0]",
+      "rhs": 0.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,1]": 1.0,
+        "ship.delay[90,0,2]": 2.0,
+        "ship.delay[90,0,3]": 3.0,
+        "ship.delay[90,0,4]": 4.0,
+        "ship.delay[90,1,1]": -1.0,
+        "ship.delay[90,1,2]": -2.0,
+        "ship.delay[90,1,3]": -3.0,
+        "ship.delay[90,1,4]": -4.0
+      },
+      "name": "ship.symmetry_delay[90,0]",
+      "rhs": 0.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.delay[48,0,4]": -4.0,
+        "ship.delay[51,0,1]": -4.0,
+        "ship.delay[51,0,2]": -4.0,
+        "ship.delay[51,0,3]": -4.0,
+        "ship.delay[51,0,4]": -4.0,
+        "ship.qc_saturated[51]": -4.0
+      },
+      "name": "ship.qc_threshold_high[51]",
+      "rhs": -4.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[48,0,4]": 4.0,
+        "ship.delay[51,0,1]": 4.0,
+        "ship.delay[51,0,2]": 4.0,
+        "ship.delay[51,0,3]": 4.0,
+        "ship.delay[51,0,4]": 4.0,
+        "ship.qc_saturated[51]": 4.0
+      },
+      "name": "ship.qc_threshold_low[51]",
+      "rhs": 8.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[51,ship.delay[48,0,4]]": 1.0,
+        "ship.qc_saturated[51]": -1.0
+      },
+      "name": "ship.qc_product[51,ship.delay[48,0,4]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[48,0,4]": -1.0,
+        "ship.qc_product[51,ship.delay[48,0,4]]": 1.0
+      },
+      "name": "ship.qc_product[51,ship.delay[48,0,4]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[48,0,4]": -1.0,
+        "ship.qc_product[51,ship.delay[48,0,4]]": 1.0,
+        "ship.qc_saturated[51]": -1.0
+      },
+      "name": "ship.qc_product[51,ship.delay[48,0,4]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[51,ship.delay[51,0,1]]": 1.0,
+        "ship.qc_saturated[51]": -1.0
+      },
+      "name": "ship.qc_product[51,ship.delay[51,0,1]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[51,0,1]": -1.0,
+        "ship.qc_product[51,ship.delay[51,0,1]]": 1.0
+      },
+      "name": "ship.qc_product[51,ship.delay[51,0,1]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[51,0,1]": -1.0,
+        "ship.qc_product[51,ship.delay[51,0,1]]": 1.0,
+        "ship.qc_saturated[51]": -1.0
+      },
+      "name": "ship.qc_product[51,ship.delay[51,0,1]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[51,ship.delay[51,0,2]]": 1.0,
+        "ship.qc_saturated[51]": -1.0
+      },
+      "name": "ship.qc_product[51,ship.delay[51,0,2]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[51,0,2]": -1.0,
+        "ship.qc_product[51,ship.delay[51,0,2]]": 1.0
+      },
+      "name": "ship.qc_product[51,ship.delay[51,0,2]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[51,0,2]": -1.0,
+        "ship.qc_product[51,ship.delay[51,0,2]]": 1.0,
+        "ship.qc_saturated[51]": -1.0
+      },
+      "name": "ship.qc_product[51,ship.delay[51,0,2]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[51,ship.delay[51,0,3]]": 1.0,
+        "ship.qc_saturated[51]": -1.0
+      },
+      "name": "ship.qc_product[51,ship.delay[51,0,3]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[51,0,3]": -1.0,
+        "ship.qc_product[51,ship.delay[51,0,3]]": 1.0
+      },
+      "name": "ship.qc_product[51,ship.delay[51,0,3]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[51,0,3]": -1.0,
+        "ship.qc_product[51,ship.delay[51,0,3]]": 1.0,
+        "ship.qc_saturated[51]": -1.0
+      },
+      "name": "ship.qc_product[51,ship.delay[51,0,3]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[51,ship.delay[51,0,4]]": 1.0,
+        "ship.qc_saturated[51]": -1.0
+      },
+      "name": "ship.qc_product[51,ship.delay[51,0,4]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[51,0,4]": -1.0,
+        "ship.qc_product[51,ship.delay[51,0,4]]": 1.0
+      },
+      "name": "ship.qc_product[51,ship.delay[51,0,4]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[51,0,4]": -1.0,
+        "ship.qc_product[51,ship.delay[51,0,4]]": 1.0,
+        "ship.qc_saturated[51]": -1.0
+      },
+      "name": "ship.qc_product[51,ship.delay[51,0,4]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.delay[55,0,4]": 4.0,
+        "ship.delay[58,0,1]": 4.0,
+        "ship.delay[58,0,2]": 4.0,
+        "ship.delay[58,0,3]": 4.0,
+        "ship.delay[58,0,4]": 4.0,
+        "ship.delay[90,0,1]": -4.0,
+        "ship.delay[90,0,2]": -4.0,
+        "ship.delay[90,0,3]": -4.0,
+        "ship.delay[90,0,4]": -4.0,
+        "ship.delay[90,1,1]": -4.0,
+        "ship.delay[90,1,2]": -4.0,
+        "ship.delay[90,1,3]": -4.0,
+        "ship.delay[90,1,4]": -4.0,
+        "ship.qc_saturated[90]": -12.0
+      },
+      "name": "ship.qc_threshold_high[90]",
+      "rhs": -4.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[55,0,4]": -4.0,
+        "ship.delay[58,0,1]": -4.0,
+        "ship.delay[58,0,2]": -4.0,
+        "ship.delay[58,0,3]": -4.0,
+        "ship.delay[58,0,4]": -4.0,
+        "ship.delay[90,0,1]": 4.0,
+        "ship.delay[90,0,2]": 4.0,
+        "ship.delay[90,0,3]": 4.0,
+        "ship.delay[90,0,4]": 4.0,
+        "ship.delay[90,1,1]": 4.0,
+        "ship.delay[90,1,2]": 4.0,
+        "ship.delay[90,1,3]": 4.0,
+        "ship.delay[90,1,4]": 4.0,
+        "ship.qc_saturated[90]": 4.0
+      },
+      "name": "ship.qc_threshold_low[90]",
+      "rhs": 8.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[90,ship.delay[55,0,4]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[55,0,4]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[55,0,4]": -1.0,
+        "ship.qc_product[90,ship.delay[55,0,4]]": 1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[55,0,4]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[55,0,4]": -1.0,
+        "ship.qc_product[90,ship.delay[55,0,4]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[55,0,4]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[90,ship.delay[58,0,1]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[58,0,1]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,1]": -1.0,
+        "ship.qc_product[90,ship.delay[58,0,1]]": 1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[58,0,1]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,1]": -1.0,
+        "ship.qc_product[90,ship.delay[58,0,1]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[58,0,1]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[90,ship.delay[58,0,2]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[58,0,2]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,2]": -1.0,
+        "ship.qc_product[90,ship.delay[58,0,2]]": 1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[58,0,2]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,2]": -1.0,
+        "ship.qc_product[90,ship.delay[58,0,2]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[58,0,2]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[90,ship.delay[58,0,3]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[58,0,3]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,3]": -1.0,
+        "ship.qc_product[90,ship.delay[58,0,3]]": 1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[58,0,3]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,3]": -1.0,
+        "ship.qc_product[90,ship.delay[58,0,3]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[58,0,3]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[90,ship.delay[58,0,4]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[58,0,4]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,4]": -1.0,
+        "ship.qc_product[90,ship.delay[58,0,4]]": 1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[58,0,4]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,4]": -1.0,
+        "ship.qc_product[90,ship.delay[58,0,4]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[58,0,4]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[90,ship.delay[90,0,1]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,0,1]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,1]": -1.0,
+        "ship.qc_product[90,ship.delay[90,0,1]]": 1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,0,1]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,1]": -1.0,
+        "ship.qc_product[90,ship.delay[90,0,1]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,0,1]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[90,ship.delay[90,0,2]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,0,2]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,2]": -1.0,
+        "ship.qc_product[90,ship.delay[90,0,2]]": 1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,0,2]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,2]": -1.0,
+        "ship.qc_product[90,ship.delay[90,0,2]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,0,2]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[90,ship.delay[90,0,3]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,0,3]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,3]": -1.0,
+        "ship.qc_product[90,ship.delay[90,0,3]]": 1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,0,3]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,3]": -1.0,
+        "ship.qc_product[90,ship.delay[90,0,3]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,0,3]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[90,ship.delay[90,0,4]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,0,4]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,4]": -1.0,
+        "ship.qc_product[90,ship.delay[90,0,4]]": 1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,0,4]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,4]": -1.0,
+        "ship.qc_product[90,ship.delay[90,0,4]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,0,4]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[90,ship.delay[90,1,1]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,1,1]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,1,1]": -1.0,
+        "ship.qc_product[90,ship.delay[90,1,1]]": 1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,1,1]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,1,1]": -1.0,
+        "ship.qc_product[90,ship.delay[90,1,1]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,1,1]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[90,ship.delay[90,1,2]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,1,2]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,1,2]": -1.0,
+        "ship.qc_product[90,ship.delay[90,1,2]]": 1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,1,2]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,1,2]": -1.0,
+        "ship.qc_product[90,ship.delay[90,1,2]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,1,2]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[90,ship.delay[90,1,3]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,1,3]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,1,3]": -1.0,
+        "ship.qc_product[90,ship.delay[90,1,3]]": 1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,1,3]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,1,3]": -1.0,
+        "ship.qc_product[90,ship.delay[90,1,3]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,1,3]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[90,ship.delay[90,1,4]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,1,4]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,1,4]": -1.0,
+        "ship.qc_product[90,ship.delay[90,1,4]]": 1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,1,4]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,1,4]": -1.0,
+        "ship.qc_product[90,ship.delay[90,1,4]]": 1.0,
+        "ship.qc_saturated[90]": -1.0
+      },
+      "name": "ship.qc_product[90,ship.delay[90,1,4]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,2]": 4.0,
+        "ship.delay[58,0,3]": 4.0,
+        "ship.delay[58,0,4]": 4.0,
+        "ship.delay[90,0,2]": -4.0,
+        "ship.delay[90,0,3]": -4.0,
+        "ship.delay[90,0,4]": -4.0,
+        "ship.delay[90,1,2]": -4.0,
+        "ship.delay[90,1,3]": -4.0,
+        "ship.delay[90,1,4]": -4.0,
+        "ship.qc_saturated[91]": -8.0
+      },
+      "name": "ship.qc_threshold_high[91]",
+      "rhs": -4.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,2]": -4.0,
+        "ship.delay[58,0,3]": -4.0,
+        "ship.delay[58,0,4]": -4.0,
+        "ship.delay[90,0,2]": 4.0,
+        "ship.delay[90,0,3]": 4.0,
+        "ship.delay[90,0,4]": 4.0,
+        "ship.delay[90,1,2]": 4.0,
+        "ship.delay[90,1,3]": 4.0,
+        "ship.delay[90,1,4]": 4.0,
+        "ship.qc_saturated[91]": 4.0
+      },
+      "name": "ship.qc_threshold_low[91]",
+      "rhs": 8.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[91,ship.delay[58,0,2]]": 1.0,
+        "ship.qc_saturated[91]": -1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[58,0,2]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,2]": -1.0,
+        "ship.qc_product[91,ship.delay[58,0,2]]": 1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[58,0,2]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,2]": -1.0,
+        "ship.qc_product[91,ship.delay[58,0,2]]": 1.0,
+        "ship.qc_saturated[91]": -1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[58,0,2]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[91,ship.delay[58,0,3]]": 1.0,
+        "ship.qc_saturated[91]": -1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[58,0,3]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,3]": -1.0,
+        "ship.qc_product[91,ship.delay[58,0,3]]": 1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[58,0,3]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,3]": -1.0,
+        "ship.qc_product[91,ship.delay[58,0,3]]": 1.0,
+        "ship.qc_saturated[91]": -1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[58,0,3]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[91,ship.delay[58,0,4]]": 1.0,
+        "ship.qc_saturated[91]": -1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[58,0,4]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,4]": -1.0,
+        "ship.qc_product[91,ship.delay[58,0,4]]": 1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[58,0,4]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,4]": -1.0,
+        "ship.qc_product[91,ship.delay[58,0,4]]": 1.0,
+        "ship.qc_saturated[91]": -1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[58,0,4]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[91,ship.delay[90,0,2]]": 1.0,
+        "ship.qc_saturated[91]": -1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[90,0,2]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,2]": -1.0,
+        "ship.qc_product[91,ship.delay[90,0,2]]": 1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[90,0,2]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,2]": -1.0,
+        "ship.qc_product[91,ship.delay[90,0,2]]": 1.0,
+        "ship.qc_saturated[91]": -1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[90,0,2]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[91,ship.delay[90,0,3]]": 1.0,
+        "ship.qc_saturated[91]": -1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[90,0,3]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,3]": -1.0,
+        "ship.qc_product[91,ship.delay[90,0,3]]": 1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[90,0,3]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,3]": -1.0,
+        "ship.qc_product[91,ship.delay[90,0,3]]": 1.0,
+        "ship.qc_saturated[91]": -1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[90,0,3]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[91,ship.delay[90,0,4]]": 1.0,
+        "ship.qc_saturated[91]": -1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[90,0,4]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,4]": -1.0,
+        "ship.qc_product[91,ship.delay[90,0,4]]": 1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[90,0,4]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,4]": -1.0,
+        "ship.qc_product[91,ship.delay[90,0,4]]": 1.0,
+        "ship.qc_saturated[91]": -1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[90,0,4]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[91,ship.delay[90,1,2]]": 1.0,
+        "ship.qc_saturated[91]": -1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[90,1,2]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,1,2]": -1.0,
+        "ship.qc_product[91,ship.delay[90,1,2]]": 1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[90,1,2]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,1,2]": -1.0,
+        "ship.qc_product[91,ship.delay[90,1,2]]": 1.0,
+        "ship.qc_saturated[91]": -1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[90,1,2]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[91,ship.delay[90,1,3]]": 1.0,
+        "ship.qc_saturated[91]": -1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[90,1,3]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,1,3]": -1.0,
+        "ship.qc_product[91,ship.delay[90,1,3]]": 1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[90,1,3]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,1,3]": -1.0,
+        "ship.qc_product[91,ship.delay[90,1,3]]": 1.0,
+        "ship.qc_saturated[91]": -1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[90,1,3]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[91,ship.delay[90,1,4]]": 1.0,
+        "ship.qc_saturated[91]": -1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[90,1,4]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,1,4]": -1.0,
+        "ship.qc_product[91,ship.delay[90,1,4]]": 1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[90,1,4]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,1,4]": -1.0,
+        "ship.qc_product[91,ship.delay[90,1,4]]": 1.0,
+        "ship.qc_saturated[91]": -1.0
+      },
+      "name": "ship.qc_product[91,ship.delay[90,1,4]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,3]": 4.0,
+        "ship.delay[58,0,4]": 4.0,
+        "ship.delay[90,0,3]": -4.0,
+        "ship.delay[90,0,4]": -4.0,
+        "ship.delay[90,1,3]": -4.0,
+        "ship.delay[90,1,4]": -4.0,
+        "ship.qc_saturated[92]": -8.0
+      },
+      "name": "ship.qc_threshold_high[92]",
+      "rhs": -4.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,3]": -4.0,
+        "ship.delay[58,0,4]": -4.0,
+        "ship.delay[90,0,3]": 4.0,
+        "ship.delay[90,0,4]": 4.0,
+        "ship.delay[90,1,3]": 4.0,
+        "ship.delay[90,1,4]": 4.0,
+        "ship.qc_saturated[92]": 4.0
+      },
+      "name": "ship.qc_threshold_low[92]",
+      "rhs": 8.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[92,ship.delay[58,0,3]]": 1.0,
+        "ship.qc_saturated[92]": -1.0
+      },
+      "name": "ship.qc_product[92,ship.delay[58,0,3]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,3]": -1.0,
+        "ship.qc_product[92,ship.delay[58,0,3]]": 1.0
+      },
+      "name": "ship.qc_product[92,ship.delay[58,0,3]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,3]": -1.0,
+        "ship.qc_product[92,ship.delay[58,0,3]]": 1.0,
+        "ship.qc_saturated[92]": -1.0
+      },
+      "name": "ship.qc_product[92,ship.delay[58,0,3]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[92,ship.delay[58,0,4]]": 1.0,
+        "ship.qc_saturated[92]": -1.0
+      },
+      "name": "ship.qc_product[92,ship.delay[58,0,4]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,4]": -1.0,
+        "ship.qc_product[92,ship.delay[58,0,4]]": 1.0
+      },
+      "name": "ship.qc_product[92,ship.delay[58,0,4]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,4]": -1.0,
+        "ship.qc_product[92,ship.delay[58,0,4]]": 1.0,
+        "ship.qc_saturated[92]": -1.0
+      },
+      "name": "ship.qc_product[92,ship.delay[58,0,4]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[92,ship.delay[90,0,3]]": 1.0,
+        "ship.qc_saturated[92]": -1.0
+      },
+      "name": "ship.qc_product[92,ship.delay[90,0,3]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,3]": -1.0,
+        "ship.qc_product[92,ship.delay[90,0,3]]": 1.0
+      },
+      "name": "ship.qc_product[92,ship.delay[90,0,3]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,3]": -1.0,
+        "ship.qc_product[92,ship.delay[90,0,3]]": 1.0,
+        "ship.qc_saturated[92]": -1.0
+      },
+      "name": "ship.qc_product[92,ship.delay[90,0,3]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[92,ship.delay[90,0,4]]": 1.0,
+        "ship.qc_saturated[92]": -1.0
+      },
+      "name": "ship.qc_product[92,ship.delay[90,0,4]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,4]": -1.0,
+        "ship.qc_product[92,ship.delay[90,0,4]]": 1.0
+      },
+      "name": "ship.qc_product[92,ship.delay[90,0,4]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,4]": -1.0,
+        "ship.qc_product[92,ship.delay[90,0,4]]": 1.0,
+        "ship.qc_saturated[92]": -1.0
+      },
+      "name": "ship.qc_product[92,ship.delay[90,0,4]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[92,ship.delay[90,1,3]]": 1.0,
+        "ship.qc_saturated[92]": -1.0
+      },
+      "name": "ship.qc_product[92,ship.delay[90,1,3]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,1,3]": -1.0,
+        "ship.qc_product[92,ship.delay[90,1,3]]": 1.0
+      },
+      "name": "ship.qc_product[92,ship.delay[90,1,3]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,1,3]": -1.0,
+        "ship.qc_product[92,ship.delay[90,1,3]]": 1.0,
+        "ship.qc_saturated[92]": -1.0
+      },
+      "name": "ship.qc_product[92,ship.delay[90,1,3]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[92,ship.delay[90,1,4]]": 1.0,
+        "ship.qc_saturated[92]": -1.0
+      },
+      "name": "ship.qc_product[92,ship.delay[90,1,4]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,1,4]": -1.0,
+        "ship.qc_product[92,ship.delay[90,1,4]]": 1.0
+      },
+      "name": "ship.qc_product[92,ship.delay[90,1,4]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,1,4]": -1.0,
+        "ship.qc_product[92,ship.delay[90,1,4]]": 1.0,
+        "ship.qc_saturated[92]": -1.0
+      },
+      "name": "ship.qc_product[92,ship.delay[90,1,4]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,4]": 4.0,
+        "ship.delay[90,0,4]": -4.0,
+        "ship.delay[90,1,4]": -4.0,
+        "ship.qc_saturated[93]": -8.0
+      },
+      "name": "ship.qc_threshold_high[93]",
+      "rhs": -4.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,4]": -4.0,
+        "ship.delay[90,0,4]": 4.0,
+        "ship.delay[90,1,4]": 4.0,
+        "ship.qc_saturated[93]": 4.0
+      },
+      "name": "ship.qc_threshold_low[93]",
+      "rhs": 8.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[93,ship.delay[58,0,4]]": 1.0,
+        "ship.qc_saturated[93]": -1.0
+      },
+      "name": "ship.qc_product[93,ship.delay[58,0,4]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,4]": -1.0,
+        "ship.qc_product[93,ship.delay[58,0,4]]": 1.0
+      },
+      "name": "ship.qc_product[93,ship.delay[58,0,4]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[58,0,4]": -1.0,
+        "ship.qc_product[93,ship.delay[58,0,4]]": 1.0,
+        "ship.qc_saturated[93]": -1.0
+      },
+      "name": "ship.qc_product[93,ship.delay[58,0,4]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[93,ship.delay[90,0,4]]": 1.0,
+        "ship.qc_saturated[93]": -1.0
+      },
+      "name": "ship.qc_product[93,ship.delay[90,0,4]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,4]": -1.0,
+        "ship.qc_product[93,ship.delay[90,0,4]]": 1.0
+      },
+      "name": "ship.qc_product[93,ship.delay[90,0,4]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,0,4]": -1.0,
+        "ship.qc_product[93,ship.delay[90,0,4]]": 1.0,
+        "ship.qc_saturated[93]": -1.0
+      },
+      "name": "ship.qc_product[93,ship.delay[90,0,4]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    },
+    {
+      "coefficients": {
+        "ship.qc_product[93,ship.delay[90,1,4]]": 1.0,
+        "ship.qc_saturated[93]": -1.0
+      },
+      "name": "ship.qc_product[93,ship.delay[90,1,4]].le_s",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,1,4]": -1.0,
+        "ship.qc_product[93,ship.delay[90,1,4]]": 1.0
+      },
+      "name": "ship.qc_product[93,ship.delay[90,1,4]].le_q",
+      "rhs": 0.0,
+      "sense": "le"
+    },
+    {
+      "coefficients": {
+        "ship.delay[90,1,4]": -1.0,
+        "ship.qc_product[93,ship.delay[90,1,4]]": 1.0,
+        "ship.qc_saturated[93]": -1.0
+      },
+      "name": "ship.qc_product[93,ship.delay[90,1,4]].ge_sq",
+      "rhs": -1.0,
+      "sense": "ge"
+    }
+  ],
+  "model_horizon": 96,
+  "nominal_selector": {
+    "ship.delay[20,0,1]": 0,
+    "ship.delay[20,0,2]": 0,
+    "ship.delay[20,0,3]": 0,
+    "ship.delay[20,0,4]": 0,
+    "ship.delay[34,0,1]": 0,
+    "ship.delay[34,0,2]": 0,
+    "ship.delay[34,0,3]": 0,
+    "ship.delay[34,0,4]": 0,
+    "ship.delay[38,0,1]": 0,
+    "ship.delay[38,0,2]": 0,
+    "ship.delay[38,0,3]": 0,
+    "ship.delay[38,0,4]": 0,
+    "ship.delay[48,0,1]": 0,
+    "ship.delay[48,0,2]": 0,
+    "ship.delay[48,0,3]": 0,
+    "ship.delay[48,0,4]": 0,
+    "ship.delay[51,0,1]": 0,
+    "ship.delay[51,0,2]": 0,
+    "ship.delay[51,0,3]": 0,
+    "ship.delay[51,0,4]": 0,
+    "ship.delay[52,0,1]": 0,
+    "ship.delay[52,0,2]": 0,
+    "ship.delay[52,0,3]": 0,
+    "ship.delay[52,0,4]": 0,
+    "ship.delay[52,1,1]": 0,
+    "ship.delay[52,1,2]": 0,
+    "ship.delay[52,1,3]": 0,
+    "ship.delay[52,1,4]": 0,
+    "ship.delay[54,0,1]": 0,
+    "ship.delay[54,0,2]": 0,
+    "ship.delay[54,0,3]": 0,
+    "ship.delay[54,0,4]": 0,
+    "ship.delay[55,0,1]": 0,
+    "ship.delay[55,0,2]": 0,
+    "ship.delay[55,0,3]": 0,
+    "ship.delay[55,0,4]": 0,
+    "ship.delay[58,0,1]": 0,
+    "ship.delay[58,0,2]": 0,
+    "ship.delay[58,0,3]": 0,
+    "ship.delay[58,0,4]": 0,
+    "ship.delay[62,0,1]": 0,
+    "ship.delay[62,0,2]": 0,
+    "ship.delay[62,0,3]": 0,
+    "ship.delay[62,0,4]": 0,
+    "ship.delay[68,0,1]": 0,
+    "ship.delay[68,0,2]": 0,
+    "ship.delay[68,0,3]": 0,
+    "ship.delay[68,0,4]": 0,
+    "ship.delay[71,0,1]": 0,
+    "ship.delay[71,0,2]": 0,
+    "ship.delay[71,0,3]": 0,
+    "ship.delay[71,0,4]": 0,
+    "ship.delay[90,0,1]": 0,
+    "ship.delay[90,0,2]": 0,
+    "ship.delay[90,0,3]": 0,
+    "ship.delay[90,0,4]": 0,
+    "ship.delay[90,1,1]": 0,
+    "ship.delay[90,1,2]": 0,
+    "ship.delay[90,1,3]": 0,
+    "ship.delay[90,1,4]": 0,
+    "ship.qc_product[51,ship.delay[48,0,4]]": 0,
+    "ship.qc_product[51,ship.delay[51,0,1]]": 0,
+    "ship.qc_product[51,ship.delay[51,0,2]]": 0,
+    "ship.qc_product[51,ship.delay[51,0,3]]": 0,
+    "ship.qc_product[51,ship.delay[51,0,4]]": 0,
+    "ship.qc_product[90,ship.delay[55,0,4]]": 0,
+    "ship.qc_product[90,ship.delay[58,0,1]]": 0,
+    "ship.qc_product[90,ship.delay[58,0,2]]": 0,
+    "ship.qc_product[90,ship.delay[58,0,3]]": 0,
+    "ship.qc_product[90,ship.delay[58,0,4]]": 0,
+    "ship.qc_product[90,ship.delay[90,0,1]]": 0,
+    "ship.qc_product[90,ship.delay[90,0,2]]": 0,
+    "ship.qc_product[90,ship.delay[90,0,3]]": 0,
+    "ship.qc_product[90,ship.delay[90,0,4]]": 0,
+    "ship.qc_product[90,ship.delay[90,1,1]]": 0,
+    "ship.qc_product[90,ship.delay[90,1,2]]": 0,
+    "ship.qc_product[90,ship.delay[90,1,3]]": 0,
+    "ship.qc_product[90,ship.delay[90,1,4]]": 0,
+    "ship.qc_product[91,ship.delay[58,0,2]]": 0,
+    "ship.qc_product[91,ship.delay[58,0,3]]": 0,
+    "ship.qc_product[91,ship.delay[58,0,4]]": 0,
+    "ship.qc_product[91,ship.delay[90,0,2]]": 0,
+    "ship.qc_product[91,ship.delay[90,0,3]]": 0,
+    "ship.qc_product[91,ship.delay[90,0,4]]": 0,
+    "ship.qc_product[91,ship.delay[90,1,2]]": 0,
+    "ship.qc_product[91,ship.delay[90,1,3]]": 0,
+    "ship.qc_product[91,ship.delay[90,1,4]]": 0,
+    "ship.qc_product[92,ship.delay[58,0,3]]": 0,
+    "ship.qc_product[92,ship.delay[58,0,4]]": 0,
+    "ship.qc_product[92,ship.delay[90,0,3]]": 0,
+    "ship.qc_product[92,ship.delay[90,0,4]]": 0,
+    "ship.qc_product[92,ship.delay[90,1,3]]": 0,
+    "ship.qc_product[92,ship.delay[90,1,4]]": 0,
+    "ship.qc_product[93,ship.delay[58,0,4]]": 0,
+    "ship.qc_product[93,ship.delay[90,0,4]]": 0,
+    "ship.qc_product[93,ship.delay[90,1,4]]": 0,
+    "ship.qc_saturated[51]": 1,
+    "ship.qc_saturated[90]": 1,
+    "ship.qc_saturated[91]": 1,
+    "ship.qc_saturated[92]": 1,
+    "ship.qc_saturated[93]": 1
+  },
+  "outputs": {
+    "ship.active_quay_cranes": {
+      "key": "ship.active_quay_cranes",
+      "nominal": [
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        8.0,
+        8.0,
+        12.0,
+        12.0,
+        12.0,
+        12.0,
+        12.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        4.0,
+        4.0,
+        4.0,
+        4.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        12.0,
+        12.0,
+        12.0,
+        12.0,
+        12.0,
+        12.0,
+        12.0,
+        12.0,
+        12.0,
+        12.0,
+        16.0,
+        16.0,
+        16.0,
+        20.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        16.0,
+        16.0
+      ],
+      "selector_columns_path": "ship_active_quay_cranes_columns.npz",
+      "unit": "quay_crane"
+    },
+    "ship.arrival_count": {
+      "key": "ship.arrival_count",
+      "nominal": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "selector_columns_path": "ship_arrival_count_columns.npz",
+      "unit": "ship"
+    },
+    "ship.delayed_out_of_current_day_count": {
+      "key": "ship.delayed_out_of_current_day_count",
+      "nominal": [
+        0.0
+      ],
+      "selector_columns_path": "ship_delayed_out_of_current_day_count_columns.npz",
+      "unit": "ship"
+    },
+    "ship.in_port_count": {
+      "key": "ship.in_port_count",
+      "nominal": [
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        7.0,
+        7.0,
+        7.0,
+        6.0,
+        6.0,
+        5.0,
+        5.0,
+        5.0,
+        4.0,
+        4.0,
+        4.0,
+        2.0,
+        2.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        4.0,
+        4.0,
+        4.0,
+        5.0,
+        6.0,
+        6.0,
+        7.0,
+        8.0,
+        8.0,
+        8.0,
+        9.0,
+        9.0,
+        9.0,
+        9.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        9.0,
+        9.0,
+        10.0,
+        10.0,
+        9.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        9.0,
+        9.0,
+        9.0,
+        8.0,
+        6.0,
+        6.0,
+        5.0,
+        4.0,
+        4.0,
+        4.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        4.0,
+        4.0
+      ],
+      "selector_columns_path": "ship_in_port_count_columns.npz",
+      "unit": "ship"
+    },
+    "ship.quay_crane_power_kw": {
+      "key": "ship.quay_crane_power_kw",
+      "nominal": [
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        4000.0,
+        4000.0,
+        6000.0,
+        6000.0,
+        6000.0,
+        6000.0,
+        6000.0,
+        4000.0,
+        4000.0,
+        4000.0,
+        4000.0,
+        4000.0,
+        2000.0,
+        2000.0,
+        2000.0,
+        2000.0,
+        4000.0,
+        4000.0,
+        4000.0,
+        4000.0,
+        6000.0,
+        6000.0,
+        6000.0,
+        6000.0,
+        6000.0,
+        6000.0,
+        6000.0,
+        6000.0,
+        6000.0,
+        6000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        10000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        8000.0,
+        10000.0,
+        10000.0,
+        10000.0,
+        10000.0,
+        8000.0,
+        8000.0
+      ],
+      "selector_columns_path": "ship_quay_crane_power_kw_columns.npz",
+      "unit": "kW"
+    },
+    "ship.shore_power_kw": {
+      "key": "ship.shore_power_kw",
+      "nominal": [
+        24000.0,
+        24000.0,
+        24000.0,
+        24000.0,
+        24000.0,
+        24000.0,
+        24000.0,
+        21000.0,
+        21000.0,
+        21000.0,
+        18000.0,
+        18000.0,
+        15000.0,
+        15000.0,
+        15000.0,
+        12000.0,
+        12000.0,
+        12000.0,
+        6000.0,
+        6000.0,
+        9000.0,
+        9000.0,
+        9000.0,
+        9000.0,
+        9000.0,
+        6000.0,
+        6000.0,
+        6000.0,
+        6000.0,
+        6000.0,
+        3000.0,
+        3000.0,
+        3000.0,
+        3000.0,
+        6000.0,
+        6000.0,
+        6000.0,
+        6000.0,
+        9000.0,
+        9000.0,
+        9000.0,
+        9000.0,
+        9000.0,
+        9000.0,
+        9000.0,
+        9000.0,
+        9000.0,
+        9000.0,
+        12000.0,
+        12000.0,
+        12000.0,
+        15000.0,
+        18000.0,
+        18000.0,
+        21000.0,
+        24000.0,
+        24000.0,
+        24000.0,
+        27000.0,
+        27000.0,
+        27000.0,
+        27000.0,
+        30000.0,
+        30000.0,
+        30000.0,
+        30000.0,
+        27000.0,
+        27000.0,
+        30000.0,
+        30000.0,
+        27000.0,
+        30000.0,
+        30000.0,
+        30000.0,
+        30000.0,
+        30000.0,
+        30000.0,
+        30000.0,
+        30000.0,
+        30000.0,
+        27000.0,
+        27000.0,
+        27000.0,
+        24000.0,
+        18000.0,
+        18000.0,
+        15000.0,
+        12000.0,
+        12000.0,
+        12000.0,
+        15000.0,
+        15000.0,
+        15000.0,
+        15000.0,
+        12000.0,
+        12000.0
+      ],
+      "selector_columns_path": "ship_shore_power_kw_columns.npz",
+      "unit": "kW"
+    },
+    "ship.task_release": {
+      "key": "ship.task_release",
+      "nominal": [
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        70.0,
+        70.0,
+        105.0,
+        105.0,
+        105.0,
+        105.0,
+        105.0,
+        70.0,
+        70.0,
+        70.0,
+        70.0,
+        70.0,
+        35.0,
+        35.0,
+        35.0,
+        35.0,
+        70.0,
+        70.0,
+        70.0,
+        70.0,
+        105.0,
+        105.0,
+        105.0,
+        105.0,
+        105.0,
+        105.0,
+        105.0,
+        105.0,
+        105.0,
+        105.0,
+        140.0,
+        140.0,
+        140.0,
+        175.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        175.0,
+        175.0,
+        175.0,
+        175.0,
+        140.0,
+        140.0
+      ],
+      "selector_columns_path": "ship_task_release_columns.npz",
+      "unit": "task"
+    }
+  },
+  "primary_selector_keys": [
+    "ship.delay[20,0,1]",
+    "ship.delay[20,0,2]",
+    "ship.delay[20,0,3]",
+    "ship.delay[20,0,4]",
+    "ship.delay[34,0,1]",
+    "ship.delay[34,0,2]",
+    "ship.delay[34,0,3]",
+    "ship.delay[34,0,4]",
+    "ship.delay[38,0,1]",
+    "ship.delay[38,0,2]",
+    "ship.delay[38,0,3]",
+    "ship.delay[38,0,4]",
+    "ship.delay[48,0,1]",
+    "ship.delay[48,0,2]",
+    "ship.delay[48,0,3]",
+    "ship.delay[48,0,4]",
+    "ship.delay[51,0,1]",
+    "ship.delay[51,0,2]",
+    "ship.delay[51,0,3]",
+    "ship.delay[51,0,4]",
+    "ship.delay[52,0,1]",
+    "ship.delay[52,0,2]",
+    "ship.delay[52,0,3]",
+    "ship.delay[52,0,4]",
+    "ship.delay[52,1,1]",
+    "ship.delay[52,1,2]",
+    "ship.delay[52,1,3]",
+    "ship.delay[52,1,4]",
+    "ship.delay[54,0,1]",
+    "ship.delay[54,0,2]",
+    "ship.delay[54,0,3]",
+    "ship.delay[54,0,4]",
+    "ship.delay[55,0,1]",
+    "ship.delay[55,0,2]",
+    "ship.delay[55,0,3]",
+    "ship.delay[55,0,4]",
+    "ship.delay[58,0,1]",
+    "ship.delay[58,0,2]",
+    "ship.delay[58,0,3]",
+    "ship.delay[58,0,4]",
+    "ship.delay[62,0,1]",
+    "ship.delay[62,0,2]",
+    "ship.delay[62,0,3]",
+    "ship.delay[62,0,4]",
+    "ship.delay[68,0,1]",
+    "ship.delay[68,0,2]",
+    "ship.delay[68,0,3]",
+    "ship.delay[68,0,4]",
+    "ship.delay[71,0,1]",
+    "ship.delay[71,0,2]",
+    "ship.delay[71,0,3]",
+    "ship.delay[71,0,4]",
+    "ship.delay[90,0,1]",
+    "ship.delay[90,0,2]",
+    "ship.delay[90,0,3]",
+    "ship.delay[90,0,4]",
+    "ship.delay[90,1,1]",
+    "ship.delay[90,1,2]",
+    "ship.delay[90,1,3]",
+    "ship.delay[90,1,4]"
+  ],
+  "profile_name": "quarter_hour_96",
+  "proofs": {
+    "early_arrival_selectors": 0,
+    "modulo_wraparound_used": false,
+    "quay_crane_bound_statuses": [
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL",
+      "OPTIMAL"
+    ],
+    "quay_crane_maximum": [
+      32.0,
+      32.0,
+      32.0,
+      32.0,
+      32.0,
+      32.0,
+      32.0,
+      28.0,
+      28.0,
+      28.0,
+      24.0,
+      24.0,
+      20.0,
+      20.0,
+      20.0,
+      16.0,
+      16.0,
+      16.0,
+      8.0,
+      8.0,
+      12.0,
+      12.0,
+      12.0,
+      12.0,
+      12.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      12.0,
+      12.0,
+      12.0,
+      12.0,
+      12.0,
+      12.0,
+      12.0,
+      12.0,
+      12.0,
+      12.0,
+      16.0,
+      16.0,
+      16.0,
+      20.0,
+      28.0,
+      28.0,
+      32.0,
+      36.0,
+      32.0,
+      32.0,
+      36.0,
+      36.0,
+      36.0,
+      36.0,
+      40.0,
+      40.0,
+      40.0,
+      40.0,
+      40.0,
+      40.0,
+      44.0,
+      44.0,
+      40.0,
+      44.0,
+      44.0,
+      44.0,
+      40.0,
+      40.0,
+      40.0,
+      40.0,
+      40.0,
+      40.0,
+      40.0,
+      40.0,
+      40.0,
+      40.0,
+      32.0,
+      32.0,
+      28.0,
+      24.0,
+      24.0,
+      24.0,
+      28.0,
+      24.0,
+      24.0,
+      24.0,
+      20.0,
+      20.0
+    ],
+    "quay_crane_minimum": [
+      32.0,
+      32.0,
+      32.0,
+      32.0,
+      32.0,
+      32.0,
+      32.0,
+      28.0,
+      28.0,
+      28.0,
+      24.0,
+      24.0,
+      20.0,
+      20.0,
+      20.0,
+      16.0,
+      16.0,
+      16.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      12.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      12.0,
+      12.0,
+      12.0,
+      12.0,
+      12.0,
+      12.0,
+      12.0,
+      12.0,
+      12.0,
+      12.0,
+      16.0,
+      16.0,
+      20.0,
+      24.0,
+      24.0,
+      24.0,
+      28.0,
+      32.0,
+      32.0,
+      32.0,
+      36.0,
+      36.0,
+      36.0,
+      36.0,
+      36.0,
+      36.0,
+      36.0,
+      36.0,
+      32.0,
+      32.0,
+      36.0,
+      36.0,
+      36.0,
+      40.0,
+      40.0,
+      40.0,
+      40.0,
+      40.0,
+      36.0,
+      36.0,
+      36.0,
+      32.0,
+      24.0,
+      24.0,
+      20.0,
+      16.0,
+      16.0,
+      16.0,
+      12.0,
+      12.0,
+      12.0,
+      12.0,
+      16.0,
+      16.0
+    ],
+    "quay_crane_saturation_classification": [
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_nonsaturated",
+      "always_nonsaturated",
+      "always_nonsaturated",
+      "always_nonsaturated",
+      "always_nonsaturated",
+      "always_nonsaturated",
+      "always_nonsaturated",
+      "always_nonsaturated",
+      "always_nonsaturated",
+      "always_nonsaturated",
+      "always_nonsaturated",
+      "always_nonsaturated",
+      "always_nonsaturated",
+      "always_nonsaturated",
+      "always_nonsaturated",
+      "always_nonsaturated",
+      "always_nonsaturated",
+      "always_nonsaturated",
+      "always_nonsaturated",
+      "always_nonsaturated",
+      "always_nonsaturated",
+      "always_nonsaturated",
+      "always_nonsaturated",
+      "always_nonsaturated",
+      "always_nonsaturated",
+      "always_nonsaturated",
+      "always_nonsaturated",
+      "always_nonsaturated",
+      "always_nonsaturated",
+      "always_nonsaturated",
+      "always_nonsaturated",
+      "always_nonsaturated",
+      "always_nonsaturated",
+      "always_nonsaturated",
+      "always_nonsaturated",
+      "always_nonsaturated",
+      "crossing",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "always_saturated",
+      "crossing",
+      "crossing",
+      "crossing",
+      "crossing",
+      "always_saturated",
+      "always_saturated"
+    ],
+    "ship_builder_horizon": 288,
+    "ship_projection_window": [
+      96,
+      192
+    ],
+    "three_day_mass_conservation": true,
+    "three_day_nominal_total": 39
+  },
+  "schema_version": 1,
+  "selectors": [
+    {
+      "domain": "binary",
+      "key": "ship.delay[20,0,1]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[20,0,2]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[20,0,3]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[20,0,4]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[34,0,1]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[34,0,2]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[34,0,3]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[34,0,4]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[38,0,1]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[38,0,2]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[38,0,3]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[38,0,4]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[48,0,1]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[48,0,2]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[48,0,3]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[48,0,4]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[51,0,1]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[51,0,2]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[51,0,3]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[51,0,4]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[52,0,1]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[52,0,2]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[52,0,3]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[52,0,4]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[52,1,1]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[52,1,2]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[52,1,3]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[52,1,4]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[54,0,1]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[54,0,2]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[54,0,3]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[54,0,4]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[55,0,1]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[55,0,2]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[55,0,3]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[55,0,4]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[58,0,1]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[58,0,2]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[58,0,3]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[58,0,4]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[62,0,1]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[62,0,2]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[62,0,3]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[62,0,4]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[68,0,1]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[68,0,2]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[68,0,3]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[68,0,4]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[71,0,1]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[71,0,2]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[71,0,3]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[71,0,4]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[90,0,1]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[90,0,2]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[90,0,3]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[90,0,4]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[90,1,1]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[90,1,2]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[90,1,3]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.delay[90,1,4]",
+      "namespace": "ship_delay",
+      "role": "primary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_saturated[51]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[51,ship.delay[48,0,4]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[51,ship.delay[51,0,1]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[51,ship.delay[51,0,2]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[51,ship.delay[51,0,3]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[51,ship.delay[51,0,4]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_saturated[90]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[90,ship.delay[55,0,4]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[90,ship.delay[58,0,1]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[90,ship.delay[58,0,2]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[90,ship.delay[58,0,3]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[90,ship.delay[58,0,4]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[90,ship.delay[90,0,1]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[90,ship.delay[90,0,2]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[90,ship.delay[90,0,3]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[90,ship.delay[90,0,4]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[90,ship.delay[90,1,1]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[90,ship.delay[90,1,2]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[90,ship.delay[90,1,3]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[90,ship.delay[90,1,4]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_saturated[91]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[91,ship.delay[58,0,2]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[91,ship.delay[58,0,3]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[91,ship.delay[58,0,4]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[91,ship.delay[90,0,2]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[91,ship.delay[90,0,3]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[91,ship.delay[90,0,4]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[91,ship.delay[90,1,2]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[91,ship.delay[90,1,3]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[91,ship.delay[90,1,4]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_saturated[92]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[92,ship.delay[58,0,3]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[92,ship.delay[58,0,4]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[92,ship.delay[90,0,3]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[92,ship.delay[90,0,4]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[92,ship.delay[90,1,3]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[92,ship.delay[90,1,4]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_saturated[93]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[93,ship.delay[58,0,4]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[93,ship.delay[90,0,4]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    },
+    {
+      "domain": "binary",
+      "key": "ship.qc_product[93,ship.delay[90,1,4]]",
+      "namespace": "ship_delay",
+      "role": "auxiliary"
+    }
+  ],
+  "source_hashes": {
+    "canonical_payload_sha256": "1ac440cf33778f2dba7f65a122be4a6d432ca4a8eb1bcf83c7e7738650bf148d",
+    "generation_script_sha256": "ab659a919fd996c04d398dc6a09b9ff33a98fd0651c1e12557195d4ffad2601c",
+    "raw_file_sha256": "47e21db6eff99a454ae902f8ed82dc2b0746ca00669f4af1367a25eec2a3d1fb"
+  }
+}

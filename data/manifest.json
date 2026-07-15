@@ -1,0 +1,22 @@
+{
+  "files": {
+    "data/cases/C1.yaml": "fb0e07e417ffbfbc122434e583994ed77c6ad376b9af36c85e19457d5739ca7a",
+    "data/cases/C2.yaml": "8b138b06329bbd75935d29d56db487e594cec41946d86115f4ce4f002f2ef94d",
+    "data/cases/C3.yaml": "bd23c562fe52a3c32074002cb2baae90b3a40a2629e125b822cb5c726ff1a035",
+    "data/cases/C4.yaml": "f06fa2a79a33c53a1ff84cfc13497f12da55cb76bc9cc2be1a4843d069eb6278",
+    "data/deterministic/hourly_24/physical.json": "8cadf111fc09e3c478904b6a3c75278e413759d15e3ceadbe0d02e188f09e128",
+    "data/deterministic/quarter_hour_96/physical.json": "b4510d1a481f8b5a82e4568fb32e1f692152c50d7d098d545d214f9462f154af",
+    "data/profiles/hourly_24.yaml": "89ddcbb95a34844e48395d73b29a816b34859db43b80ad38277d9331d41404a3",
+    "data/profiles/quarter_hour_96.yaml": "a6c3d27596f818f0687fb00512640093c6a76bb3243cf9c1908d6ed6350a8def",
+    "data/uncertainty_bundles/.gitkeep": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "data/uncertainty_sources/ship_delay/hourly_24.json": "cef51579941d31b9f9c0239777d5b1c9085f21b9fad4371c8cf0ccf02777bcc2",
+    "data/uncertainty_sources/ship_delay/nhpp_three_day_24.csv": "5b8c5aa96e204d9d8478163b14e9b3a7c68b31a689cd9df9530854102b3829c2",
+    "data/uncertainty_sources/ship_delay/nhpp_three_day_96.csv": "e568af9fc9f313c90d151ac040dda6cb6b348a77af5d3f0224e4629887e1fa4d",
+    "data/uncertainty_sources/ship_delay/quarter_hour_96.json": "926e95af0f90b863245b150f291a502a059effd9eb8d3b0fa41cf60630935b31",
+    "data/uncertainty_sources/wind/hourly_24.json": "334dacefbe368f0d7f21d9148b43b715a59eee47fc11d600e8b82c2745ffedbc",
+    "data/uncertainty_sources/wind/quarter_hour_96.json": "6eaf598caecb654d343c801f03cec56779cac988b2ea637fa724a5b7b2d8cb72"
+  },
+  "generated_by": "tools/migrate_authoritative_inputs.py",
+  "legacy_solver_code_imported": false,
+  "schema_version": 1
+}

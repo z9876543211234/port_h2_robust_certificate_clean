@@ -1,0 +1,36 @@
+.DS_Store
+.pytest_cache/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+build/
+dist/
+.mplconfig/
+_bundle_cache/
+_comparison_bundle_cache/
+bundle_cache/
+grbnodes*/
+*.log
+checkpoints/*
+!checkpoints/.gitkeep
+results/*
+!results/.gitkeep
+
+# Historical or superseded experiment outputs are retained locally but are not
+# part of the authoritative GitHub snapshot.
+experiments/c1_large_port_12v_20260713/
+experiments/c2_c4_large_port_12v_20260714/
+experiments/c1_spill_deviation_scan_20260713/*
+!experiments/c1_spill_deviation_scan_20260713/run_scan.py
+experiments/c1_confirmed_main_budget_20260714/C1_ProposedRobustMain/
+experiments/c1_confirmed_main_budget_20260714/C2_NoHydrogenRobust/
+experiments/c1_confirmed_main_budget_20260714/C2_diagnostic_bundle/
+experiments/c1_confirmed_main_budget_20260714/C2_fixed_selector_diagnostic_bundle/
+experiments/c1_confirmed_main_budget_20260714/C2_leaf_diff_bundle/
+experiments/c1_confirmed_main_budget_20260714/C2_partition_diagnostic_bundle/
+experiments/c1_confirmed_main_budget_20260714/C2_refined_leaf_bundle/
+experiments/c1_confirmed_main_budget_20260714/validation/
+experiments/c1_confirmed_main_budget_20260714/validation_C2/
+experiments/c1_confirmed_main_budget_20260714/validation_C3/
+experiments/c1_confirmed_main_budget_20260714/validation_C4/

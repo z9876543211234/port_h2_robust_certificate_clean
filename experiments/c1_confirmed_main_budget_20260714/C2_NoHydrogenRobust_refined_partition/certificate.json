@@ -1,0 +1,40 @@
+{
+  "accepted_limited_solve": false,
+  "all_partition_leaves_optimal_or_empty": true,
+  "bounds_ordered": true,
+  "case_name": "C2_NoHydrogenRobust",
+  "case_semantic_sha256": "b316123d4dde77d954c485144b350dfbdf3f92b2a719d4f384ee97770a89e574",
+  "cost_adversary_status": "OPTIMAL",
+  "cost_partition_branch_keys": [
+    "wind.down[1]",
+    "wind.down[9]",
+    "ship.delay[51,0,2]",
+    "ship.delay[48,0,4]"
+  ],
+  "engineering_optimal": true,
+  "gap_abs": 0.09374999999997158,
+  "gap_rel": 0.000499166900452443,
+  "git_commit": "uncommitted",
+  "gurobi_version": "13.0.1",
+  "joint_bundle_sha256": "c86a258d698635b6279717fd8f4c4f19491024e01cbe1af0ed695b2a3c8714a5",
+  "lower_bound": 187.71918374019182,
+  "master_status": "OPTIMAL",
+  "max_abs_residual": 5.329070518200751e-15,
+  "model_horizon": 96,
+  "outer_gap_tolerance": 0.01,
+  "partition_oracle_used": true,
+  "phase1_adversary_status": "OPTIMAL",
+  "primal_replay_passed": true,
+  "profile_name": "quarter_hour_96",
+  "residual_check_passed": true,
+  "schema_version": 1,
+  "ship_builder_horizon": 288,
+  "ship_projection_window": [
+    96,
+    192
+  ],
+  "status": "engineering_optimal",
+  "time_limit_used_for_certificate": false,
+  "uncertainty_coverage_complete": true,
+  "upper_bound": 187.8129337401918
+}
