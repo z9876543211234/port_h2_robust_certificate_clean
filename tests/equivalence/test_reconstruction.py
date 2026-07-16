@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from dataclasses import replace
+
 import pytest
 
 from port_h2_certificate.compilers.compile_master import compile_master
@@ -39,3 +41,54 @@ def test_reconstruction_restores_eliminated_physical_variables(
     assert len(reconstructed.series["hydrogen_inventory_kg"]) == 5
     assert len(reconstructed.series["lohc_inventory_kg"]) == 5
     assert len(reconstructed.series["backlog_tasks"]) == 5
+
+
+def test_reconstruction_accounts_for_positive_agv_operation_cost(
+    toy_case, toy_joint_bundle
+) -> None:
+    from port_h2_certificate.reconstruct import reconstruct_recourse
+
+    case = toy_case()
+    operation_cost = 4.6
+    case = replace(
+        case,
+        cost=replace(
+            case.cost,
+            agv_operation_per_vehicle_hour=operation_cost,
+        ),
+    )
+    realization = toy_joint_bundle.evaluate(toy_joint_bundle.nominal_selector)
+    two_stage = TwoStageIR(
+        build_first_stage_ir(case, toy_joint_bundle),
+        build_recourse_ir(case, toy_joint_bundle),
+    )
+    master = compile_master(two_stage, [realization]).solve()
+    replay = compile_recourse(
+        two_stage.recourse, master.first_stage, realization
+    ).solve()
+    reconstructed = reconstruct_recourse(
+        case,
+        toy_joint_bundle,
+        master.first_stage,
+        realization,
+        replay.variables,
+    )
+    expected = (
+        operation_cost
+        * case.profile.dt_hours
+        / case.cost_scale
+        * sum(
+            replay.variables[(family, period)]
+            for family in ("agv_container_count", "agv_lohc_count")
+            for period in range(case.profile.periods)
+        )
+    )
+
+    assert reconstructed.cost_breakdown["agv_operation"] == pytest.approx(
+        expected,
+        abs=1e-10,
+    )
+    assert reconstructed.recourse_objective == pytest.approx(
+        replay.objective,
+        abs=1e-8,
+    )

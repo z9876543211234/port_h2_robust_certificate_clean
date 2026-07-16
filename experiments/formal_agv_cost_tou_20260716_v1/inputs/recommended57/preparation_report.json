@@ -1,0 +1,32 @@
+{
+  "base_load_kw_unique": [
+    20000.0
+  ],
+  "buy_price_levels": [
+    0.41,
+    0.63,
+    0.75
+  ],
+  "buy_price_strictly_above_sell": true,
+  "c3_config_written": false,
+  "grid_capacity_kw": {
+    "buy": 100000.0,
+    "sell": 300000.0
+  },
+  "horizon_periods": 96,
+  "sell_price_levels": [
+    0.205,
+    0.315,
+    0.375
+  ],
+  "ship_delay": {
+    "delayed_ship_budget": 2,
+    "max_delay_steps": 4,
+    "total_delay_step_budget": null
+  },
+  "terminal_lower_bounds": {
+    "agv_soc": 0.7,
+    "hydrogen_kg": 5000.0,
+    "lohc_kg_h2eq": 2688.0
+  }
+}

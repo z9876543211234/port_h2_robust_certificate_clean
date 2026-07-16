@@ -1,0 +1,24 @@
+{
+  "accepted_as_formal_certificate": false,
+  "case_name": "C1_ProposedRobustMain",
+  "case_semantic_sha256": "6321a8ec1eb9ee274e1d0fccef6b0ed64586c3c9ba9bc99ad41405e515947f49",
+  "elapsed_seconds_approx": 2317,
+  "formal_solver_time_limit_seconds": null,
+  "interruption_reason": "explicit_user_request_to_pause_and_publish_current_state",
+  "joint_bundle_sha256": "f1af6d2a2d5c6d4ab362891dfd84a122e0f0ff802e2946b11a30ae4633749e53",
+  "last_complete_ccg_iteration": 0,
+  "observed_cpu_percent_range": [1007.5, 1124.7],
+  "observed_memory_percent": 1.5,
+  "partition_branch_keys": [
+    "wind.down[1]",
+    "wind.down[9]",
+    "ship.delay[50,0,2]",
+    "ship.delay[50,0,4]",
+    "ship.delay[35,0,4]"
+  ],
+  "partition_leaf_count": 32,
+  "process_still_running": false,
+  "result_status": "INTERRUPTED_FAIL_CLOSED_BEFORE_FIRST_CHECKPOINT",
+  "runtime_message": "formal partitioned cost adversary did not provide complete OPTIMAL/INFEASIBLE leaf coverage",
+  "solver_acceptance_policy": "GRB.OPTIMAL_only_zero_MIP_gap_no_time_limit"
+}

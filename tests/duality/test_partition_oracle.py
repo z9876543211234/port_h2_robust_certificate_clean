@@ -5,6 +5,7 @@ import pytest
 from port_h2_certificate.compilers.compile_adversary import compile_adversary
 from port_h2_certificate.compilers.compile_dual import compile_dual
 from port_h2_certificate.compilers.compile_master import compile_master
+from port_h2_certificate.compilers.compile_recourse import compile_recourse
 from port_h2_certificate.first_stage_ir import build_first_stage_ir
 from port_h2_certificate.recourse_ir import build_recourse_ir
 from port_h2_certificate.two_stage_ir import TwoStageIR
@@ -33,3 +34,46 @@ def test_exact_partition_leaves_cover_and_match_monolithic_adversary(
     assert len(partitioned.leaves) == 4
     assert all(leaf.status in {"OPTIMAL", "INFEASIBLE"} for leaf in partitioned.leaves)
     assert partitioned.objective == pytest.approx(monolithic.objective, abs=1e-7)
+
+
+def test_exact_partition_preserves_a_compatible_known_scenario_lower_bound(
+    toy_case, toy_joint_bundle
+) -> None:
+    from port_h2_certificate.partition_oracle import solve_exact_partition
+
+    case = toy_case()
+    first_ir = build_first_stage_ir(case, toy_joint_bundle)
+    recourse_ir = build_recourse_ir(case, toy_joint_bundle)
+    enumerated = _exact_realizations(toy_joint_bundle)
+    first_stage = compile_master(
+        TwoStageIR(first_ir, recourse_ir),
+        [realization for _, realization in enumerated],
+    ).solve().first_stage
+    known_selector, known_realization = enumerated[-1]
+    known_value = compile_recourse(
+        recourse_ir,
+        first_stage,
+        known_realization,
+    ).solve().objective
+    branch_keys = toy_joint_bundle.primary_selector_keys[:2]
+
+    partitioned = solve_exact_partition(
+        compile_dual(recourse_ir, first_stage),
+        toy_joint_bundle,
+        branch_keys,
+        known_scenario_values=((known_selector, known_value),),
+    )
+    compatible = next(
+        leaf
+        for leaf in partitioned.leaves
+        if all(
+            known_selector[key] == value
+            for key, value in leaf.fixed_primary.items()
+        )
+    )
+
+    assert compatible.status == "OPTIMAL"
+    assert compatible.known_lower_bound == pytest.approx(known_value)
+    assert compatible.lower_bound_consistent is True
+    assert compatible.full_known_scenario_start_used is True
+    assert compatible.objective + 1e-7 >= known_value

@@ -203,6 +203,9 @@ def load_case(
             )
         ),
     }
+    payloads["deterministic"]["cost"].setdefault(
+        "agv_operation_per_vehicle_hour", 0.0
+    )
     for path, value in (resolutions or {}).items():
         _apply_resolution(payloads, path, value)
 

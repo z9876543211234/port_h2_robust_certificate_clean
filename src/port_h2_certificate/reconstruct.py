@@ -200,6 +200,20 @@ def reconstruct_recourse(
             / scale
             for period in range(horizon)
         ),
+        "agv_operation": sum(
+            case.cost.agv_operation_per_vehicle_hour
+            * (
+                _value(solution, "agv_container_count", period)
+                + (
+                    _value(solution, "agv_lohc_count", period)
+                    if case.has_hydrogen_chain
+                    else 0.0
+                )
+            )
+            * dt
+            / scale
+            for period in range(horizon)
+        ),
         "backlog_delay": sum(
             case.cost.backlog_delay_per_task_hour * backlog[period] * dt / scale
             for period in range(horizon)

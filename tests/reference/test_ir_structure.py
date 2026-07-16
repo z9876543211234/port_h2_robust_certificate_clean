@@ -66,6 +66,29 @@ def test_recourse_uses_only_reduced_variables_and_state_index_ranges(
     assert "spill_deviation_mw" in families
 
 
+def test_positive_agv_operation_cost_prices_each_running_allocation(
+    toy_case, toy_joint_bundle
+) -> None:
+    case = toy_case()
+    operation_cost = 4.6
+    case = replace(
+        case,
+        cost=replace(
+            case.cost,
+            agv_operation_per_vehicle_hour=operation_cost,
+        ),
+    )
+
+    ir = build_recourse_ir(case, toy_joint_bundle)
+    variables = {spec.key: spec for spec in ir.variables}
+    expected = operation_cost * case.profile.dt_hours / case.cost_scale
+
+    for period in range(case.profile.periods):
+        assert variables[("agv_container_count", period)].objective_coefficient == expected
+        assert variables[("agv_lohc_count", period)].objective_coefficient == expected
+        assert variables[("agv_charge_count", period)].objective_coefficient == 0.0
+
+
 def test_ir_uncertainty_rows_reference_only_allowed_bundle_outputs(
     toy_case, toy_joint_bundle
 ) -> None:

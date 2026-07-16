@@ -11,10 +11,13 @@ def register(case, bundle, registry) -> None:
     p_charge_mw = agv.charge_power_per_vehicle_kw / 1000.0
     p_run_mw = agv.run_power_per_vehicle_kw / 1000.0
     battery_mwh = agv.battery_capacity_per_vehicle_kwh / 1000.0
+    operation_coefficient = (
+        case.cost.agv_operation_per_vehicle_hour * dt / scale
+    )
     for period in range(horizon):
-        registry.add_variable(("agv_container_count", period), 0.0, agv.fleet_size, 0.0, "vehicle", "agv")
+        registry.add_variable(("agv_container_count", period), 0.0, agv.fleet_size, operation_coefficient, "vehicle", "agv")
         if case.has_hydrogen_chain:
-            registry.add_variable(("agv_lohc_count", period), 0.0, agv.fleet_size, 0.0, "vehicle", "agv")
+            registry.add_variable(("agv_lohc_count", period), 0.0, agv.fleet_size, operation_coefficient, "vehicle", "agv")
         registry.add_variable(("agv_charge_count", period), 0.0, agv.charger_count, 0.0, "vehicle", "agv")
         registry.add_variable(("charge_deviation_mw", period), 0.0, agv.charge_adjustment_limit_kw / 1000.0, case.cost.charge_adjustment_per_kwh * 1000.0 * dt / scale, "MW", "agv")
     for period in range(horizon + 1):
@@ -50,4 +53,3 @@ def register(case, bundle, registry) -> None:
             registry.add_row(f"agv.charge_ramp_positive[{period}]", "ge", {("agv_charge_count", period): -1.0, ("agv_charge_count", period - 1): 1.0}, -agv.charge_count_ramp, None, None, "vehicle", "agv", "AGV-CH-RAMP+")
             registry.add_row(f"agv.charge_ramp_negative[{period}]", "ge", {("agv_charge_count", period): 1.0, ("agv_charge_count", period - 1): -1.0}, -agv.charge_count_ramp, None, None, "vehicle", "agv", "AGV-CH-RAMP-")
     registry.add_row("agv.soc_terminal_min", "ge", {("soc", horizon): 1.0}, agv.terminal_min_soc, None, None, "p.u.", "agv", "SOC-TERM")
-

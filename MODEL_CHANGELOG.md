@@ -1,5 +1,24 @@
 # Model Changelog
 
+## 2026-07-16 — positive AGV work cost and known-scenario leaf floor
+
+- Retained the original continuous equivalent-AGV capacity inequalities; this
+  branch does not use the later exact-transport variable elimination.
+- Added a configurable positive operating cost to container-working and
+  LOHC-working AGV allocations only. Charging and idle allocations remain
+  unpriced, while all working allocations retain the existing 18 kW SOC load.
+- Added reconstruction and explicit-reference accounting for the AGV operating
+  cost, with zero-cost backward compatibility.
+- Strengthened the exact partition oracle with fixed known-scenario primal/dual
+  replay, a compatible-leaf objective floor, a full MIP start, and explicit
+  lower-bound consistency status.
+- Added focused unit, duality, equivalence, integration, and experiment tests;
+  the branch passed `126` tests before the current formal attempt.
+- Froze the user-confirmed 57-AGV, 20 MW base-load, time-of-use-price experiment
+  under `experiments/formal_agv_cost_tou_20260716_v1/`.
+- Recorded the interrupted C1 attempt as noncertifying: no completed C&CG
+  iteration and no accepted formal result.
+
 ## 2026-07-13 — clean-room baseline
 
 - Established the final specification as the sole mathematical implementation

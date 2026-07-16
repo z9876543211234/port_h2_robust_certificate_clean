@@ -280,6 +280,12 @@ def solve_explicit(
             )
         )
         objective += (
+            case.cost.agv_operation_per_vehicle_hour
+            * dt
+            / scale
+            * (n_container[period] + n_lohc[period])
+        )
+        objective += (
             case.cost.backlog_delay_per_task_hour
             * case.logistics.backlog_capacity
             * dt

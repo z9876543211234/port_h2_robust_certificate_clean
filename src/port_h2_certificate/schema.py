@@ -112,6 +112,7 @@ class CostParameters:
     backlog_delay_per_task_hour: float
     terminal_backlog_per_task: float
     lohc_export_revenue_per_kg: float
+    agv_operation_per_vehicle_hour: float = 0.0
 
 
 def _minimum_output(bundle: UncertaintyBundle, output_key: str) -> np.ndarray:
@@ -343,4 +344,3 @@ class CaseData:
             raise ValueError("initial backlog exceeds capacity")
         for name, value in asdict(self.cost).items():
             _finite_nonnegative(f"cost.{name}", value)
-

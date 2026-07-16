@@ -276,8 +276,45 @@ def solve_robust_ccg(
 
         dual_template = compile_dual(two_stage_ir.recourse, master.first_stage)
         if branch_keys:
+            known_scenario_values: list[tuple[Mapping[str, int], float]] = []
+            for record in scenario_by_hash.values():
+                known_replay = compile_recourse(
+                    two_stage_ir.recourse,
+                    master.first_stage,
+                    record.realization,
+                ).solve()
+                max_abs_residual = max(
+                    max_abs_residual, known_replay.max_abs_residual
+                )
+                residual_check_passed &= (
+                    known_replay.max_abs_residual <= residual_tolerance
+                )
+                if known_replay.objective > master.theta + dual_replay_tolerance:
+                    primal_replay_passed = False
+                    _record(
+                        CcgIteration(
+                            iteration,
+                            last_lower_bound,
+                            global_upper_bound,
+                            math.inf,
+                            math.inf,
+                            last_theta,
+                            phase1_adversary.objective,
+                            None,
+                            len(scenario_by_hash),
+                            "master_scenario_replay_mismatch",
+                        )
+                    )
+                    return finish("master_scenario_replay_mismatch", False)
+                known_scenario_values.append(
+                    (record.selector, float(known_replay.objective))
+                )
             cost_adversary = solve_exact_partition(
-                dual_template, joint_bundle, branch_keys
+                dual_template,
+                joint_bundle,
+                branch_keys,
+                known_scenario_values=tuple(known_scenario_values),
+                known_scenario_tolerance=dual_replay_tolerance,
             )
             leaves_are_resolved = all(
                 leaf.status in {"OPTIMAL", "INFEASIBLE"}

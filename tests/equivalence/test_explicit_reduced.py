@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from dataclasses import replace
+
 import numpy as np
 import pytest
 
@@ -12,10 +14,18 @@ from port_h2_certificate.two_stage_ir import TwoStageIR
 from tests.equivalence.explicit_reference import solve_explicit
 
 
+@pytest.mark.parametrize("operation_cost", [0.0, 4.6])
 def test_explicit_and_reduced_recourse_are_equivalent(
-    toy_case, toy_joint_bundle
+    toy_case, toy_joint_bundle, operation_cost
 ) -> None:
     case = toy_case()
+    case = replace(
+        case,
+        cost=replace(
+            case.cost,
+            agv_operation_per_vehicle_hour=operation_cost,
+        ),
+    )
     realization = toy_joint_bundle.evaluate(toy_joint_bundle.nominal_selector)
     two_stage = TwoStageIR(
         build_first_stage_ir(case, toy_joint_bundle),

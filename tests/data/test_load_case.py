@@ -63,6 +63,22 @@ def test_resolved_96_input_package_uses_frozen_three_day_nhpp_integer_counts() -
     assert loaded.ship_delay_payload["total_delay_step_budget"] is None
 
 
+def test_agv_operation_cost_can_be_injected_without_rewriting_source_data() -> None:
+    from port_h2_certificate.load_case import load_case
+
+    resolutions = {
+        **_resolutions(),
+        "deterministic.cost.agv_operation_per_vehicle_hour": 4.6,
+    }
+    loaded = load_case(
+        CASE_ROOT / "C1.yaml",
+        "quarter_hour_96",
+        resolutions=resolutions,
+    )
+
+    assert loaded.case.cost.agv_operation_per_vehicle_hour == 4.6
+
+
 def test_hourly_hydrogen_delay_remains_an_explicit_blocker() -> None:
     from port_h2_certificate.load_case import UnresolvedInputError, load_case
 

@@ -1,0 +1,19 @@
+{
+  "c3_pending_prespecified_scan": true,
+  "generated_by": "isolated_case_studies/wind800_p2h60_agv_scan_20260715/formal_agv_cost_tou_20260716_v1/scripts/prepare_inputs.py",
+  "non_overwriting_write": true,
+  "package_label": "recommended57_agv60_tou",
+  "schema_version": 1,
+  "sha256": {
+    "C1_large_port_12v.yaml": "7923efd83acd2729784f49c695b3b6bb1859d5752f3405f2f80a8c64c84a7efd",
+    "C2_large_port_12v.yaml": "508be808b6aecea1ecde61abfaa2c06db4524087975ed3be6d885f7db8c4f850",
+    "C4_large_port_12v.yaml": "57897bed3e3a37cb10ff92fe1eac711078025960afab357251ea73b54b8d7049",
+    "parameter_mapping.json": "748ae7c0af3fc3751c5920188d22f797c88df0c6a3601188af53f79579a4205c",
+    "physical_large_port_96.json": "b0ba350bfe49ed971e9ab592c89a1341ad31ff84ff91d582fe66580e6162db1c",
+    "preparation_report.json": "7bf34f0e48c468b00f4b753106e0f51c856d76ec4bcc9659dd40dc5f7b339046",
+    "profile_96.yaml": "a6c3d27596f818f0687fb00512640093c6a76bb3243cf9c1908d6ed6350a8def",
+    "ship_delay_large_port_96.json": "1bd811a702df455041ac80a6cb4185f7f6842160112e7e348ccb17d82e2fd0f8",
+    "wind_large_port_96.json": "7224f6e0b8334af44ae971617bcbd687f1abb730418796b56eaa7f2dc1ba9a71"
+  },
+  "source_package": "isolated_case_studies/wind800_p2h60_agv_scan_20260715/formal_exact_transport_20260716_v1/inputs/recommended57"
+}

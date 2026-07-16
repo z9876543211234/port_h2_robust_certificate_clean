@@ -73,3 +73,40 @@ def test_ccg_can_use_an_exact_cost_adversary_partition(
     assert result.partition_oracle_used is True
     assert result.all_partition_leaves_optimal_or_empty is True
     assert result.cost_partition_branch_keys == branch_keys
+
+
+def test_ccg_passes_replayed_master_scenarios_as_partition_lower_bounds(
+    monkeypatch, toy_case, toy_joint_bundle
+) -> None:
+    import port_h2_certificate.solver.ccg as ccg
+
+    case = toy_case()
+    two_stage = TwoStageIR(
+        build_first_stage_ir(case, toy_joint_bundle),
+        build_recourse_ir(case, toy_joint_bundle),
+    )
+    real_solve = ccg.solve_exact_partition
+    recorded_batches = []
+
+    def recording_solve(*args, **kwargs):
+        recorded_batches.append(tuple(kwargs.get("known_scenario_values", ())))
+        return real_solve(*args, **kwargs)
+
+    monkeypatch.setattr(ccg, "solve_exact_partition", recording_solve)
+    result = ccg.solve_robust_ccg(
+        two_stage,
+        toy_joint_bundle,
+        outer_gap_tolerance=1e-9,
+        cost_partition_branch_keys=(
+            toy_joint_bundle.primary_selector_keys[:2]
+        ),
+    )
+
+    assert result.engineering_optimal is True
+    assert recorded_batches
+    assert all(batch for batch in recorded_batches)
+    assert all(
+        isinstance(value, float)
+        for batch in recorded_batches
+        for _, value in batch
+    )
