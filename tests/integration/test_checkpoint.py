@@ -55,3 +55,81 @@ def test_every_completed_ccg_iteration_can_be_atomically_checkpointed(
     payload = json.loads((checkpoint_dir / "checkpoint.json").read_text())
     assert payload["iteration"] == result.history[-1].iteration
     assert payload["latest_action"] == result.history[-1].action
+
+
+def test_partition_progress_checkpoint_round_trips_only_for_same_model(
+    tmp_path, toy_case, toy_joint_bundle
+) -> None:
+    from port_h2_certificate.checkpoint import (
+        load_partition_checkpoint,
+        write_partition_checkpoint,
+    )
+    from port_h2_certificate.partition_oracle import PartitionEvent, PartitionLeaf
+
+    case = toy_case()
+    two_stage = TwoStageIR(
+        build_first_stage_ir(case, toy_joint_bundle),
+        build_recourse_ir(case, toy_joint_bundle),
+    )
+    first_stage = {
+        spec.key: spec.lower_bound for spec in two_stage.first_stage.variables
+    }
+    branch_keys = toy_joint_bundle.primary_selector_keys[:2]
+    leaf = PartitionLeaf(
+        fixed_primary={branch_keys[0]: 0, branch_keys[1]: 0},
+        status="INFEASIBLE",
+        objective=None,
+        objective_bound=None,
+        selector={},
+    )
+    events = (
+        PartitionEvent(0, 4, "COMPLETED", leaf.fixed_primary, leaf),
+    )
+    path = tmp_path / "partition_progress.json"
+
+    write_partition_checkpoint(
+        path,
+        iteration=1,
+        branch_keys=branch_keys,
+        first_stage=first_stage,
+        bundle=toy_joint_bundle,
+        events=events,
+    )
+    restored = load_partition_checkpoint(
+        path,
+        iteration=1,
+        branch_keys=branch_keys,
+        first_stage=first_stage,
+        bundle=toy_joint_bundle,
+    )
+
+    assert restored == (leaf,)
+
+    resumed_path = tmp_path / "partition_resumed.json"
+    write_partition_checkpoint(
+        resumed_path,
+        iteration=3,
+        branch_keys=branch_keys,
+        first_stage=first_stage,
+        bundle=toy_joint_bundle,
+        events=(
+            PartitionEvent(0, 4, "RESUMED", leaf.fixed_primary, leaf),
+        ),
+    )
+    assert load_partition_checkpoint(
+        resumed_path,
+        iteration=3,
+        branch_keys=branch_keys,
+        first_stage=first_stage,
+        bundle=toy_joint_bundle,
+    ) == (leaf,)
+    changed = dict(first_stage)
+    first_key = next(iter(changed))
+    changed[first_key] += 1.0
+    assert load_partition_checkpoint(
+        path,
+        iteration=1,
+        branch_keys=branch_keys,
+        first_stage=changed,
+        bundle=toy_joint_bundle,
+    ) == ()

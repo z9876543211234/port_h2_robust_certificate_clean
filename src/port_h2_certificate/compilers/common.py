@@ -49,9 +49,8 @@ def evaluate_row_rhs(
 
 
 def configure_formal_lp(model) -> None:
+    model.Params.OutputFlag = 0
     model.Params.Method = 1
     model.Params.FeasibilityTol = 1e-8
     model.Params.OptimalityTol = 1e-8
     model.Params.NumericFocus = 1
-    model.Params.OutputFlag = 0
-

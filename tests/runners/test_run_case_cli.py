@@ -27,4 +27,5 @@ def test_run_case_cli_exposes_repeatable_cost_partition_key() -> None:
 
     assert completed.returncode == 0
     assert "--cost-partition-key COST_PARTITION_KEY" in completed.stdout
-
+    assert "--resume-partition" in completed.stdout
+    assert "--semantic-ship-partition" in completed.stdout

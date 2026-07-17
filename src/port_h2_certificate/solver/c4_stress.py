@@ -27,6 +27,9 @@ class C4StressResult:
     nominal_objective: float
     first_stage: Mapping[VariableKey, float]
     phase1_objective: float
+    phase1_replay_objective: float | None
+    feasibility_tolerance: float
+    dual_replay_tolerance: float
     stress_recourse_objective: float | None
     stress_total_objective: float | None
     stress_objective_bound: float | None
@@ -83,6 +86,9 @@ def solve_c4_nominal_then_stress(
             nominal_objective=master.objective,
             first_stage=master.first_stage,
             phase1_objective=phase1.objective,
+            phase1_replay_objective=replay.objective,
+            feasibility_tolerance=feasibility_tolerance,
+            dual_replay_tolerance=dual_replay_tolerance,
             stress_recourse_objective=None,
             stress_total_objective=None,
             stress_objective_bound=None,
@@ -132,6 +138,9 @@ def solve_c4_nominal_then_stress(
         nominal_objective=master.objective,
         first_stage=master.first_stage,
         phase1_objective=phase1.objective,
+        phase1_replay_objective=None,
+        feasibility_tolerance=feasibility_tolerance,
+        dual_replay_tolerance=dual_replay_tolerance,
         stress_recourse_objective=replay.objective,
         stress_total_objective=_first_stage_cost(
             two_stage_ir, master.first_stage

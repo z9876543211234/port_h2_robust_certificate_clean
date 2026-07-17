@@ -1,0 +1,42 @@
+{
+  "fleet_size": 34,
+  "formal_robust_certificate": false,
+  "integer_rounding_rule": "ROUND_HALF_UP for container; LOHC is fleet minus container",
+  "joint_bundle_sha256": "f1af6d2a2d5c6d4ab362891dfd84a122e0f0ff802e2946b11a30ae4633749e53",
+  "proof_scope": "C1_discovered_scenario_pool_parameter_diagnostic",
+  "scenario_count": 3,
+  "selected_candidate": {
+    "case_semantic_sha256": "cd21074f5fa52f26a9af4b2cfd889441a83b33d94af038639bccdf85133306ca",
+    "container_capacity": 29,
+    "joint_bundle_sha256": "f1af6d2a2d5c6d4ab362891dfd84a122e0f0ff802e2946b11a30ae4633749e53",
+    "lohc_capacity": 5,
+    "max_abs_recourse_residual": 7.460698725481052e-14,
+    "maximum_container_agv_used": 29.0,
+    "maximum_empty_vehicle_periods": 2.4868995751603507e-13,
+    "maximum_lohc_agv_used": 5.0,
+    "maximum_terminal_backlog_teu": 142.83128822885587,
+    "minimum_completed_container_teu": 2257.168711771144,
+    "minimum_lohc_export_kg_h2eq": 71319.68042809353,
+    "objective_scaled": -1410.298612892673,
+    "scenario_count": 3,
+    "share_percent": 85,
+    "status": "OPTIMAL",
+    "theta_scaled": -1313.8062976456492,
+    "wall_time_seconds": 0.3445795419975184
+  },
+  "selected_case": "experiments/base_load_20mw_agv34_c1_c3_20260717/inputs/base20mw_agv34/C3_base20mw_agv34_selected.yaml",
+  "selection_rationale": "This gives the fixed-group C3 ablation its strongest fair split; the selected case must still pass its own exact adversary certificate.",
+  "selection_rule": "minimum finite-scenario two-stage robust objective among OPTIMAL candidates on the complete formal-C1 discovered scenario pool",
+  "share_candidates_percent": [
+    50,
+    55,
+    60,
+    65,
+    70,
+    75,
+    80,
+    85
+  ],
+  "source_c1_case": "experiments/base_load_20mw_agv34_c1_c3_20260717/inputs/base20mw_agv34/C1_base20mw_agv34.yaml",
+  "source_c1_scenario_pool": "experiments/base_load_20mw_agv34_c1_c3_20260717/formal_C1/checkpoints/scenario_pool.json"
+}

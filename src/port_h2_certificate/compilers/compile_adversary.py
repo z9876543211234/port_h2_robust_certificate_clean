@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+import math
 from typing import Mapping
 
 import gurobipy as gp
@@ -36,7 +37,57 @@ class CompiledAdversary:
     selector_variables: Mapping[str, gp.Var]
     row_duals: Mapping[str, gp.Var]
     upper_bound_duals: Mapping[tuple[str, int], gp.Var]
+    primal_variables: Mapping[VariableKey, gp.Var]
+    product_variables: Mapping[str, gp.Var]
+    product_row_coefficients: Mapping[str, Mapping[str, float]]
     active_selector_keys: tuple[str, ...]
+
+    def set_full_start(
+        self,
+        selector: Mapping[str, int],
+        row_duals: Mapping[str, float],
+        upper_bound_duals: Mapping[tuple[str, int], float],
+        primal_values: Mapping[VariableKey, float] | None = None,
+    ) -> int:
+        if set(selector) != set(self.selector_variables) or any(
+            int(value) not in {0, 1} for value in selector.values()
+        ):
+            raise ValueError("full adversary start requires every binary selector")
+        if set(row_duals) != set(self.row_duals):
+            raise ValueError("full adversary start requires every row dual")
+        if set(upper_bound_duals) != set(self.upper_bound_duals):
+            raise ValueError("full adversary start requires every upper-bound dual")
+        if self.primal_variables and (
+            primal_values is None
+            or set(primal_values) != set(self.primal_variables)
+        ):
+            raise ValueError("strengthened adversary start requires every primal value")
+
+        for key, variable in self.selector_variables.items():
+            variable.Start = int(selector[key])
+        for name, variable in self.row_duals.items():
+            variable.Start = float(row_duals[name])
+        for key, variable in self.upper_bound_duals.items():
+            variable.Start = float(upper_bound_duals[key])
+        for key, variable in self.primal_variables.items():
+            assert primal_values is not None
+            variable.Start = float(primal_values[key])
+        for key, variable in self.product_variables.items():
+            g_value = sum(
+                coefficient * float(row_duals[row_name])
+                for row_name, coefficient in self.product_row_coefficients[
+                    key
+                ].items()
+            )
+            variable.Start = int(selector[key]) * g_value
+        self.model.update()
+        return (
+            len(self.selector_variables)
+            + len(self.row_duals)
+            + len(self.upper_bound_duals)
+            + len(self.primal_variables)
+            + len(self.product_variables)
+        )
 
     def solve(self) -> AdversaryResult:
         self.model.optimize()
@@ -102,8 +153,154 @@ def _uncertain_row_columns(template: AdversaryDualTemplate, bundle: UncertaintyB
     return bases, columns
 
 
+def _raw_row_bases(
+    template: AdversaryDualTemplate, normalized_bases: Mapping[str, float]
+) -> dict[str, float]:
+    return {
+        row.name: normalized_bases[row.name]
+        + sum(
+            coefficient * template.lower_bounds[key]
+            for key, coefficient in row.recourse_coefficients.items()
+        )
+        for row in template.ir.constraints
+    }
+
+
+def _relaxed_rhs_range(base: float, coefficients: np.ndarray) -> tuple[float, float]:
+    """Safe interval over z in [0, 1], deliberately ignoring Bundle coupling."""
+
+    return (
+        float(base + coefficients[coefficients < 0.0].sum()),
+        float(base + coefficients[coefficients > 0.0].sum()),
+    )
+
+
+def infer_optimal_primal_upper_bounds(
+    template: AdversaryDualTemplate,
+    bundle: UncertaintyBundle,
+    normalized_bases: Mapping[str, float],
+    columns: Mapping[str, np.ndarray],
+) -> dict[VariableKey, float]:
+    """Infer finite bounds for positive-cost epigraph slacks.
+
+    The added bounds preserve at least one optimum for every integer
+    uncertainty realization.  They are used only in the primal block that
+    strengthens the exact adversary; the source recourse IR is unchanged.
+    """
+
+    specs = {spec.key: spec for spec in template.ir.variables}
+    upper_bounds = {
+        spec.key: float(spec.upper_bound)
+        for spec in template.ir.variables
+        if spec.upper_bound is not None
+    }
+    raw_bases = _raw_row_bases(template, normalized_bases)
+
+    # Direct rows of the form a*x >= rhs(z), a < 0, provide a true upper
+    # bound on x.  Relaxing every selector independently gives a conservative
+    # bound and therefore never removes a feasible integer realization.
+    for row in template.ir.constraints:
+        if row.sense != "ge" or len(row.recourse_coefficients) != 1:
+            continue
+        key, coefficient = next(iter(row.recourse_coefficients.items()))
+        if coefficient >= 0.0:
+            continue
+        rhs_min, _ = _relaxed_rhs_range(
+            raw_bases[row.name], columns[row.name]
+        )
+        candidate = rhs_min / coefficient
+        candidate = max(float(specs[key].lower_bound), float(candidate))
+        if key not in upper_bounds or candidate < upper_bounds[key]:
+            upper_bounds[key] = candidate
+
+    occurrences: dict[VariableKey, list] = {key: [] for key in specs}
+    for row in template.ir.constraints:
+        for key in row.recourse_coefficients:
+            occurrences[key].append(row)
+
+    # A positive-cost variable that appears only with a positive coefficient
+    # in >= rows is an epigraph slack.  Its minimal optimal value is no larger
+    # than the worst interval requirement computed from the other variables.
+    for spec in template.ir.variables:
+        if spec.objective_coefficient <= 0.0 or spec.key in upper_bounds:
+            continue
+        rows = occurrences[spec.key]
+        if not rows or any(
+            row.sense != "ge"
+            or row.recourse_coefficients[spec.key] <= 0.0
+            for row in rows
+        ):
+            continue
+        candidates = [float(spec.lower_bound)]
+        bounded = True
+        for row in rows:
+            coefficient = row.recourse_coefficients[spec.key]
+            _, rhs_max = _relaxed_rhs_range(
+                raw_bases[row.name], columns[row.name]
+            )
+            other_minimum = 0.0
+            for key, value in row.recourse_coefficients.items():
+                if key == spec.key:
+                    continue
+                other = specs[key]
+                if value >= 0.0:
+                    other_minimum += value * other.lower_bound
+                elif key in upper_bounds:
+                    other_minimum += value * upper_bounds[key]
+                else:
+                    bounded = False
+                    break
+            if not bounded:
+                break
+            candidates.append((rhs_max - other_minimum) / coefficient)
+        if bounded:
+            candidate = max(candidates)
+            upper_bounds[spec.key] = candidate + max(
+                1e-9, abs(candidate) * 1e-9
+            )
+
+    unresolved = [
+        spec.key
+        for spec in template.ir.variables
+        if spec.objective_coefficient > 0.0 and spec.key not in upper_bounds
+    ]
+    if unresolved:
+        raise ValueError(
+            "cannot build a bounded primal adversary objective; unresolved "
+            f"positive-cost variables: {unresolved[:8]}"
+        )
+    if any(not math.isfinite(value) for value in upper_bounds.values()):
+        raise ValueError("inferred primal upper bounds must be finite")
+    return upper_bounds
+
+
+def infer_optimal_recourse_objective_upper_bound(
+    template: AdversaryDualTemplate,
+    bundle: UncertaintyBundle,
+) -> float:
+    """Return a finite cap that preserves every integer-scenario optimum."""
+
+    normalized_bases, columns = _uncertain_row_columns(template, bundle)
+    upper_bounds = infer_optimal_primal_upper_bounds(
+        template, bundle, normalized_bases, columns
+    )
+    value = 0.0
+    for spec in template.ir.variables:
+        if spec.objective_coefficient > 0.0:
+            value += spec.objective_coefficient * upper_bounds[spec.key]
+        elif spec.objective_coefficient < 0.0:
+            value += spec.objective_coefficient * spec.lower_bound
+    if not math.isfinite(value):
+        raise ValueError("inferred recourse objective upper bound must be finite")
+    return float(value + max(1e-7, abs(value) * 1e-9))
+
+
 def compile_adversary(
-    dual_template: AdversaryDualTemplate, joint_bundle: UncertaintyBundle
+    dual_template: AdversaryDualTemplate,
+    joint_bundle: UncertaintyBundle,
+    *,
+    strengthen_with_primal: bool = False,
+    objective_upper_bound: float | None = None,
 ) -> CompiledAdversary:
     joint_bundle.validate()
     model = gp.Model(f"exact_dual_only_{dual_template.template_kind}_adversary")
@@ -170,11 +367,17 @@ def compile_adversary(
         objective -= row.width * upper_duals[row.variable_key]
 
     active: list[str] = []
+    product_variables: dict[str, gp.Var] = {}
+    product_row_coefficients: dict[str, dict[str, float]] = {}
     for selector_index, selector_key in enumerate(joint_bundle.selector_keys):
-        g_expression = gp.quicksum(
-            columns[row.name][selector_index] * row_duals[row.name]
+        row_coefficients = {
+            row.name: float(columns[row.name][selector_index])
             for row in dual_template.ir.constraints
             if columns[row.name][selector_index] != 0.0
+        }
+        g_expression = gp.quicksum(
+            coefficient * row_duals[row_name]
+            for row_name, coefficient in row_coefficients.items()
         )
         if g_expression.size() == 0:
             continue
@@ -185,6 +388,8 @@ def compile_adversary(
             vtype=gp.GRB.CONTINUOUS,
             name=f"selector_dual_product[{selector_key}]",
         )
+        product_variables[selector_key] = product
+        product_row_coefficients[selector_key] = row_coefficients
         model.addGenConstrIndicator(
             selectors[selector_key],
             0,
@@ -199,7 +404,61 @@ def compile_adversary(
         )
         objective += product
 
-    model.setObjective(objective, gp.GRB.MAXIMIZE)
+    if objective_upper_bound is not None:
+        if not math.isfinite(objective_upper_bound):
+            raise ValueError("adversary objective upper bound must be finite")
+        model.addConstr(
+            objective <= float(objective_upper_bound),
+            name="valid_recourse_objective_upper_bound",
+        )
+
+    primal_variables: dict[VariableKey, gp.Var] = {}
+    if strengthen_with_primal:
+        primal_upper_bounds = infer_optimal_primal_upper_bounds(
+            dual_template, joint_bundle, bases, columns
+        )
+        primal_variables = {
+            spec.key: model.addVar(
+                lb=spec.lower_bound,
+                ub=primal_upper_bounds.get(spec.key, gp.GRB.INFINITY),
+                vtype=gp.GRB.CONTINUOUS,
+                name=f"primal[{spec.key[0]}[{spec.key[1]}]]",
+            )
+            for spec in dual_template.ir.variables
+        }
+        raw_bases = _raw_row_bases(dual_template, bases)
+        for row in dual_template.ir.constraints:
+            lhs = gp.quicksum(
+                coefficient * primal_variables[key]
+                for key, coefficient in row.recourse_coefficients.items()
+            )
+            rhs = raw_bases[row.name] + gp.quicksum(
+                float(columns[row.name][selector_index])
+                * selectors[selector_key]
+                for selector_index, selector_key in enumerate(
+                    joint_bundle.selector_keys
+                )
+                if columns[row.name][selector_index] != 0.0
+            )
+            if row.sense == "eq":
+                model.addConstr(
+                    lhs == rhs, name=f"primal_feasibility[{row.name}]"
+                )
+            else:
+                model.addConstr(
+                    lhs >= rhs, name=f"primal_feasibility[{row.name}]"
+                )
+        primal_objective = gp.quicksum(
+            spec.objective_coefficient * primal_variables[spec.key]
+            for spec in dual_template.ir.variables
+        )
+        model.addConstr(
+            primal_objective == objective,
+            name="primal_dual_strong_duality",
+        )
+        model.setObjective(primal_objective, gp.GRB.MAXIMIZE)
+    else:
+        model.setObjective(objective, gp.GRB.MAXIMIZE)
     model.update()
     return CompiledAdversary(
         template=dual_template,
@@ -208,5 +467,8 @@ def compile_adversary(
         selector_variables=selectors,
         row_duals=row_duals,
         upper_bound_duals=upper_duals,
+        primal_variables=primal_variables,
+        product_variables=product_variables,
+        product_row_coefficients=product_row_coefficients,
         active_selector_keys=tuple(active),
     )

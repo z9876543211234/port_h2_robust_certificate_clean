@@ -4,12 +4,78 @@ from __future__ import annotations
 
 from dataclasses import asdict
 from pathlib import Path
-from typing import Any, Mapping
+import json
+from typing import Any, Mapping, Sequence
 
 from port_h2_certificate.export import atomic_write_csv, atomic_write_json
+from port_h2_certificate.partition_oracle import PartitionEvent, PartitionLeaf
 from port_h2_certificate.solver.ccg import CcgProgress
 from port_h2_certificate.two_stage_ir import TwoStageIR
+from port_h2_contracts.hashing import canonical_sha256
 from port_h2_contracts.uncertainty_bundle import UncertaintyBundle
+
+
+def _first_stage_sha256(first_stage: Mapping[tuple[str, int], float]) -> str:
+    return canonical_sha256(
+        [
+            {"family": key[0], "period": key[1], "value": float(value)}
+            for key, value in sorted(first_stage.items())
+        ]
+    )
+
+
+def write_partition_checkpoint(
+    path: str | Path,
+    *,
+    iteration: int,
+    branch_keys: Sequence[str],
+    first_stage: Mapping[tuple[str, int], float],
+    bundle: UncertaintyBundle,
+    events: Sequence[PartitionEvent],
+) -> None:
+    atomic_write_json(
+        path,
+        {
+            "schema_version": 1,
+            "iteration": int(iteration),
+            "branch_keys": list(branch_keys),
+            "joint_bundle_sha256": bundle.bundle_sha256,
+            "first_stage_sha256": _first_stage_sha256(first_stage),
+            "events": [asdict(event) for event in events],
+        },
+    )
+
+
+def load_partition_checkpoint(
+    path: str | Path,
+    *,
+    iteration: int,
+    branch_keys: Sequence[str],
+    first_stage: Mapping[tuple[str, int], float],
+    bundle: UncertaintyBundle,
+) -> tuple[PartitionLeaf, ...]:
+    source = Path(path)
+    if not source.is_file():
+        return ()
+    payload = json.loads(source.read_text(encoding="utf-8"))
+    if (
+        payload.get("schema_version") != 1
+        or payload.get("iteration") != int(iteration)
+        or tuple(payload.get("branch_keys", ())) != tuple(branch_keys)
+        or payload.get("joint_bundle_sha256") != bundle.bundle_sha256
+        or payload.get("first_stage_sha256") != _first_stage_sha256(first_stage)
+    ):
+        return ()
+    leaves: list[PartitionLeaf] = []
+    for event in payload.get("events", ()):
+        leaf = event.get("leaf")
+        if event.get("stage") not in {"COMPLETED", "RESUMED"} or leaf is None:
+            continue
+        restored = PartitionLeaf(**leaf)
+        if restored.status not in {"OPTIMAL", "INFEASIBLE"}:
+            continue
+        leaves.append(restored)
+    return tuple(leaves)
 
 
 def write_ccg_checkpoint(

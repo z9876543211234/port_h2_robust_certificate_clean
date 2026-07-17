@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 import math
-from typing import Callable, Mapping
+from typing import Callable, Mapping, Sequence
 
 import numpy as np
 
@@ -16,7 +16,11 @@ from port_h2_certificate.compilers.compile_phase1_adversary import (
     compile_phase1_adversary,
 )
 from port_h2_certificate.compilers.compile_recourse import compile_recourse
-from port_h2_certificate.partition_oracle import solve_exact_partition
+from port_h2_certificate.partition_oracle import (
+    PartitionEvent,
+    PartitionLeaf,
+    solve_exact_partition,
+)
 from port_h2_certificate.recourse_ir import VariableKey
 from port_h2_certificate.two_stage_ir import TwoStageIR
 from port_h2_contracts.hashing import canonical_sha256
@@ -80,6 +84,7 @@ class CcgResult:
     partition_oracle_used: bool = False
     all_partition_leaves_optimal_or_empty: bool | None = None
     cost_partition_branch_keys: tuple[str, ...] = ()
+    cost_partition_leaf_count: int | None = None
 
 
 @dataclass(frozen=True)
@@ -119,7 +124,22 @@ def solve_robust_ccg(
     max_iterations: int = 100,
     phase1_sigma: float = 1.0,
     cost_partition_branch_keys: tuple[str, ...] = (),
+    cost_partition_assignments: Sequence[Mapping[str, int]] | None = None,
     iteration_callback: Callable[[CcgProgress], None] | None = None,
+    partition_resume_provider: Callable[
+        [
+            int,
+            Mapping[VariableKey, float],
+            UncertaintyBundle,
+            tuple[str, ...],
+        ],
+        Sequence[PartitionLeaf],
+    ]
+    | None = None,
+    partition_event_callback: Callable[
+        [int, Mapping[VariableKey, float], PartitionEvent], None
+    ]
+    | None = None,
 ) -> CcgResult:
     if outer_gap_tolerance < 0.0:
         raise ValueError("outer_gap_tolerance must be nonnegative")
@@ -149,6 +169,13 @@ def solve_robust_ccg(
     last_worst_recourse_variables: Mapping[VariableKey, float] = {}
     last_worst_cost_breakdown: Mapping[str, float] = {}
     branch_keys = tuple(cost_partition_branch_keys)
+    explicit_partition_assignments = (
+        tuple(dict(assignment) for assignment in cost_partition_assignments)
+        if cost_partition_assignments is not None
+        else None
+    )
+    if explicit_partition_assignments is not None and not branch_keys:
+        raise ValueError("explicit partition assignments require branch keys")
     all_partition_leaves_optimal_or_empty: bool | None = (
         True if branch_keys else None
     )
@@ -195,6 +222,11 @@ def solve_robust_ccg(
                 all_partition_leaves_optimal_or_empty
             ),
             cost_partition_branch_keys=branch_keys,
+            cost_partition_leaf_count=(
+                len(explicit_partition_assignments)
+                if explicit_partition_assignments is not None
+                else (2 ** len(branch_keys) if branch_keys else None)
+            ),
         )
 
     for iteration in range(1, max_iterations + 1):
@@ -309,12 +341,34 @@ def solve_robust_ccg(
                 known_scenario_values.append(
                     (record.selector, float(known_replay.objective))
                 )
+            resume_leaves = (
+                tuple(
+                    partition_resume_provider(
+                        iteration,
+                        master.first_stage,
+                        joint_bundle,
+                        branch_keys,
+                    )
+                )
+                if partition_resume_provider is not None
+                else ()
+            )
+
+            def relay_partition_event(event: PartitionEvent) -> None:
+                if partition_event_callback is not None:
+                    partition_event_callback(
+                        iteration, master.first_stage, event
+                    )
+
             cost_adversary = solve_exact_partition(
                 dual_template,
                 joint_bundle,
                 branch_keys,
                 known_scenario_values=tuple(known_scenario_values),
                 known_scenario_tolerance=dual_replay_tolerance,
+                resume_leaves=resume_leaves,
+                event_callback=relay_partition_event,
+                partition_assignments=explicit_partition_assignments,
             )
             leaves_are_resolved = all(
                 leaf.status in {"OPTIMAL", "INFEASIBLE"}

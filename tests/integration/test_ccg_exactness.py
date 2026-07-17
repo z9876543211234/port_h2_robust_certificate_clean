@@ -110,3 +110,73 @@ def test_ccg_passes_replayed_master_scenarios_as_partition_lower_bounds(
         for batch in recorded_batches
         for _, value in batch
     )
+
+
+def test_ccg_exposes_partition_progress_and_resume_hooks(
+    toy_case, toy_joint_bundle
+) -> None:
+    from port_h2_certificate.solver.ccg import solve_robust_ccg
+
+    case = toy_case()
+    two_stage = TwoStageIR(
+        build_first_stage_ir(case, toy_joint_bundle),
+        build_recourse_ir(case, toy_joint_bundle),
+    )
+    branch_keys = tuple(toy_joint_bundle.primary_selector_keys[:2])
+    resume_calls = []
+    events = []
+
+    def resume_provider(iteration, first_stage, bundle, keys):
+        resume_calls.append((iteration, first_stage, bundle, keys))
+        return ()
+
+    def progress_callback(iteration, first_stage, event):
+        events.append((iteration, first_stage, event))
+
+    result = solve_robust_ccg(
+        two_stage,
+        toy_joint_bundle,
+        outer_gap_tolerance=1e-9,
+        cost_partition_branch_keys=branch_keys,
+        partition_resume_provider=resume_provider,
+        partition_event_callback=progress_callback,
+    )
+
+    assert result.engineering_optimal is True
+    assert resume_calls
+    assert events
+    assert all(call[2] is toy_joint_bundle for call in resume_calls)
+    assert all(call[3] == branch_keys for call in resume_calls)
+    assert any(event.stage == "SOLVE_STARTED" for _, _, event in events)
+    assert any(event.stage == "COMPLETED" for _, _, event in events)
+
+
+def test_ccg_accepts_exact_semantic_partition_assignments(
+    toy_case, toy_joint_bundle
+) -> None:
+    from port_h2_certificate.partition_oracle import (
+        build_ship_delay_partition_assignments,
+    )
+    from port_h2_certificate.solver.ccg import solve_robust_ccg
+
+    case = toy_case()
+    two_stage = TwoStageIR(
+        build_first_stage_ir(case, toy_joint_bundle),
+        build_recourse_ir(case, toy_joint_bundle),
+    )
+    branch_keys, assignments = build_ship_delay_partition_assignments(
+        toy_joint_bundle
+    )
+
+    result = solve_robust_ccg(
+        two_stage,
+        toy_joint_bundle,
+        outer_gap_tolerance=1e-9,
+        cost_partition_branch_keys=branch_keys,
+        cost_partition_assignments=assignments,
+    )
+
+    assert result.engineering_optimal is True
+    assert result.partition_oracle_used is True
+    assert result.all_partition_leaves_optimal_or_empty is True
+    assert result.cost_partition_branch_keys == branch_keys

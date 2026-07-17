@@ -1,0 +1,17 @@
+{
+  "calibration_name": "wind800_12v_agv34_agv60_tou_base20mw_c3_ctn20_lohc14_20260717",
+  "case_name": "C3_WorkCapacityCapsRobust",
+  "container_work_capacity": 20.0,
+  "hydrogen_chain": true,
+  "lohc_work_capacity": 14.0,
+  "outbound_mode": "agv_virtual_pipeline",
+  "profiles": {
+    "quarter_hour_96": {
+      "deterministic_reference": "physical_large_port_96.json",
+      "profile_reference": "profile_96.yaml",
+      "ship_delay_source_reference": "ship_delay_large_port_96.json",
+      "wind_source_reference": "wind_large_port_96.json"
+    }
+  },
+  "schema_version": 1
+}
